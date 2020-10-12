@@ -212,9 +212,8 @@
 		font-size: 9px;
 	}
 	.memu-noti li { 
-		margin: 0 10px;
+		margin: 0 5px;
 	}
-	
 }
 
 
@@ -238,8 +237,12 @@
 		position: relative;
 		width: 100%;
 	}	
-	
-	
+	.memu-noti li {
+		margin: 0 5px;
+	}
+	.send-mail-form input.form-control {
+		width: 150px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -265,8 +268,25 @@
 		position: relative;
 		width: 100%;
 	}	
+	.action-noti {
+		display: block;
+		text-align: right;
+		margin: 0;
+	}
+	.memu-noti li { 
+		margin: 0;
+	}
 	
-	
-	
-	
+	.memu-noti li a {
+		padding: 0 4px;
+	}
+	.send-mail-form input.form-control {
+		width: 150px;
+	}
+}
+@media (max-width: 413px) {
+	.memu-noti li a {
+		font-size: 0.75rem;
+		padding: 1px ;
+	}
 }
