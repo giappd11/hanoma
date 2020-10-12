@@ -1,0 +1,51 @@
+
+<div class = "bg-white px-3 border-radius d-flex align-items-center pt-3 pt-lg-0">
+    <div class ="col-7">
+        <span class = "hello">Xin chào, Dự </span>
+        <p>Hãy chú ý bảo vệ tài khoản của mình bằng cách thực hiện đầy đủ các bước theo hướng dẫn của Hanoma, và đặc biệt đừng chia sẻ tài khoản của mình với người khác nhé!</p>
+    </div>
+    <div class = "col-5">
+        <img src = "./images/protect.png" />
+    </div>
+</div>
+<div class = "bg-white mt-3 p-5 border-radius non-editable">
+    <div class  = "title-page pb-4 mb-4">
+        <h3 class = "text-uppercase">THÔNG TIN CỦA BẠN</h3>
+    </div>
+    <div class = "content-page info-profile">
+        <form>
+            <div class="form-group row align-items-center mx-0">
+                <label class="col-sm-12 col-12 col-md-12 col-lg-3 col-form-label"><span class = "icon-lable name"></span> Họ và tên</label>
+                <div class="col-sm-8 col-8 col-md-8 col-lg-6">
+                    <input type="text" name= "name" readonly class="form-control"  value="Lò Văn Dự">
+                </div>
+                <span class = "edit col-sm-4 col-4 col-md-4 col-lg-3"  onclick = "javascript:edit('name')">Chỉnh sửa</span>
+            </div>
+            <div class="form-group row align-items-center mx-0">
+                <label class="col-sm-12 col-12 col-md-12 col-lg-3 col-form-label"><span class = "icon-lable sex"></span> Giới tính:</label>
+                <div class="col-sm-8 col-8 col-md-8 col-lg-6">
+                    <input type="text" name= "sex" readonly class="form-control"  value="Nam">
+                </div>
+                <span class = "edit col-sm-4 col-4 col-md-4 col-lg-3" onclick = "javascript:edit('sex')">Chỉnh sửa</span>
+            </div>
+            <div class="form-group row align-items-center mx-0">
+                <label class="col-sm-12 col-12 col-md-12 col-lg-3 col-form-label"><span class = "icon-lable phone"></span> Số điện thoại:</label>
+                <div class="col-sm-8 col-8 col-md-8 col-lg-6">
+                    <input type="text" name= "phonenumber" readonly class="form-control"  value="0123456789">
+                </div>
+                <span class = "edit col-sm-4 col-4 col-md-4 col-lg-3" onclick = "javascript:edit('phonenumber')">Chỉnh sửa</span>
+            </div>
+            <div class="form-group row align-items-center mx-0">
+                <label class="col-sm-12 col-12 col-md-12 col-lg-3 col-form-label"><span class = "icon-lable email"></span> Email:</label>
+                <div class="col-sm-8 col-8 col-md-8 col-lg-6">
+                    <input type="text" name= "email" readonly class="form-control"  value="DuLo@gmail.com">
+                </div>
+                <span class = "edit col-sm-4 col-4 col-md-4 col-lg-3" onclick = "javascript:edit('email')">Chỉnh sửa</span>
+            </div>
+            
+            <div class="col-auto justify-content-end d-flex">
+                <button type="submit" class="btn btn-primary mb-2">Cập nhật</button>
+            </div>
+        </form>
+    </div>
+</div>

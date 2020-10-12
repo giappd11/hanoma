@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css"  >
+	<link rel="stylesheet" href="./css/style.css" >
+	<link rel="stylesheet" href="./css/responsive.css" >
+	<title>Hanoma Home page.</title>
+</head>
+<body>
+	<!-- Header -->
+	<section class = "header navbar-expand-sm">
+		<div class = "  container p-0">
+			<div class = "d-block d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1">
+				<div class = "col-1 d-inline-block d-lg-none pr-0 pt-2 pt-sm-0 ">
+					<a href = "#my-menu" class = "mburger">
+						<span></span>
+					</a>
+				</div>
+				<div class = "col-10 col-lg-2 col-md-3 col-sm-3 pr-0 text-center pl-2 pl-sm-2  d-inline-block align-top">
+					<a href = "./index.html">
+						<img  src = "./images/logo.png" alt = "logo"/>
+					</a>
+				</div>
+				<div class = "col-12 col-lg-5 col-md-8 col-sm-8 pr-lg-2 px-3 my-sm-0 my-2">
+					<form class = "search-form" action = "#">
+						<div class="input-group input-group-sm">
+							<input type="text" class="form-control" aria-label="Search" placeholder = "Tìm kiếm" >
+							<div class="input-group-append">
+								<select name = "category">
+									<option value = "XX">Máy để bán</option>
+									<option value = "XX">Máy để bán 1</option>
+									<option value = "XX">Máy để bán 222</option>
+									<option value = "XX">Máy để bán 444</option>
+								</select>
+							</div>
+							<div class="d-none">
+								<button class="input-group-text">Search</button>
+							</div>
+							
+						</div>
+						<div class = "result bg-white p-2" style = "display: none">
+							<h5 class = "text-uppercase">Truy cập nhanh</h5>
+							<ul>
+								<li><a href = "#">Kết quả search </a></li>
+								<li><a href = "#">Kết quả search 1</a></li>
+								<li><a href = "#">Kết quả search 3</a></li>
+								<li><a href = "#">Kết quả search 5</a></li>
+							</ul>	
+						
+						</div>
+					</form>
+				</div>
+				<div class = "col-lg-3 col-md-4 d-none d-lg-block ">
+					<nav class="nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Trang chủ</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a class="nav-link" href="#">Tin Tức</a>
+						</li>
+					</nav>
+				</div>
+				<div class = "col-12 col-lg-2 col-md-3 col-sm-3 pl-0 d-none d-lg-block ">
+					<nav class="nav justify-content-sm-end justify-content-center d-flex">
+						<li class="nav-item">
+							<a class="nav-link " href="#"><img  src = "./images/noti.png"/></a>
+							<span class = "noti-count">4</span>
+						</li>
+						<li class="nav-item ml-3 ml-sm-1">
+							<a class="nav-link" href="#"><img  src = "./images/user.png"/></a>
+						</li>
+						<li class="nav-item ml-3  ml-sm-1">
+							<a class="nav-link" href="#"><img  src = "./images/f-vn.png"/></a>
+						</li>
+					</nav>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+	
+	<!-- Content -->
+	<section class = "content container p-0 category">
+		<article >
+			<div class ="mt-2 bg-white mx-3 menu-news">
+				<div class = "d-flex align-items-center">
+					<div class = "menu col-3 pl-0 d-lg-block d-none" > 
+						<div class = "card">
+							<div class="card-header text-uppercase pl-2 show_menu">
+								<h4 class = "d-flex align-items-center"><img class = "mr-2" src="./images/category.png"/>Danh Mục</h4>
+							</div>
+							<div class="card-body p-0" id = "my-menu" >
+								<ul>
+									<li class = "has-child" >
+										<a href = "#">Máy để bán</a>
+										<ul >
+											<li>
+												<a href = "./maycontrinh.html">Máy Công Trình</a>
+											</li>
+											<li><a href = "./phutung.html">Phụ Tùng</a></li>
+											<li class = "has-child" >
+												<a href = "#">Vật Tư</a>
+												<ul>
+													<li><a href = "./maycontrinh.html">Máy Công Trình</a></li>
+													<li ><a href = "./phutung.html">Phụ Tùng</a></li>
+													<li ><a href = "#">Vật Tư</a></li>
+													<li ><a href = "#">Máy Cho Thuê</a></li>
+													<li ><a href = "#">Dịch Vụ</a></li>
+												</ul>
+											</li>
+											<li ><a href = "#">Máy Cho Thuê</a></li>
+											<li ><a href = "#">Dịch Vụ</a></li>
+											<li ><a href = "#">Hồ Sơ Xin Việc</a></li>
+											<li ><a href = "#">Tin Tuyển Dụng</a></li>
+										</ul>
+									</li>
+									<li class = "has-child">
+										<a href = "./phutung.html">Phụ Tùng</a>
+										<ul >
+											<li><a href = "#">Máy để bán</a></li>
+											<li><a href = "./phutung.html">Phụ Tùng</a></li>
+											<li><a href = "#">Vật Tư</a></li>
+											<li><a href = "#">Máy Cho Thuê</a></li>
+											<li><a href = "#">Dịch Vụ</a></li>
+										</ul>
+									</li>
+									<li><a href = "#">Vật Tư</a></li>
+									<li><a href = "#">Máy Cho Thuê</a></li>
+									<li><a href = "#">Dịch Vụ</a></li>
+									<li><a href = "./hsxinviec.html">Hồ Sơ Xin Việc</a></li>
+									<li><a href = "./tuyendung.html">Tin Tuyển Dụng</a></li>
+								</ul>
+							
+							</div>
+						</div>
+					</div>
+					<ul class = "nav my-0">
+						<li class="nav-item"><a class = "active" href = "./tintuc.html">Tin tức</a></li>
+						<li class="nav-item"><a href = "#">Kiến thức</a></li>
+						<li class="nav-item"><a href = "./tintucvideo.html">Video</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class ="bg-white mx-3 menu-news-bottom d-flex">
+				
+				<ul class = "nav my-0 py-2 col-11 menu-news-bottom">
+					<li class="nav-item"><a href = "#">Trang Chủ</a></li>
+					<li class="nav-item"><a href = "#">Tin Nóng</a></li>
+					<li class="nav-item"><a href = "#">Thời Sự</a></li>
+					<li class="nav-item"><a href = "#">Thông Tin Đấu Thầu</a></li>
+					<li class="nav-item"><a href = "#">Giao Thông - Vận Tải</a></li>
+					<li class="nav-item"><a href = "#">Ngành Xây Dựng</a></li>
+					<li class="nav-item"><a href = "#">Ngành Công Thương</a></li>
+					<li class="nav-item"><a href = "#">Thị trường tài chính</a></li>
+					
+				</ul> 
+				<div class = "col-1 p-0 border-left news-more">
+					<a class = "more-news" href = "#">Thêm</a>
+					<div class = "more-news-dropdow" style = "display: none;">
+						<ul class = "list-unstyled my-2" >
+							<li class="nav-item"><a href = "#">Thị trường tài chính</a></li>
+							<li class="nav-item"><a href = "#">Thương hiệu Việt</a></li>
+							<li class="nav-item"><a href = "#">Công nghệ mới</a></li>
+							<li class="nav-item"><a href = "#">Giải trí</a></li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+		<article>
+			<div class = "bg-white mx-3 mt-2 p-2">
+				<nav aria-label="breadcrumb" class = "col-12 col-sm-9 px-3 pl-lg-0 pr-lg-0">
+					<ol class="breadcrumb p-0 m-0">
+						<li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Thị trường tài chính</li>
+					</ol>
+				</nav>
+			</div>
+			<div class = "bg-white mx-3 p-2 px-3">
+				 
+				<div class = "title my-2">
+					<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi fringilla in eleifend in in quis a. Tortor convallis augue vitae, massa, suspendisse odio dui, est. </h1>
+				</div>
+				<div class = "news-info mb-1 ">
+					<span class = "time">20/07/2020</span>
+					<span class = "">Nguồn: <a href = "#">Hanoma.vn</a></span>
+				</div>
+				<audio controls>
+					<source src="horse.ogg" type="audio/ogg">
+					<source src="horse.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio>
+				<div class = "news-content mt-1  ">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan volutpat, dignissim ut pharetra. Ultrices amet phasellus eu commodo, vel. Sapien, diam non phasellus cras donec. Malesuada curabitur duis amet habitasse porta egestas. Est, diam vitae a ut velit bibendum ridiculus. Ligula ut praesent iaculis pretium sagittis massa quis et. Mauris mauris vitae pellentesque aliquet lobortis ultrices. Non, ipsum tellus eget euismod cursus amet pellentesque. Feugiat integer ullamcorper duis urna lacus et interdum. Quam dictum in massa vel libero.
+	Quis semper viverra lobortis dui tempor, auctor. Egestas orci erat lacinia sit turpis duis consectetur magna leo. Id amet nunc sit ut iaculis. Suspendisse elementum nunc id quis pharetra, nascetur. Leo semper nisi metus, turpis eu faucibus proin nunc quis. Augue tortor penatibus semper risus, convallis elementum convallis. Erat aliquam ultricies lectus vitae. Est morbi egestas nec tincidunt pretium lacus, ac laoreet. Aliquet nec duis diam at cras dolor elit.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan volutpat, dignissim ut pharetra. Ultrices amet phasellus eu commodo, vel. Sapien, diam non phasellus cras donec. Malesuada curabitur duis amet habitasse porta egestas. Est, diam vitae a ut velit bibendum ridiculus. Ligula ut praesent iaculis pretium sagittis massa quis et. Mauris mauris vitae pellentesque aliquet lobortis ultrices. Non, ipsum tellus eget euismod cursus amet pellentesque. Feugiat integer ullamcorper duis urna lacus et interdum. Quam dictum in massa vel libero.
+	Quis semper viverra lobortis dui tempor, auctor. Egestas orci erat lacinia sit turpis duis consectetur magna leo. Id amet nunc sit ut iaculis. Suspendisse elementum nunc id quis pharetra, nascetur. Leo semper nisi metus, turpis eu faucibus proin nunc quis. Augue tortor penatibus semper risus, convallis elementum convallis. Erat aliquam ultricies lectus vitae. Est morbi egestas nec tincidunt pretium lacus, ac laoreet. Aliquet nec duis diam at cras dolor elit.</p>
+				<img src = "./images/news-image.jpg" style = "width: 100%"/>
+				<p class = "center d-block text-center my-2">Hình 1.1: Đây là một cái hình minh hoạ</p>
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra convallis accumsan a enim leo ipsum. Habitasse sit condimentum commodo, non eleifend scelerisque diam gravida ultrices. Dui varius eget scelerisque viverra mattis turpis diam vitae volutpat. Sit vestibulum nunc morbi ut fringilla. Imperdiet imperdiet sagittis tellus cursus consectetur pharetra eget sed. Purus diam pellentesque pellentesque sed ultricies maecenas malesuada. Erat velit turpis eget commodo. Ut in urna, lectus hendrerit arcu justo vitae dignissim.
+	Ut velit sapien amet mauris amet sed. Diam donec ullamcorper a, enim sapien morbi. Vel rhoncus eget feugiat in venenatis in volutpat. Sagittis in amet amet, viverra sagittis, eu at massa. Faucibus varius rutrum lorem ullamcorper maecenas feugiat tellus massa etiam.
+	Porttitor semper urna, morbi lacus tempor. Eleifend volutpat vulputate nisl egestas enim iaculis. Malesuada eget nunc ultrices enim. Pharetra in neque velit bibendum risus eget integer amet. Dui feugiat id malesuada sit facilisis. Sagittis gravida turpis aliquam arcu, in. Faucibus vel scelerisque non ut aliquam in sem pharetra. Imperdiet at pellentesque odio mi scelerisque pretium.
+	Nunc imperdiet pretium, viverra facilisis euismod proin. Viverra praesent fames nibh ante nibh adipiscing. Lectus vulputate amet consectetur sem curabitur molestie eget. Interdum lacinia adipiscing purus amet praesent sed vel a eget. Porta cursus id velit morbi nunc eget quam tristique interdum. Diam ullamcorper non vitae mattis vel velit.
+	Eleifend turpis magna enim dignissim. Amet, elit mattis aliquet cursus lobortis odio. Viverra leo sagittis, pulvinar neque urna pellentesque malesuada. Condimentum sed augue hac in. Aliquet venenatis ut sodales sed amet tellus sed amet. Feugiat lorem elementum, sit integer magnis bibendum. Sit tellus cursus sem hac bibendum commodo, eu. Non elit dis mi sagittis ut vulputate ut. Vulputate convallis aliquam enim sociis morbi.
+	Odio posuere in cras enim aenean eu purus ipsum. Nam lacinia bibendum in nibh suspendisse pellentesque purus nec. Lobortis elit fermentum amet mollis convallis. Ullamcorper ac in sit sit nibh a. Proin vel tempor amet, nec varius aliquam. Felis et velit velit pellentesque massa quis mauris a, ut. Diam lacus, auctor suscipit aliquet tortor, dictum cum varius nunc. Nisi, nunc cursus arcu massa viverra vitae massa. Quisque phasellus hendrerit nisl malesuada senectus nulla molestie turpis. Id tempor et adipiscing mattis. Gravida gravida et convallis ut. Volutpat id neque aliquet aliquam non elit nisl cursus. Tristique duis habitasse sapien risus, viverra.
+	Leo augue blandit leo, nec nulla pretium. Malesuada at lobortis nunc, tortor. Sem turpis adipiscing adipiscing purus eu, consectetur et. Nisi, diam dis velit nibh sit scelerisque sed arcu eget. Arcu diam, odio pretium sed risus enim tristique.
+	Interdum vitae quis accumsan, ac at rutrum quisque tempor neque. Blandit aenean tellus blandit ullamcorper. Posuere vitae sit felis, metus, varius aenean amet, vulputate. Mattis pharetra a consectetur cras et tellus. Scelerisque nibh adipiscing nec odio sed dictumst gravida elementum. Mi amet facilisis ultrices laoreet rhoncus lectus sed cursus ipsum. Risus tortor ut morbi enim aliquam eget. Odio blandit laoreet metus nulla ac sed. Habitasse eu nunc, nibh nibh ut vitae amet nullam. Suspendisse habitant sed sed massa neque felis est egestas vel.
+	In malesuada viverra cum etiam scelerisque felis varius eu, accumsan. Eget nunc imperdiet egestas amet, posuere felis facilisis risus, at. Massa viverra consectetur enim pellentesque auctor bibendum pharetra sagittis id. In nibh sem gravida non, turpis nunc nulla. Nunc imperdiet sed donec massa, pellentesque vitae consectetur. Vitae blandit ut pellentesque convallis cursus risus, dictum. Tempor pharetra arcu luctus tellus. Vestibulum ut lobortis et cursus neque. Amet viverra enim suscipit netus.
+	Id vestibulum, in consequat sed consectetur ut gravida. Enim auctor arcu vestibulum pretium sit ipsum magnis sit tellus. Faucibus semper viverra eget aenean purus enim. Eget sit molestie auctor orci leo orci auctor. Gravida pellentesque scelerisque quam ut. Dictum at lectus eget dictumst diam adipiscing tortor, eros, urna. Habitant morbi integer proin vel nibh arcu consectetur. Vitae libero ultrices diam facilisi non interdum aliquam aliquet tortor. Id viverra lectus diam nulla ultrices proin morbi. Id neque porttitor libero purus at sit. Sociis metus, ultrices tincidunt volutpat nisi, leo in. Eleifend tristique id amet turpis. Nunc amet tellus feugiat sit et proin cras gravida quam. Neque ut risus fringilla id morbi etiam volutpat viverra nunc.
+	Ut quis cras magna leo magna sed nam pulvinar pulvinar. Enim vulputate semper accumsan gravida varius sed semper hac at. Rhoncus adipiscing cras sollicitudin nunc metus, penatibus. Vel elementum id at fringilla non non tincidunt adipiscing. Vulputate dui proin arcu dui blandit pellentesque netus erat mi. Non sapien neque bibendum in id eu nec, curabitur neque.
+	Convallis eu pellentesque aliquet enim, in nibh. Nullam dapibus et aenean elit eget. Quis arcu gravida scelerisque nunc odio. Posuere nulla senectus velit et scelerisque turpis condimentum. Lacus magna turpis mauris, diam quisque pellentesque euismod condimentum sed. Faucibus nullam nisi egestas ultrices.</p>
+
+				</div>
+			</div>
+
+
+		</article>
+		
+		<!-- Sản phẩm được tài trợ -->
+		<article class = "red-style"> 
+			<div class = "article-header d-block d-lg-flex mt-2 ">
+				<div class = "category-title text-uppercase col-12 col-lg-4 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
+					<h3 class = "title"  >Được tài trợ</h3>
+					 
+				</div>
+				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-8 col-sm-12 d-block d-lg-flex  align-items-center">
+				</div>
+			</div>
+			<div class ="article-content p-2  products-container-layout1 swiper-container bg-white">
+				<div class = "swiper-wrapper">
+					<div class="swiper-slide">
+						<div class = "card">
+							<a href = "#"> 
+								<div class = "percent">30%</div>
+								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod2.jpg" alt="Card image cap"></div>
+								<div class="card-body">
+									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<div class = "d-flex justify-content-between mt-1">
+										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
+										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
+									</div>	 
+									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
+									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class = "card">
+							<a href = "#"> 
+								<div class = "percent">5%</div>
+								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod1.jpg" alt="Card image cap"></div>
+								<div class="card-body">
+									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<div class = "d-flex justify-content-between mt-1">
+										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
+										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
+									</div>	 
+									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
+									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class = "card">
+							<a href = "#">  
+								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod3.jpg" alt="Card image cap"></div>
+								<div class="card-body">
+									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<div class = "d-flex justify-content-between mt-1">
+										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
+										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
+									</div>	 
+									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
+									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class = "card">
+							<a href = "#"> 
+								<div class = "percent">30%</div>
+								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod4.jpg" alt="Card image cap"></div>
+								<div class="card-body">
+									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<div class = "d-flex justify-content-between mt-1">
+										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
+										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
+									</div>	 
+									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
+									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class = "card">
+							<a href = "#"> 
+								<div class = "percent">30%</div>
+								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod5.jpg" alt="Card image cap"></div>
+								<div class="card-body">
+									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<div class = "d-flex justify-content-between mt-1">
+										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
+										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
+									</div>	 
+									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
+									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+								</div>
+							</a>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</article>
+
+		<!-- Relative post -->
+		<article> 
+			<div class = "px-3 article-content mt-2">
+				<div class = "relavie-post row bg-white py-1">
+					<div class="col-4 ">
+						<img src = "./images/relative-post.png" />
+					</div>
+					<div class="col-8 pl-0">
+						<h4 class = "font-weight-bold mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
+						<p  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sed non amet et id dictum dictumst. Eget vitae ante mattis vitae viverra viverra. Ipsum amet, amet, amet nisl malesuada tristique volutpat libero. At sed amet pellentesque vitae a ac nibh in. Vitae sed sem placerat lectus massa condimentum. Nisl lobortis urna, risus purus nunc facilisis nec lacinia ornare. Enim aliquam arcu hac eleifend sed ridiculus fames ornare.</p>
+						<p  >
+							Vitae integer duis tellus tellus. Elementum ornare laoreet et eros id adipiscing urna quis non. Faucibus amet adipiscing ipsum ipsum eget fusce pellentesque et natoque. A diam at vel, tempus felis rhoncus dui arcu. Nibh maecenas quis tortor praesent. Tempus, eget aliquam risus nec. Massa pellentesque magna arcu, habitant tempus ipsum...
+							</p>
+						<span class = "time mt-3 d-block">1 giờ trước</span>
+					</div>
+				</div>
+				
+				<div class = "relavie-post row bg-white py-1">
+					<div class="col-4">
+						<img src = "./images/relative-post.png" />
+					</div>
+					<div class="col-8 pl-0">
+						<h4 class = "font-weight-bold mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
+						<p  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sed non amet et id dictum dictumst. Eget vitae ante mattis vitae viverra viverra. Ipsum amet, amet, amet nisl malesuada tristique volutpat libero. At sed amet pellentesque vitae a ac nibh in. Vitae sed sem placerat lectus massa condimentum. Nisl lobortis urna, risus purus nunc facilisis nec lacinia ornare. Enim aliquam arcu hac eleifend sed ridiculus fames ornare.</p>
+						<p  >
+							Vitae integer duis tellus tellus. Elementum ornare laoreet et eros id adipiscing urna quis non. Faucibus amet adipiscing ipsum ipsum eget fusce pellentesque et natoque. A diam at vel, tempus felis rhoncus dui arcu. Nibh maecenas quis tortor praesent. Tempus, eget aliquam risus nec. Massa pellentesque magna arcu, habitant tempus ipsum...
+							</p>
+						<span class = "time mt-3 d-block">1 giờ trước</span>
+					</div>
+				</div>
+
+			</div>
+		</article>
+		
+		
+	</section>
+	<!-- footer -->
+	<section class = "footer pb-4 mt-3">
+		<div class = "send-letter">
+			<div class = "d-block d-md-flex container p-0 align-items-center pt-4 pb-4">
+				<div class = "col-lg-3 d-none d-lg-block">
+					<img  src = "./images/send-letter.png" alt = "send email"/>
+
+				</div>
+				<div class = "col-12 col-lg-3 col-md-6 col-sm-12 pl-xs-0 pl-3 text-center text-md-left mb-2 mb-md-0">
+					<h4>Đăng ký nhận bản tin</h4>
+					<p class = "m-0">Chúng tôi không chia sẻ email của bạn cho bất kỳ bên thứ ba nào.</p>
+				</div>
+				<div class = "col-12 col-lg-6 col-md-6 col-sm-12 justify-content-md-end justify-content-center d-flex">
+					<form class = "send-mail-form form-inline" action = "#">
+						<div class="form-group mx-4 ">
+							<input type="email" class="form-control" id="inputPassword2" placeholder="Nhập địa chỉ email của bạn">
+						</div>
+						<button type="submit" class="btn btn px-4 py-2">Đăng ký</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		
+		 
+		<div class = " container p-0">
+			<div class = "d-block d-lg-flex py-3 py-lg-5">
+				<div class = "col-12 col-lg-3 col-sm-12 pr-lg-0 toturial">
+					<div class = "toturial-title d-flex d-lg-block justify-content-between align-items-center">
+						<h4 class = "d-block d-sm-flex justify-content-start text-uppercase">HƯỚNG DẪN NGƯỜI MUA</h4>
+						<button class="navbar-toggler d-lg-none d-flex justify-content-end "  type="button" data-toggle="collapse" data-target="#navbarNav-hdnm" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class = "navbar navbar-expand-lg d-block d-lg-flex  align-items-left align-items-lg-center px-0">
+						<ul class = "collapse navbar-collapse  list-unstyled"   id="navbarNav-hdnm" >
+							<li><a href = "#">Hướng Dẫn Tìm Mua, Thuê Thiết Bị</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Cần Mua Phụ Tùng</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Cần Mua Vật Tư</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Cần Thuê Thiết Bị</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Cần Thuê Dịch Vụ</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Tuyển Dụng</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Tìm Việc Làm</a></li>
+							<li><a href = "#">Hướng Dẫn Chia Sẻ Kiến Thức Với Cộng Đồng</a></li>
+							<li><a href = "#">Trung Tâm Hỗ Trợ Người Dùng</a></li>
+						
+						</ul>
+					</div>
+				</div> 
+				<div class = "col-12 col-lg-3 col-sm-12 pr-lg-0 toturial">
+					<div class = "toturial-title d-flex d-lg-block justify-content-between align-items-center">
+						<h4 class = "d-block d-sm-flex justify-content-start text-uppercase">HƯỚNG DẪN NGƯỜI BÁN</h4>
+						<button class="navbar-toggler d-lg-none d-flex justify-content-end "  type="button" data-toggle="collapse" data-target="#navbarNav-hdnb" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class = "navbar navbar-expand-lg col-sm-12 d-block d-lg-flex  align-items-left align-items-lg-center px-0">
+						<ul class = "collapse navbar-collapse  list-unstyled"   id="navbarNav-hdnb" > 
+							<li><a href = "#">Hướng Dẫn Mở Gian Hàng Kinh Doanh</a></li>
+							<li><a href = "#">Hướng Dẫn Nâng Cấp Gian Hàng</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Bán Thiết Bị</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Bán Phụ Tùng</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Bán Vật Tư</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Cho Thuê Thiết Bị</a></li>
+							<li><a href = "#">Hướng Dẫn Đăng Tin Cung Cấp Dịch Vụ</a></li>
+							<li><a href = "#">Hướng Dẫn Chia Sẻ Kiến Thức Với Cộng Đồng</a></li>
+							<li><a href = "#">Trung Tâm Hỗ Trợ Người Bán</a></li>
+						
+						</ul>
+					</div>
+				</div>
+				<div class = "col-12 col-lg-3 col-sm-12 pr-lg-0 toturial">
+					<div class = "toturial-title d-flex d-lg-block justify-content-between align-items-center">
+						<h4 class = "d-block d-sm-flex justify-content-start text-uppercase">DÀNH CHO NGƯỜI BÁN</h4>
+						<button class="navbar-toggler d-lg-none d-flex justify-content-end "  type="button" data-toggle="collapse" data-target="#navbarNav-dcnb" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class = "navbar navbar-expand-lg d-block d-lg-flex  align-items-left align-items-lg-center px-0">
+						<ul class = "collapse navbar-collapse  list-unstyled"   id="navbarNav-dcnb" >
+							<li><a href = "#">Giới Thiệu</a></li>
+							<li><a href = "#">Quy Chế Hoạt Động</a></li>
+							<li><a href = "#">Chính Sách Bảo Mật</a></li>
+							<li><a href = "#">Điều Khoản Và Điều Kiện Sử Dụng</a></li>
+							<li><a href = "#">Giải Quyết Tranh Chấp, Khiếu Nại</a></li>
+							<li><a href = "#">Hợp Tác Cùng Hanoma</a></li>
+						
+						</ul>
+					</div>
+				</div>
+				<div class = "col-12 col-lg-3 col-sm-12 pr-lg-0 toturial">
+					<div class = "toturial-title d-flex d-lg-block justify-content-between align-items-center">
+						<h4 class = "d-block d-sm-flex justify-content-start text-uppercase">DÀNH CHO NGƯỜI BÁN</h4>
+						<button class="navbar-toggler d-lg-none d-flex justify-content-end "  type="button" data-toggle="collapse" data-target="#navbarNav-dcnb1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class = "navbar navbar-expand-lg d-block d-lg-flex  align-items-left align-items-lg-center px-0">
+						<ul class = "collapse navbar-collapse  list-unstyled"   id="navbarNav-dcnb1" >
+							<li><a href = "#">Dịch Vụ Bán Hộ</a></li>
+							<li><a href = "#">Dịch Vụ Mua Hộ</a></li>
+							<li><a href = "#">Dịch Vụ Vận Chuyển</a></li>
+							<li><a href = "#">Dịch Vụ Thanh Toán</a></li>
+							<li><a href = "#">Dịch Vụ Cho Thuê Tài CHính</a></li>
+							<li><a href = "#">Dịch Vụ Nhập Khẩu Uỷ Thác</a></li>
+							<li><a href = "#">Giao Dịch Đảm Bảo Qua Hanoma</a></li>
+						
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "d-flex ">
+				<div class = "copyright col-12">
+					<div class = "d-flex align-items-center ">
+						<a href = "#" class = "d-inline-block text-truncate mr-2">
+							<img  src = "./images/logo2.png" alt = "logo"/>
+						</a>
+						<h4 class = "d-inline-block text-truncate">Nền Tảng Kinh Doanh Máy Móc Thiết Bị Và Phương Tiện Vận Tải Số 1 Việt Nam</h4>
+					</div>
+					<h5 class = "mt-1">Bản Quyền Thuộc Về Công Ty Cổ Phần ILOTT. Nghiêm Cấm Sao Chép Mà Không Có Sự Đồng Ý Bằng Văn Bản</h5>
+					<h5 class = "mt-1">Giấy Phép Hoạt Động Mạng Xã Hội Số 58/GP-BTTTT Do Bộ Thông Tin & Truyền Thông Cấp Ngày 15/02/2019</h5>
+				</div>
+			</div> 
+			<div class = " d-block d-lg-flex my-2 mt-lg-4 mb-lg-0 text-center align-items-center">
+				<div class = "col-12  col-lg-5 col-md-12 col-sm-12">
+					<h4>Mua Bán Dễ Dàng Hơn Trên Điện Thoại Thông Minh:</h4>
+					<div class = "d-block d-lg-flex  my-2 mt-lg-4 mb-lg-0 "> 
+						<a href = "#" class = "mr-4">
+							<img  src = "./images/applestore.png" />
+						</a>
+						<a href = "#">
+							<img  src = "./images/googlestore.png" />
+						</a>
+					</div>
+				</div>
+				<div class = "col-12 col-lg-4 col-md-12 col-sm-12">
+					<h4>Theo Dõi Chúng Tôi Trên Mạng Xã Hội</h4>
+					<div class = "d-block d-lg-flex  mt-4"> 
+						<a href = "#" class = "mr-2">
+							<img  src = "./images/telegram.png" />
+						</a>
+						<a href = "#" class = "mr-2">
+							<img  src = "./images/youtube.png" />
+						</a>
+						<a href = "#" class = "mr-2">
+							<img  src = "./images/facebook.png" />
+						</a>
+						<a href = "#" class = "mr-2">
+							<img  src = "./images/twiter.png" />
+						</a>
+						<a href = "#">
+							<img  src = "./images/google.png" />
+						</a>
+					</div>	
+				</div>
+				<div class = "col-12 col-lg-3 col-md-12 col-sm-12 d-block d-lg-flex align-items-lg-end align-items-center text-center">
+					 
+						<img  src = "./images/certificate.png" />
+					 
+				</div> 
+			</div>
+		</div>
+	
+	</section>
+	<!-- menu mobile -->
+	<section> 
+		<div class = "navigation d-block d-lg-none">
+			<div class = "d-flex align-items-center text-center list-unstyled mb-0 bg-white">
+				<a href = "#" class = "menu-item home"><img src = "./images/home.png"/><span> Trang chủ</span></a>  
+				<a href = "#" class = "menu-item news"><img src = "./images/news.png"/><span>Tin Tức</span></a>  
+				<a href = "#" class = "menu-item noti"><img src = "./images/bell.png"/><span class = "count">12</span><span>Thông báo</span></a>  
+				<a href = "#" class = "menu-item account"><img src = "./images/profile.png"/><span>Tài khoản</span></a>  
+			</div>			
+		
+		</div>
+	</section>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/bootstrap.min.js" ></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/jquery.lazy.min.js"></script>
+	<script src="./js/navScript.js"></script>
+	<script src="./js/mmenu.js"></script>
+	<script src="./js/custom.js"></script>
+  </body>
+</html>
