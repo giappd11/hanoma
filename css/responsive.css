@@ -120,6 +120,7 @@
 		overflow: hidden;
 		vertical-align: middle;
 		padding: 5px !important;
+		margin-bottom: -1px;
 	}
 	.navbar nav .nav-item{
 		margin: 0 !important;
