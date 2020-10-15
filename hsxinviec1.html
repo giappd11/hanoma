@@ -141,15 +141,16 @@
 				<nav aria-label="breadcrumb" class = "col-12 col-sm-9 px-3 pl-lg-0 pr-lg-0">
 					<ol class="breadcrumb p-0 m-0">
 						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Máy để bán</li>
+						<li class="breadcrumb-item"><a href="#">Hồ sơ xin việc</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Lái máy</li>
 					</ol>
 				</nav>
 			</div>
 			
 		</article>
 		<article>
-			<div class = "d-flex mt-3">
-				<div class = "col-lg-8 col-md-12 ">
+			<div class = "d-lg-flex d-block mt-3">
+				<div class = "col-xl-8 col-lg-7 col-md-12 pr-3 pr-lg-0 ">
 					<div class = "banner-container swiper-container">
 						<div class ="swiper-wrapper">
 							<div class="swiper-slide"><img src = "./images/maydeban/maydeban1.jpg" /></div>
@@ -165,15 +166,20 @@
 						<div class="swiper-button-prev swiper-button"></div>
 					</div>
 				</div>
-				<div class = "col-lg-4 pl-0 d-none d-lg-block">
-					<img class = "mb-3" src = "./images/maydeban/maydeban2.jpg" />
-					<img src = "./images/maydeban/maydeban3.jpg" />
+				<div class = "col-xl-4 col-lg-5 d-flex px-0 d-lg-block   mt-3 mt-lg-0">
+					<div class = "col-lg-12 col-sm-6 col-6 pr-2 px-sm-3"><img class = "mb-3 mb-xl-3 mb-lg-0" src = "./images/maydeban/maydeban2.jpg" /></div>
+					<div class = "col-lg-12 col-sm-6 col-6 pl-2 px-sm-3"><img src = "./images/maydeban/maydeban3.jpg" /></div>
 				</div>
 			</div>
 			<div class = "container">
-				<div class = "menu-container d-flex  pb-2 mt-3 align-items-center category-list bg-white px-1"> 
-					<button class="nav_menu_toggler_icon"><span class="fa fa-bars"></span></button>
-					<nav class="manu nav ">
+				<div class = "menu-container d-block d-lg-flex navbar navbar-expand-lg pb-2 mt-0 mt-lg-3 align-items-center category-list bg-white px-1"> 
+					<a class="navbar-brand d-inline-block d-lg-none" href="#">Danh mục</a>
+   
+					<button class="navbar-toggler bg-black"  type="button" data-toggle="collapse" data-target="#navbarNav-catemenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class = "manu navbar navbar-expand-lg category-menu col-12 col-lg-12 col-sm-12 d-block d-lg-flex  align-items-center p-0">
+						<nav class="collapse " id="navbarNav-catemenu">
 						<ul>
 							<li class="nav-item col-2-5 active"> 
 									<div class = "link-box d-flex justify-content-between align-items-center">
@@ -181,120 +187,152 @@
 										<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 									</div>
 									<ul class = "list-group  " style = "display: none">
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy công trình</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe hơi</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe tải chở hàng</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe chuyên dụng</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Thi công cầu đường bộ</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Thi công nền móng</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Khai thác mỏ</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy xây dựng</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Thiết bị nâng hạ</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy công nghiệp</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy nông nghiệp</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Lái xe</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Lái máy</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Thợ sửa chữa</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Công nhân</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Bảo vệ</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Lao động phổ thông</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Nhân viên kinh doanh</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Nhân viên XNK</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Nhân viên tài chính</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Kỹ sư</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Quản lý</a></li>
 									
 									</ul> 
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy công trình</a> 
+									<a class="nav-link d-flex justify-content-start" href="#">Lái xe</a> 
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
-								</div>
-								<ul class = "list-group  " style = "display: none">
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy công trình</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe hơi</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe tải chở hàng</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe chuyên dụng</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Thi công cầu đường bộ</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Thi công nền móng</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Khai thác mỏ</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy xây dựng</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Thiết bị nâng hạ</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy công nghiệp</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy nông nghiệp</a></li>
-								
-								</ul> 
+								</div> 
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Xe hơi</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Lái máy</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Xe tải chở hàng</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Thợ sửa chữa</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Xe chuyên dụng</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Công nhân</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Thi công cầu đường bộ</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Bảo vệ</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Thi công nền móng</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Lao động phổ thông</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Khai thác mỏ</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Nhân viên kinh doanh</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy xây dựng</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Nhân viên XNK</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Thiết bị nâng hạ</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Nhân viên tài chính</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy công nghiệp</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Kỹ sư</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy nông nghiệp</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Quản lý</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy lâm nghiệp</a>
-									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
-								</div>
-							</li>
-							<li class="nav-item col-2-5">
-								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Giao thông đường thuỷ</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Thuỷ thủ</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 						</ul>
 					
 					</nav> 
+					</div>
 				</div>
 			</div>
 			
 		</article>
-		
+		<article>
+			<div class = "container">
+				<div class = "search-module border-top pb-4 bg-white">
+					<div class = "title">
+						<h3 class = "px-2 py-3">Bộ lọc</h3>
+					</div>
+					<div class = "search-content d-block d-md-flex m-2 mb-3">
+						<div class = " input-box col-12 col-md-4 mb-2 mb-md-0 pl-md-0 pl-2">
+							<span class = "sm-lable">Thiết bị liên quan</span>
+							<select  >
+								<option value = "">Máy xúc đào komatsu 1123</option>
+								<option value = "1">Máy xúc đào komatsu 1123</option>
+								<option value = "2">Máy xúc đào komatsu 1123</option>
+								<option value = "3">Máy xúc đào komatsu 1123</option>
+								<option value = "4">Máy xúc đào komatsu 1123</option>
+							</select>
+						</div>
+						<div class = " input-box col-12 col-md-2 mb-2 mb-md-0 pl-md-0 pl-2">
+							<select >
+								<option value = "">Năm kinh nghiệm</option>
+								<option value = "2">1</option>
+								<option value = "3">2</option>
+								<option value = "2">3</option>
+								<option value = "1">4</option>
+							</select>
+						</div>
+						<div class = " input-box col-12 col-md-2 mb-2 mb-md-0 pl-md-0 pl-2">
+							<select >
+								<option value= "">Mức lương</option>
+								<option value= "1">1213123</option>
+								<option value= "2">2EFECF</option>
+								<option value= "3">3EEFFFF</option>
+								<option value= "4">4GGGGGGG</option>
+							</select>
+						</div>
+						<div class = " input-box col-12 col-md-2 mb-2 mb-md-0 pl-md-0 pl-2">
+							<select >
+								<option value= "">Chọn tỉnh thành</option>
+								<option value= "2">Ha Noi</option>
+								<option value= "3">Tp Ho Chi Minh</option>
+								<option value= "4">Da Nang</option>
+								<option value= "1">Hue</option>
+							</select>
+						</div>
+						
+					</div> 
+					
+				
+				</div>
+			</div>
+		</article>
+		 
 	 
 		<div class = "line-seprate" >
 			<div class = "border-top border-bottom m-3 "></div>
@@ -304,7 +342,7 @@
 		<article class = "red-style"> 
 			<div class = "article-header d-block d-lg-flex ">
 				<div class = "category-title text-uppercase col-12 col-lg-4 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
-					<h3 class = "title"  >Được tài trợ</h3>
+					<h3 class = "title"  >Sản phẩm được tài trợ</h3>
 					 
 				</div>
 				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-8 col-sm-12 d-block d-lg-flex  align-items-center">
@@ -412,10 +450,10 @@
 		<article>
 			
 			<div class ="article-content pt-2 px-1 bg-white">
-				<div class = "d-flex justify-content-between align-items-center mt-2 mb-4">
-					<h3 class = "text-uppercase mx-1  font-weight-bold justify-content-start">Hồ sơ lái xe</h3>
-					<div class = "justify-content-end  align-items-center d-flex">
-						<label for "" class = "justify-content-end m-0 mr-2" >Số sản phẩm / Trang:</label> 
+				<div class = "d-block d-lg-flex justify-content-lg-between align-items-center text-center mt-2 mb-4">
+					<h3 class = "mx-1 font-weight-bold justify-content-start">Hồ sơ lái xe</h3>
+					<div class = "justify-content-lg-end justify-content-center align-items-center d-flex">
+						<span  class = "justify-content-end m-0 mr-2 d-none d-sm-block" >Số sản phẩm / Trang:</span> 
 						<select name = "" class = "justify-content-end">
 							<option value = "5">5</option>
 							<option value = "10">10</option>
@@ -427,13 +465,14 @@
 						<nav aria-label="Page navigation " class = "justify-content-end mx-2">
 						  <ul class="pagination m-0">
 							<li class="page-item disabled">
-							  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+							  <a class="page-link previous" href="#" tabindex="-1" aria-disabled="true"></a>
 							</li>
 							<li class="page-item"><a class="page-link" href="#">1</a></li>
 							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">...</a></li>
+							<li class="page-item"><a class="page-link" href="#">6</a></li>
 							<li class="page-item">
-							  <a class="page-link" href="#">Next</a>
+							  <a class="page-link next" href="#"> </a>
 							</li>
 						  </ul>
 						</nav>
@@ -667,9 +706,9 @@
 					</div>
 				</div>
 				<div class = "d-flex justify-content-between align-items-center mt-4 pb-4">
-					<h3 class = "text-uppercase mx-1  font-weight-bold justify-content-start"></h3>
-					<div class = "justify-content-end  align-items-center d-flex">
-						<label for "" class = "justify-content-end m-0 mr-2" >Số sản phẩm / Trang:</label> 
+					<h3 class = "text-uppercase mx-1 font-weight-bold justify-content-start"></h3>
+					<div class = "justify-content-md-end justify-content-center  align-items-center d-flex">
+						<span   class = "justify-content-end m-0 mr-2 d-none d-sm-block" >Số sản phẩm / Trang:</span> 
 						<select name = "" class = "justify-content-end">
 							<option value = "5">5</option>
 							<option value = "10">10</option>
@@ -679,17 +718,18 @@
 							<option value = "30">30</option>
 						</select>
 						<nav aria-label="Page navigation " class = "justify-content-end mx-2">
-						  <ul class="pagination m-0">
-							<li class="page-item disabled">
-							  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item">
-							  <a class="page-link" href="#">Next</a>
-							</li>
-						  </ul>
+							<ul class="pagination m-0">
+							  <li class="page-item disabled">
+								<a class="page-link previous" href="#" tabindex="-1" aria-disabled="true"></a>
+							  </li>
+							  <li class="page-item"><a class="page-link" href="#">1</a></li>
+							  <li class="page-item"><a class="page-link" href="#">2</a></li>
+							  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">...</a></li>
+							  <li class="page-item"><a class="page-link" href="#">6</a></li>
+							  <li class="page-item">
+								<a class="page-link next" href="#"> </a>
+							  </li>
+							</ul>
 						</nav>
 					</div>
 				</div>
@@ -699,19 +739,19 @@
 		</article>
 		 
 		<article> 
-			<div class = "article-banner d-flex ads-container mx-3">
+			<div class = "article-banner d-flex ads-container mx-3 mt-3">
 				<div class = "swiper-wrapper">
 					<div class = "swiper-slide">
-						<img  src = "./images/article-banner1.jpg" />
+						<a href = "#"><img  src = "./images/article-banner1.jpg" /></a>
 					</div>
 					<div class = "swiper-slide">
-						<img  src = "./images/article-banner3.jpg" />
+						<a href = "#"><img  src = "./images/article-banner3.jpg" /></a>
 					</div>
 					<div class = "swiper-slide">
-						<img  src = "./images/article-banner2.jpg" />
+						<a href = "#"><img  src = "./images/article-banner2.jpg" /></a>
 					</div>
 				</div>
-			</div>
+			</div> 
 		</article>
 	</section>
 

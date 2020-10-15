@@ -214,48 +214,7 @@ span.drop_down_icon{
 	font-size: 30px;
 	font-weight: normal;
 }
-@media only screen and (max-width: 756px) {
-	.nav_menu_toggler_icon{
-		display:block;
-	}
-	.menu-container{
-		background: skyblue;
-	}
-	.menu-container .manu{
-		display: none;
-	}
-	.menu-container .manu ul li{
-		float: none;
-		display: block;
-	}
-	.menu-container .manu ul li .have_dropdown{
-		background-color:transparent;
-		display: none;
-		position: relative;
-	}
-	.menu-container .manu ul li .have_dropdown li{
-		display: block;
-		float: none;
-		width: 100%;
-		background-color: #fff;
-	}
-	.menu-container .manu ul li .have_dropdown li a{
-		display: block;
-		float: none;
-		width: 100%;
-		padding: 15px 0px;
-	}
-	.menu-container .manu ul li .have_dropdown_n_style li{
-		width:100%;
-		float: none;
-	}
-	.menu-container .manu ul li .have_dropdown_n_style li a{
-		float: none;
-	}
-	.menu-container .manu ul li .have_dropdown_n_style{
-		position: relative;
-	}
-}
+
 /**
  * Swiper 6.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -392,7 +351,7 @@ section.content {
 }
 .nav-link {
     display: block;
-    padding: .5rem .7rem;
+    padding: .5rem;
 }
 
 .article-content {
@@ -436,7 +395,10 @@ section.content {
     padding: 5px 0;
 }
 .category-menu {
-    min-height: 50px;
+    min-height: 49px;
+}
+.category-menu.sm-menu {
+    min-height: 39px;
 }
 .article-content {
     margin-left: 15px;
@@ -573,15 +535,19 @@ span.bigcompany {
     border: 1px solid #DBDBDB;
     margin-top: 10px;
     padding: 1px;
+    border-radius: 5px;
 }
 
-.active .link-box a {
+.active .link-box a,
+.link-box:hover a {
     color: #fff;
 }
-.active .link-box {
-	background: #FFC107;
-    border-color: #FFC107;	
+.active .link-box,
+.link-box:hover {
+    background: #FFC107;
+    border-color: #FFC107;
 }
+
 .category-list .nav-link {
     padding: 0px 5px;
     display: block;
@@ -884,6 +850,10 @@ span.status.online {
     display: block;
     white-space: nowrap;
     text-align: center;
+    transition: 400ms;
+}
+.call a:hover {
+    background-color: #FFC107;
 }
 .message a {
     padding: 20px 0;
@@ -893,19 +863,26 @@ span.status.online {
     display: block;
     white-space: nowrap;
     text-align: center;
+    transition: 400ms;
+}
+.message a:hover {
+    background-color: #3CD053;
 }
 .nav-tabs {
     border-bottom: 2px solid #dee2e6;
-	font-weight: bold;
 }
 .tab-content>.tab-pane {
     min-height: 5rem;
     overflow: hidden;
 }
+.nav-tabs .nav-link {
+    padding: .5rem 1.5rem;
+}
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    border-color : transparent transparent #FFC107; 
+    border-color: transparent transparent #FFC107;
     color: #FFC107;
-} 
+    font-weight: normal;
+}
 .nav-tabs .nav-link:hover {
     border-color: transparent transparent #FFC107;
 }
@@ -994,6 +971,7 @@ span.career-hover .lable
 .profile .card .image {
     overflow: hidden;
     border-radius: 10px;
+    height: auto;
 }
 .person-info tr td {
     padding: 5px;
@@ -1456,12 +1434,34 @@ a.changepicture {
     border-radius: 50%;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
+a.page-link.previous:before {
+    content: "previous";
+    font-family: 'swiper-icons';
+}
 
+a.page-link.next:before {
+    content: "next";
+    font-family: 'swiper-icons';
+}
 
+span.sm-lable {
+    position: absolute;
+    top: -7px;
+    background: #fff;
+    left: 12px;
+    font-size: 10px;
+    padding: 0 7px;
+    color: #7E7E7E;
+}
 
-
-
-
+.article-banner .swiper-slide a {
+    overflow: hidden;
+    display: block;
+}
+.article-banner .swiper-slide a:hover img {
+    transform: scale(1.1);
+    transition: 400ms;
+}
 
 
 

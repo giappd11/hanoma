@@ -22,6 +22,9 @@ new Swiper('.ads-container',
 			  slidesPerView: 1
 			},
 			321: {
+				slidesPerView: 1
+			},
+			415: {
 				slidesPerView: 2
 			},
 			640: {
@@ -126,7 +129,7 @@ new Swiper('.products-container-layout1', {
 		}, 321: {
 			slidesPerView: 1.5
 		}, 415: {
-			slidesPerView: 2
+			slidesPerView: 2.5
 		}, 640: {
 		  slidesPerView: 3
 		},

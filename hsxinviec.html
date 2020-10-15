@@ -88,7 +88,7 @@
 	<section class = "content container p-0 category ">
 		<article >
 			<div class = "d-flex banner align-items-center">
-				<div class = "menu col-3  d-lg-block d-none" > 
+				<div class = "menu col-2  d-lg-block d-none" > 
 					<div class = "card">
 						<div class="card-header text-uppercase pl-2 show_menu">
 							<h4 class = "d-flex align-items-center"><img class = "mr-2" src="./images/category.png"/>Danh Mục</h4>
@@ -148,8 +148,8 @@
 			
 		</article>
 		<article>
-			<div class = "d-flex mt-3">
-				<div class = "col-lg-8 col-md-12 ">
+			<div class = "d-lg-flex d-block mt-3">
+				<div class = "col-xl-8 col-lg-7 col-md-12 pr-3 pr-lg-0 ">
 					<div class = "banner-container swiper-container">
 						<div class ="swiper-wrapper">
 							<div class="swiper-slide"><img src = "./images/maydeban/maydeban1.jpg" /></div>
@@ -165,15 +165,20 @@
 						<div class="swiper-button-prev swiper-button"></div>
 					</div>
 				</div>
-				<div class = "col-lg-4 pl-0 d-none d-lg-block">
-					<img class = "mb-3" src = "./images/maydeban/maydeban2.jpg" />
-					<img src = "./images/maydeban/maydeban3.jpg" />
+				<div class = "col-xl-4 col-lg-5 d-flex px-0 d-lg-block   mt-3 mt-lg-0">
+					<div class = "col-lg-12 col-sm-6 col-6 pr-2 px-sm-3"><img class = "mb-3 mb-xl-3 mb-lg-0" src = "./images/maydeban/maydeban2.jpg" /></div>
+					<div class = "col-lg-12 col-sm-6 col-6 pl-2 px-sm-3"><img src = "./images/maydeban/maydeban3.jpg" /></div>
 				</div>
 			</div>
 			<div class = "container">
-				<div class = "menu-container d-flex  pb-2 mt-3 align-items-center category-list bg-white px-1"> 
-					<button class="nav_menu_toggler_icon"><span class="fa fa-bars"></span></button>
-					<nav class="manu nav ">
+				<div class = "menu-container d-block d-lg-flex navbar navbar-expand-lg pb-2 mt-0 mt-lg-3 align-items-center category-list bg-white px-1"> 
+					<a class="navbar-brand d-inline-block d-lg-none" href="#">Danh mục</a>
+   
+					<button class="navbar-toggler bg-black"  type="button" data-toggle="collapse" data-target="#navbarNav-catemenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class = "manu navbar navbar-expand-lg category-menu col-12 col-lg-12 col-sm-12 d-block d-lg-flex  align-items-center p-0">
+						<nav class="collapse " id="navbarNav-catemenu">
 						<ul>
 							<li class="nav-item col-2-5 active"> 
 									<div class = "link-box d-flex justify-content-between align-items-center">
@@ -181,115 +186,96 @@
 										<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 									</div>
 									<ul class = "list-group  " style = "display: none">
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy công trình</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe hơi</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe tải chở hàng</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe chuyên dụng</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Thi công cầu đường bộ</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Thi công nền móng</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Khai thác mỏ</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy xây dựng</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Thiết bị nâng hạ</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy công nghiệp</a></li>
-										<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy nông nghiệp</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Lái xe</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Lái máy</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Thợ sửa chữa</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Công nhân</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Bảo vệ</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Lao động phổ thông</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Nhân viên kinh doanh</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Nhân viên XNK</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Nhân viên tài chính</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Kỹ sư</a></li>
+										<li class="nav-item col-2-5"><a class="nav-link" href="#">Quản lý</a></li>
 									
 									</ul> 
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy công trình</a> 
+									<a class="nav-link d-flex justify-content-start" href="#">Lái xe</a> 
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
-								</div>
-								<ul class = "list-group  " style = "display: none">
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy công trình</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe hơi</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe tải chở hàng</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Xe chuyên dụng</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Thi công cầu đường bộ</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Thi công nền móng</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Khai thác mỏ</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy xây dựng</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Thiết bị nâng hạ</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy công nghiệp</a></li>
-									<li class="nav-item col-2-5"><a class="nav-link" href="#">Máy nông nghiệp</a></li>
-								
-								</ul> 
+								</div> 
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Xe hơi</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Lái máy</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Xe tải chở hàng</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Thợ sửa chữa</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Xe chuyên dụng</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Công nhân</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Thi công cầu đường bộ</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Bảo vệ</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Thi công nền móng</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Lao động phổ thông</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Khai thác mỏ</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Nhân viên kinh doanh</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy xây dựng</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Nhân viên XNK</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Thiết bị nâng hạ</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Nhân viên tài chính</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy công nghiệp</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Kỹ sư</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy nông nghiệp</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Quản lý</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 							<li class="nav-item col-2-5">
 								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Máy lâm nghiệp</a>
-									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
-								</div>
-							</li>
-							<li class="nav-item col-2-5">
-								<div class = "link-box d-flex justify-content-between align-items-center">
-									<a class="nav-link d-flex justify-content-start" href="#">Giao thông đường thuỷ</a>
+									<a class="nav-link d-flex justify-content-start" href="#">Thuỷ thủ</a>
 									<img class = "d-flex justify-content-end" src ="./images/maydeban/cate_thumb.jpg"/>
 								</div>
 							</li>
 						</ul>
 					
 					</nav> 
+					</div>
 				</div>
 			</div>
 			
@@ -302,15 +288,15 @@
 		<!--  lái xe -->
 		<article > 
 			<div class = "article-header d-block d-lg-flex my-2">
-				<div class = "category-title text-uppercase col-12 col-lg-3 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
-					<h3 class = "title"  >Lái xe</h3>
+				<div class = "category-title col-12 col-lg-3 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
+					<h3 class = "title" >Lái xe</h3>
 					<button class="navbar-toggler bg-black d-lg-none d-flex"  type="button" data-toggle="collapse" data-target="#navbarNav-lx" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 				</div>
-				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-9 col-sm-12 d-block d-lg-flex  align-items-center">
+				<div class = "navbar navbar-expand-lg category-menu sm-menu col-12 col-lg-9 col-sm-12 d-block d-lg-flex  align-items-center">
 					<nav class="collapse " id="navbarNav-lx">
-						<li class="nav-item ml-3 last"><a class="nav-link" href="#">Xem tất cả >></a></li>
+						<li class="nav-item ml-3 last readtotoal"><a class="nav-link" href="#">Xem tất cả</a></li>
 					</nav>
 				</div>
 			</div>
@@ -463,15 +449,15 @@
 		<!--  lái máy -->
 		<article > 
 			<div class = "article-header d-block d-lg-flex my-2">
-				<div class = "category-title text-uppercase col-12 col-lg-3 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
+				<div class = "category-title  col-12 col-lg-3 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
 					<h3 class = "title"  >Lái máy</h3>
 					<button class="navbar-toggler bg-black d-lg-none d-flex"  type="button" data-toggle="collapse" data-target="#navbarNav-lx" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 				</div>
-				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-9 col-sm-12 d-block d-lg-flex  align-items-center">
+				<div class = "navbar navbar-expand-lg category-menu sm-menu col-12 col-lg-9 col-sm-12 d-block d-lg-flex  align-items-center">
 					<nav class="collapse " id="navbarNav-lx">
-						<li class="nav-item ml-3 last"><a class="nav-link" href="#">Xem tất cả >></a></li>
+						<li class="nav-item ml-3 last readtotoal"><a class="nav-link" href="#">Xem tất cả</a></li>
 					</nav>
 				</div>
 			</div>
@@ -624,15 +610,15 @@
 		<!--  Thợ sửa chữa -->
 		<article > 
 			<div class = "article-header d-block d-lg-flex my-2">
-				<div class = "category-title text-uppercase col-12 col-lg-3 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
+				<div class = "category-title  col-12 col-lg-3 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
 					<h3 class = "title"  >Thợ sửa chữa</h3>
 					<button class="navbar-toggler bg-black d-lg-none d-flex"  type="button" data-toggle="collapse" data-target="#navbarNav-lx" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 				</div>
-				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-9 col-sm-12 d-block d-lg-flex  align-items-center">
+				<div class = "navbar navbar-expand-lg category-menu sm-menu col-12 col-lg-9 col-sm-12 d-block d-lg-flex  align-items-center">
 					<nav class="collapse " id="navbarNav-lx">
-						<li class="nav-item ml-3 last"><a class="nav-link" href="#">Xem tất cả >></a></li>
+						<li class="nav-item ml-3 last readtotoal"><a class="nav-link" href="#">Xem tất cả</a></li>
 					</nav>
 				</div>
 			</div>
@@ -781,15 +767,12 @@
 		
 		<div class = "line-seprate" >
 			<div class = "border-top border-bottom m-3 "></div>
-		</div>
-		
-		
+		</div> 
 		
 		<article> 
 			<div class = "article-header d-block d-lg-flex my-2">
 				<div class = "category-title text-uppercase col-12 col-lg-4 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
 					<h3 class = "title"  >Khuyễn mãi trong ngày</h3>
-					
 					
 				</div>
 				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-8 col-sm-12 d-block d-lg-flex  align-items-center">
@@ -890,19 +873,19 @@
 					
 				</div>
 			</div>
-			<div class = "article-banner d-flex ads-container mx-3">
+			<div class = "article-banner d-flex ads-container mx-3 mt-3">
 				<div class = "swiper-wrapper">
 					<div class = "swiper-slide">
-						<img  src = "./images/article-banner1.jpg" />
+						<a href = "#"><img  src = "./images/article-banner1.jpg" /></a>
 					</div>
 					<div class = "swiper-slide">
-						<img  src = "./images/article-banner3.jpg" />
+						<a href = "#"><img  src = "./images/article-banner3.jpg" /></a>
 					</div>
 					<div class = "swiper-slide">
-						<img  src = "./images/article-banner2.jpg" />
+						<a href = "#"><img  src = "./images/article-banner2.jpg" /></a>
 					</div>
 				</div>
-			</div>
+			</div> 
 		</article>
 		
 	</section>

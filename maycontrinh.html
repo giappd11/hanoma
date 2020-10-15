@@ -141,15 +141,16 @@
 				<nav aria-label="breadcrumb" class = "col-sm-12 col-lg-9 px-3 pl-lg-0 pr-lg-0">
 					<ol class="breadcrumb p-0 m-0">
 						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Máy để bán</li>
+						<li class="breadcrumb-item"><a href="#">Máy để bán</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Máy công trình</li>
 					</ol>
 				</nav>
 			</div>
 			
 		</article>
 		<article>
-			<div class = "d-flex mt-3">
-				<div class = "col-lg-8 col-md-12 pr-0 ">
+			<div class = "d-lg-flex d-block mt-3">
+				<div class = "col-xl-8 col-lg-7 col-md-12 pr-3 pr-lg-0 ">
 					<div class = "banner-container swiper-container">
 						<div class ="swiper-wrapper">
 							<div class="swiper-slide"><img src = "./images/maydeban/maydeban1.jpg" /></div>
@@ -165,14 +166,14 @@
 						<div class="swiper-button-prev swiper-button"></div>
 					</div>
 				</div>
-				<div class = "col-lg-4 d-none d-lg-block">
-					<img class = "mb-3" src = "./images/maydeban/maydeban2.jpg" />
-					<img src = "./images/maydeban/maydeban3.jpg" />
+				<div class = "col-xl-4 col-lg-5 d-flex px-0 d-lg-block   mt-3 mt-lg-0">
+					<div class = "col-lg-12 col-sm-6 col-6 pr-2 px-sm-3"><img class = "mb-3 mb-xl-3 mb-lg-0" src = "./images/maydeban/maydeban2.jpg" /></div>
+					<div class = "col-lg-12 col-sm-6 col-6 pl-2 px-sm-3"><img src = "./images/maydeban/maydeban3.jpg" /></div>
 				</div>
 			</div>
 			<div class = "container">
 				<div class = "menu-container d-block d-lg-flex navbar navbar-expand-lg pb-2 mt-3 align-items-center category-list bg-white px-1"> 
-					<a class="navbar-brand d-inline-block d-lg-none" href="#">Navbar</a>
+					<a class="navbar-brand d-inline-block d-lg-none" href="#">Danh mục</a>
    
 					<button class="navbar-toggler bg-black"  type="button" data-toggle="collapse" data-target="#navbarNav-catemenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -180,7 +181,7 @@
 					<div class = "manu navbar navbar-expand-lg category-menu col-12 col-lg-12 col-sm-12 d-block d-lg-flex  align-items-center p-0">
 						<nav class="collapse " id="navbarNav-catemenu">
 						<ul>
-							<li class="nav-item col-2-5 active " > 
+							<li class="nav-item col-2-5  " > 
 									<div class = "link-box d-flex justify-content-between align-items-center">
 										<a class="nav-link d-flex justify-content-start" href="#" data-toggle="dropdown">Tất cả sản phẩm</a> 
 										<img class = "d-flex justify-content-end" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/maydeban/cate_thumb.jpg"/>
@@ -200,7 +201,7 @@
 									
 									</ul> 
 							</li>
-							<li class="nav-item col-2-5">
+							<li class="nav-item col-2-5 active">
 								<div class = "link-box d-flex justify-content-between align-items-center">
 									<a class="nav-link d-flex justify-content-start" href="#">Máy công trình</a> 
 									<img class = "d-flex justify-content-end" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/maydeban/cate_thumb.jpg"/>
@@ -357,11 +358,11 @@
 		<div class = "line-seprate" >
 			<div class = "border-top border-bottom m-3 "></div>
 		</div>
-		<!-- Sản phẩm nổi bật -->
+		<!-- Được tài trợ -->
 		<article class = "red-style"> 
 			<div class = "article-header d-block d-lg-flex">
 				<div class = "category-title text-uppercase col-12 col-lg-3 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
-					<h3 class = "title" >Sản phẩm nổi bật</h3>
+					<h3 class = "title" >Được tài trợ</h3>
 				</div>
 				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-9 col-sm-12 d-block d-lg-flex  align-items-center">
 					
@@ -474,9 +475,9 @@
 			
 			<div class ="article-content pt-2 px-1 bg-white">
 				<div class = "d-block d-lg-flex justify-content-lg-between align-items-center text-center mt-2 mb-4">
-					<h3 class = "text-uppercase mx-1  font-weight-bold justify-content-start">Tất cả máy công trình</h3>
-					<div class = "justify-content-end  align-items-center d-flex">
-						<label for "" class = "justify-content-end m-0 mr-2" >Số sản phẩm / Trang:</label> 
+					<h3 class = "text-uppercase mx-1 font-weight-bold justify-content-start">Tất cả máy công trình</h3>
+					<div class = "justify-content-md-end justify-content-center  align-items-center d-flex">
+						<span   class = "justify-content-end m-0 mr-2 d-none d-sm-block" >Số sản phẩm / Trang:</span> 
 						<select name = "" class = "justify-content-end">
 							<option value = "5">5</option>
 							<option value = "10">10</option>
@@ -486,17 +487,18 @@
 							<option value = "30">30</option>
 						</select>
 						<nav aria-label="Page navigation " class = "justify-content-end mx-2">
-						  <ul class="pagination m-0">
-							<li class="page-item disabled">
-							  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item">
-							  <a class="page-link" href="#">Next</a>
-							</li>
-						  </ul>
+							<ul class="pagination m-0">
+							  <li class="page-item disabled">
+								<a class="page-link previous" href="#" tabindex="-1" aria-disabled="true"></a>
+							  </li>
+							  <li class="page-item"><a class="page-link" href="#">1</a></li>
+							  <li class="page-item"><a class="page-link" href="#">2</a></li>
+							  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">...</a></li>
+							  <li class="page-item"><a class="page-link" href="#">6</a></li>
+							  <li class="page-item">
+								<a class="page-link next" href="#"> </a>
+							  </li>
+							</ul>
 						</nav>
 					</div>
 				</div>
@@ -845,8 +847,8 @@
 				</div>
 				<div class = "d-flex justify-content-between align-items-center mt-4 pb-4">
 					<h3 class = "text-uppercase mx-1  font-weight-bold justify-content-start"></h3>
-					<div class = "justify-content-end  align-items-center d-flex">
-						<label for "" class = "justify-content-end m-0 mr-2" >Số sản phẩm / Trang:</label> 
+					<div class = "justify-content-md-end justify-content-center  align-items-center d-flex">
+						<span   class = "justify-content-end m-0 mr-2 d-none d-sm-block" >Số sản phẩm / Trang:</span> 
 						<select name = "" class = "justify-content-end">
 							<option value = "5">5</option>
 							<option value = "10">10</option>
@@ -856,17 +858,18 @@
 							<option value = "30">30</option>
 						</select>
 						<nav aria-label="Page navigation " class = "justify-content-end mx-2">
-						  <ul class="pagination m-0">
-							<li class="page-item disabled">
-							  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item">
-							  <a class="page-link" href="#">Next</a>
-							</li>
-						  </ul>
+							<ul class="pagination m-0">
+							  <li class="page-item disabled">
+								<a class="page-link previous" href="#" tabindex="-1" aria-disabled="true"></a>
+							  </li>
+							  <li class="page-item"><a class="page-link" href="#">1</a></li>
+							  <li class="page-item"><a class="page-link" href="#">2</a></li>
+							  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">...</a></li>
+							  <li class="page-item"><a class="page-link" href="#">6</a></li>
+							  <li class="page-item">
+								<a class="page-link next" href="#"> </a>
+							  </li>
+							</ul>
 						</nav>
 					</div>
 				</div>
@@ -876,118 +879,21 @@
 		</article>
 		
 		
-		<div class = "line-seprate  " >
-			<div class = "border-top border-bottom m-3 "></div>
-		</div>
-		<!-- Khuyễn mãi trong ngày -->
-		<article> 
-			<div class = "article-header d-block d-lg-flex my-2">
-				<div class = "category-title text-uppercase col-12 col-lg-3 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
-					<h3 class = "title"  >Khuyến mãi trong ngày</h3>
-				</div>
-				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-9 col-sm-12 d-block d-lg-flex  align-items-center">
-					
-					<nav class="collapse " id="navbarNav">
-						 
-					</nav>	
-					
-				</div>
-			
-			</div>
-			
-			<div class ="article-content p-2  products-container-layout1 swiper-container bg-white">
+		<article>
+			<div class = "article-banner d-flex ads-container mx-3 mt-3">
 				<div class = "swiper-wrapper">
-					<div class="swiper-slide">
-						<div class = "card">
-							<a href = "#"> 
-								<div class = "percent">30%</div>
-								<div class = "image"><img class="card-img-top" src="./images/prod4.jpg" alt="Card image cap"></div>
-								<div class="card-body">
-									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
-									<div class = "d-flex justify-content-between mt-1">
-										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
-										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
-									</div>	 
-									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h6 class = "original-price">911.500.000 <span class = "curency">đ</span></h6>
-								</div>
-							</a>
-						</div>
+					<div class = "swiper-slide">
+						<a href = "#"><img  src = "./images/article-banner1.jpg" /></a>
 					</div>
-					<div class="swiper-slide">
-						<div class = "card">
-							<a href = "#"> 
-								<div class = "percent">30%</div>
-								<div class = "image"><img class="card-img-top" src="./images/prod5.jpg" alt="Card image cap"></div>
-								<div class="card-body">
-									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
-									<div class = "d-flex justify-content-between mt-1">
-										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
-										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
-									</div>	 
-									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h6 class = "original-price">911.500.000 <span class = "curency">đ</span></h6>
-								</div>
-							</a>
-						</div>
+					<div class = "swiper-slide">
+						<a href = "#"><img  src = "./images/article-banner3.jpg" /></a>
 					</div>
-					<div class="swiper-slide">
-						<div class = "card">
-							<a href = "#"> 
-								<div class = "percent">30%</div>
-								<div class = "image"><img class="card-img-top" src="./images/prod6.jpg" alt="Card image cap"></div>
-								<div class="card-body">
-									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
-									<div class = "d-flex justify-content-between mt-1">
-										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
-										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
-									</div>	 
-									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h6 class = "original-price">911.500.000 <span class = "curency">đ</span></h6>
-								</div>
-							</a>
-						</div>
+					<div class = "swiper-slide">
+						<a href = "#"><img  src = "./images/article-banner2.jpg" /></a>
 					</div>
-					<div class="swiper-slide">
-						<div class = "card">
-							<a href = "#"> 
-								<div class = "percent">30%</div>
-								<div class = "image"><img class="card-img-top" src="./images/prod7.jpg" alt="Card image cap"></div>
-								<div class="card-body">
-									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
-									<div class = "d-flex justify-content-between mt-1">
-										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
-										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
-									</div>	 
-									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h6 class = "original-price">911.500.000 <span class = "curency">đ</span></h6>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class = "card">
-							<a href = "#"> 
-								<div class = "percent">30%</div>
-								<div class = "image"><img class="card-img-top" src="./images/prod9.jpg" alt="Card image cap"></div>
-								<div class="card-body">
-									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
-									<div class = "d-flex justify-content-between mt-1">
-										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
-										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
-									</div>	 
-									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h6 class = "original-price">911.500.000 <span class = "curency">đ</span></h6>
-								</div>
-							</a>
-						</div>
-					</div>
-					
 				</div>
 			</div>
-		
 		</article>
-		
 	</section>
 
 	<!-- footer -->

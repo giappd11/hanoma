@@ -69,12 +69,32 @@
 		margin: 1.75rem auto;
 	}
 
-	.personal-info .card .image { 
-		height: 156px;
-	}
+	
 	.card .image {
 		height: 175px;
 	}
+	.personal-info .card .image { 
+		height: 151px;
+	}
+	.products-container .swiper-slide { 
+		max-width: calc(20% - 8px);
+		margin-right: 10px;
+		position: relative;
+		width: 100%;
+	}
+	.products-container-layout1 .swiper-slide { 
+		max-width: calc(20% - 8px);
+		margin-right: 10px;
+		position: relative;
+		width: 100%;
+	}
+	.news-container .swiper-slide {
+		max-width: calc(25% - 8px);
+		margin-right: 10px;
+		position: relative;
+		width: 100%;
+	}
+
 
 }
 @media (max-width: 1200px) {
@@ -86,8 +106,18 @@
 	.personal-info .card .image { 
 		height: 130px;
 	} 
-	
-	
+	.menu-home .card-header img, .menu .card-header img {
+		width: 15px;
+	}
+	.menu-home .card-header img, .menu .card-header h4 {
+		font-size: 16px;
+	}
+	span.career-hover, span.address-hover {
+		font-size: .6rem;
+	}
+	span.address-hover {
+		background-position: 0;
+	}
 }
 @media (max-width: 1024px) {
 	.personal-info .card .image { 
@@ -111,7 +141,6 @@
 	
 	.nav-link {
 		display: block;
-		padding: .5rem 1rem;
 	}
 	.article-header h3.title {
 		float: left;
@@ -121,7 +150,11 @@
 		float: right;
 		color: #fff;
 	}
-	.category-menu {
+	.menu-container .navbar-toggler {
+		float: right;
+	}
+	.category-menu,
+	.category-menu.sm-menu {
 		min-height: 0;
 		padding: 0;
 	}
@@ -137,7 +170,6 @@
 	.navbar nav .nav-item a {
 		padding: 7px 10px;
 		margin: 0;
-		border-bottom: 1px solid #ddd;
 	}
 	.send-mail-form input.form-control {
 		width: 160px;
@@ -212,8 +244,50 @@
 	.personal-info .card .image { 
 		height: 125px;
 	}
-}
-
+	.nav_menu_toggler_icon{
+		display:block;
+	}
+	.menu-container{
+		background: skyblue;
+	}
+	.menu-container .manu{
+		display: none;
+	}
+	.menu-container .manu ul li{
+		float: none;
+		display: block;
+	}
+	.menu-container .manu ul li .have_dropdown{
+		background-color:transparent;
+		display: none;
+		position: relative;
+	}
+	.menu-container .manu ul li .have_dropdown li{
+		display: block;
+		float: none;
+		width: 100%;
+		background-color: #fff;
+	}
+	.menu-container .manu ul li .have_dropdown li a{
+		display: block;
+		float: none;
+		width: 100%;
+		padding: 15px 0px;
+	}
+	.menu-container .manu ul li .have_dropdown_n_style li{
+		width:100%;
+		float: none;
+	}
+	.menu-container .manu ul li .have_dropdown_n_style li a{
+		float: none;
+	}
+	.menu-container .manu ul li .have_dropdown_n_style{
+		position: relative;
+	}
+	.have_dropdown a.nav-link:before {
+		display: none;
+	}
+} 
 
 @media (max-width: 768px) {
 	 
@@ -275,7 +349,21 @@
 	.personal-info .card .image {
 		height: 130px;
 	}
-
+	.profile p.card-text {
+		font-size: 12px;
+		margin-top: 0 !important;
+	}
+	span.career-hover,
+	span.address-hover {
+		font-size: 0.55rem;
+	}
+	span.address-hover {
+		background-position: 0;
+	}
+	span.career-hover {
+		padding-bottom: 0;
+		margin-bottom: 2px;
+	}
 }
 @media (max-width: 413px) {
 	.memu-noti li a {
@@ -295,5 +383,25 @@
 	.category-panel .col-6 {
 		flex: 100% !important;
 		max-width: 100% ;
+	}
+	.person-info .image, 
+	.person-info .card-body{
+		max-width: 100%;
+		text-align: center;
+	}
+	.person-info {
+		display: block !important;
+	}
+	.person-info tr td:first-child {
+		text-align: left;
+	}
+	.person-info tr td:last-child {
+		text-align: right;
+	}
+	.person-info table {
+		width: 100%;
+	}
+	.person-info .image img {
+		width: auto;
 	}
 }
