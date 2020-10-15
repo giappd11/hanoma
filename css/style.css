@@ -407,6 +407,8 @@ section.content {
 }
 .category-title h3.title {
     font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: -1px;
 }
 .category-title:after {
     content: "";
@@ -444,7 +446,8 @@ section.content {
     margin-bottom: .75rem;
     font-weight: bold;
     line-height: 1.25rem;
-	margin-bottom: 0;
+    margin-bottom: 0;
+    color: #0A0015;
 }
 .article-content .card {
     border-radius: 10px 10px 0 0;
@@ -492,8 +495,8 @@ section.content {
 	z-index: 10;
 }
 span.address {
-    padding: 1px 0px 1px 15px;
-    background: url(../images/address.png) no-repeat 0 1px;
+    padding: 3px 0px 1px 15px;
+    background: url(../images/address.png) no-repeat 0 3px;
     font-size: 0.6875rem;
 }
 span.time {
@@ -503,7 +506,8 @@ span.time {
 }
 .price {
     color: #FFC107;
-	margin: 5px 0;
+    margin: 5px 0;
+    font-weight: bold;
 }
 .original-price {
     text-decoration: line-through;
@@ -670,9 +674,10 @@ li.page-item:last-child {
 .card:hover .image img {
     transform: scale(1.5);
 }
+
 .card .image {
     overflow: hidden;
-	border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .card .image img {
 	transition-duration: 800ms;
@@ -789,14 +794,15 @@ li.page-item:last-child {
 
 /* Detail */
 .product-name h1 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 	font-weight: 600;
-	line-height: 2rem;
+    line-height: 2rem;
+    color: #0A0015;
 }
 .price-box .regular-price {
     color: #FB3C00;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: bold;
     display: block;
 }
 .prod-info {
@@ -804,6 +810,8 @@ li.page-item:last-child {
 }
 .prod-info tr td:last-child {
     text-align: right;
+    font-weight: bold;
+    color: #0A0015 ;
 }
 .prod-info table {
     width: 100%;
@@ -842,7 +850,8 @@ span.status.online {
 }
 .com-details .com-detail {
     display: block;
-	margin-top: 5px;
+    margin-top: 5px;
+    color: #515C6F;
 }
 .com-details .year {
     border: 0.125rem solid #FFC107;
@@ -863,21 +872,27 @@ span.status.online {
 .com-info {
 	box-shadow: 0px 4px 20px rgba(0, 160, 251, 0.08);
 }
-
+.call a img,
+.message a img {
+    margin-right: 10px;
+}
 .call a {
-    padding: 20px 10px 20px 50px;
-    background: url(../images/call.png) no-repeat #3CD053 20px calc(50% - 0px);
+    padding: 20px 0;
+    background: #3CD053;
     color: #fff;
     border-radius: 10px;
     display: block;
+    white-space: nowrap;
+    text-align: center;
 }
 .message a {
-    padding: 20px 30px 20px 50px;
-    background: url(../images/message.png) no-repeat #FFC107 20px calc(50% - 0px);
+    padding: 20px 0;
+    background: #FFC107;
     color: #fff;
     border-radius: 10px;
-	display: block;
-	text-align: center;
+    display: block;
+    white-space: nowrap;
+    text-align: center;
 }
 .nav-tabs {
     border-bottom: 2px solid #dee2e6;
@@ -898,8 +913,11 @@ span.status.online {
     padding: 5px 10px;
     border-radius: 10px;
     background: #515C6F;
-    margin-right: 2rem;
+    margin-right: .5rem;
     color: #fff;
+    white-space: nowrap;
+    margin-bottom: .5rem;
+    display: inline-block;
 }
 span.model-name {
     min-width: 500px;
@@ -984,7 +1002,34 @@ span.career-hover .lable
 .banner img {
     border-radius: 10px;
 }
-
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #0A0015;
+    content: "next";
+    font-family: 'swiper-icons';
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+.breadcrumb a {
+    color: #0A0015;
+}
+.breadcrumb a:hover {
+    color: #FFC107;
+}
+.prod-img .swiper-button-next:after, .prod-img .swiper-button-prev:after {
+    color: #fff;
+    font-weight: bold;
+}
+.prod-img .paging-right {
+    background: #fff;
+    color: #FFC107;
+}
+.match-prod {
+    padding-left: 20px;
+    list-style: disc;
+}
 /*!
  * Mmenu Light
  * mmenujs.com/mmenu-light
@@ -1357,7 +1402,9 @@ iframe {
     padding-right: 20px !important;
     font-weight: bold;
     color: #0A0015 !important;
+    
 }
+
 a:hover p.card-text {
     color: #414141;
 }

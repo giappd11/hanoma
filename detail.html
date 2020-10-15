@@ -4,24 +4,26 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css"  >
 	<link rel="stylesheet" href="./css/style.css" >
 	<link rel="stylesheet" href="./css/responsive.css" >
+	
 	<title>Hanoma Home page.</title>
+	
 </head>
-<body>
+<body id = "body">
+	 
 	<!-- Header -->
 	<section class = "header navbar-expand-sm">
 		<div class = "  container p-0">
 			<div class = "d-block d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1">
-				<div class = "col-1 d-inline-block d-lg-none pr-0 pt-2 pt-sm-0 ">
+				<div class = "col-2 col-sm-1 d-inline-block d-lg-none pr-0 pt-2 pt-sm-0 ">
 					<a href = "#my-menu" class = "mburger">
 						<span></span>
 					</a>
 				</div>
-				<div class = "col-10 col-lg-2 col-md-3 col-sm-3 pr-0 text-center pl-2 pl-sm-2  d-inline-block align-top">
+				<div class = "col-9 col-lg-2 col-md-3 col-sm-3 pr-0 text-center pl-2 pl-sm-2  d-inline-block align-top">
 					<a href = "./index.html">
 						<img  src = "./images/logo.png" alt = "logo"/>
 					</a>
@@ -44,7 +46,7 @@
 							
 						</div>
 						<div class = "result bg-white p-2" style = "display: none">
-							<h5 class = "text-uppercase">Truy cập nhanh</h5>
+							<h6 class = "text-uppercase">Truy cập nhanh</h6>
 							<ul>
 								<li><a href = "#">Kết quả search </a></li>
 								<li><a href = "#">Kết quả search 1</a></li>
@@ -55,24 +57,66 @@
 						</div>
 					</form>
 				</div>
-				<div class = "col-lg-3 col-md-4 d-none d-lg-block ">
+				<div class = "col-lg-2 col-md-4 d-none d-lg-block px-0 ">
 					<nav class="nav">
 						<li class="nav-item">
 							<a class="nav-link active" href="#">Trang chủ</a>
 						</li>
-						<li class="nav-item ml-3">
-							<a class="nav-link" href="#">Tin Tức</a>
+						<li class="nav-item ml-2">
+							<a class="nav-link" href="./tintuc.html">Tin Tức</a>
 						</li>
 					</nav>
 				</div>
-				<div class = "col-12 col-lg-2 col-md-3 col-sm-3 pl-0 d-none d-lg-block ">
+				<div class = "col-12 col-lg-3 col-md-3 col-sm-3 pl-0 d-none d-lg-block ">
 					<nav class="nav justify-content-sm-end justify-content-center d-flex">
 						<li class="nav-item">
 							<a class="nav-link " href="#"><img  src = "./images/noti.png"/></a>
-							<span class = "noti-count">4</span>
+							<span class = "noti-count">3</span>
+							<div class = "noti-detail text-center" style = "display: none">
+								<ul class = "text-left">
+									<li class = "new">
+										<a href = "#" class = "d-flex">
+											<span class = "col-3 p-0">
+												<img src = "./images/noti-content.png"/>
+											</span>
+											<div class = "col-9">
+												<span class = "noti-title unread">Hanoma đã gửi cho bạn thông báo</span>
+												<span class = "noti-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum.</span>
+												<span class = "noti-time">2 Ngày trước</span>
+											</div>
+										</a>
+									</li>
+									<li class = "new">
+										<a href = "#" class = "d-flex">
+											<span class = "col-3 p-0">
+												<img src = "./images/noti-content.png"/>
+											</span>
+											<div class = "col-9">
+												<span class = "noti-title  unread">Hanoma đã gửi cho bạn thông báo</span>
+												<span class = "noti-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum.</span>
+												<span class = "noti-time">2 Ngày trước</span>
+											</div>
+										</a>
+									</li>
+									<li class = "new">
+										<a href = "#" class = "d-flex">
+											<span class = "col-3 p-0">
+												<img src = "./images/noti-content.png"/>
+											</span>
+											<div class = "col-9">
+												<span class = "noti-title">Hanoma đã gửi cho bạn thông báo</span>
+												<span class = "noti-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum.</span>
+												<span class = "noti-time">2 Ngày trước</span>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+								<a class = "" href = "./taikhoan.html#taikhoanthongbao">Xem tất cả</a>
+							</div>
 						</li>
 						<li class="nav-item ml-3 ml-sm-1">
-							<a class="nav-link" href="#"><img  src = "./images/user.png"/></a>
+							<a class="nav-link" href="./taikhoan.html"><img  src = "./images/user.png"/></a>
 						</li>
 						<li class="nav-item ml-3  ml-sm-1">
 							<a class="nav-link" href="#"><img  src = "./images/f-vn.png"/></a>
@@ -84,11 +128,12 @@
 	
 	</section>
 	
+	
 	<!-- Content -->
 	<section class = "content container p-0 category">
 		<article >
 			<div class = "d-flex banner align-items-center">
-				<div class = "menu col-3  d-lg-block d-none" > 
+				<div class = "menu col-2 d-lg-block d-none" > 
 					<div class = "card">
 						<div class="card-header text-uppercase pl-2 show_menu">
 							<h4 class = "d-flex align-items-center"><img class = "mr-2" src="./images/category.png"/>Danh Mục</h4>
@@ -141,6 +186,8 @@
 				<nav aria-label="breadcrumb" class = "col-12 col-sm-9 px-3 pl-lg-0 pr-lg-0">
 					<ol class="breadcrumb p-0 m-0">
 						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+						<li class="breadcrumb-item"><a href="#">Máy để bán</a></li>
+						<li class="breadcrumb-item"><a href="#">Máy công trình</a></li>
 						<li class="breadcrumb-item active" aria-current="page">Máy để bán</li>
 					</ol>
 				</nav>
@@ -199,13 +246,13 @@
 					</div>
 					<div class = "com-info mt-2 border-top pt-2">
 						<div class = "d-flex align-items-center">
-							<div class = "col-3 px-0">
+							<div class = "col-2 px-0">
 								<a href = "#">
 									<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/company 1.png" />
 								</a>
 							</div>
-							<div class = "col-9 pl-1 pr-0">
-								<h4 class="card-title">CÔNG TY CỔ PHẦN MÁY VÀ THIẾT BỊ HÀ NỘI</h4>
+							<div class = "col-10 pl-1 pr-0">
+								<a href = "#"><h4 class="card-title">CÔNG TY CỔ PHẦN MÁY VÀ THIẾT BỊ HÀ NỘI</h4></a>
 								<!-- offline class -->
 								<span class = "status online">Đang online</span>
 							</div>
@@ -230,15 +277,15 @@
 						</div>
 						
 					</div>
-					<div class = "d-flex align-items-center my-3">
-							<div class = "call col-6">
-								<a href = "call:0989989989">0989 989 989</a>
-							</div>
-							<div class = "message col-6">
-								<a href = "mail:0989 989 989">Nhắn tin</a>
-							</div>
-							
+					<div class = "d-md-flex d-block align-items-center my-3">
+						<div class = "call col-lg-6 col-md-6 col-sm-12 col-12 mb-2">
+							<a href = "call:0989989989"><img src = "./images/call.png"/>0989 989 989</a>
 						</div>
+						<div class = "message col-lg-6 col-md-6 col-sm-12 col-12 mb-2">
+							<a href = "mail:0989989989"><img src = "./images/message.png"/>Nhắn tin</a>
+						</div>
+						
+					</div>
 				 
 				
 				</div>
@@ -273,11 +320,11 @@
 					</div>
 					<div class="tab-pane fade" id="suggest" role="tabpanel" aria-labelledby="suggest-tab">
 						<h3 class = "my-2">Thiết bị phù hợp</h3>
-							<ul class ="d-flex flex-column">
+							<ul class ="d-flex flex-column match-prod">
 								<li  ><span class = "model-name">Máy xúc đào bánh xích Hitachi</span> <span class = "model">ZX870-5G</span> </li>
 								<li  ><span class = "model-name">Máy xúc đào bánh xích </span> <span class = "model">ZX870-5G</span> </li>
 								<li  ><span class = "model-name">Máy xúc đào bánh xích Hitachi</span> <span class = "model">ZX870-5G</span> </li>
-								<li  ><span class = "model-name">Máy xúc đào bánh xích Hitachi Hitachi Hitachi  </span> <span class = "model">ZX870-5G</span> </li>
+								<li  ><span class = "model-name">Máy xúc đào bánh xích Hitachi  </span> <span class = "model">ZX870-5G</span> </li>
 								<li  ><span class = "model-name">Máy xúc đào bánh xích Hitachi</span> <span class = "model">ZX870-5G</span> </li>
 							
 							</ul>
@@ -311,13 +358,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod2.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -328,13 +375,13 @@
 								<div class = "percent">5%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod1.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -344,13 +391,13 @@
 							<a href = "#">  
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod3.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -361,13 +408,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod4.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -378,13 +425,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod5.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -404,30 +451,32 @@
 		<article> 
 			<div class = "article-header d-block d-lg-flex my-2">
 				<div class = "category-title text-uppercase col-12 col-lg-4 col-sm-12 pr-0  align-items-center d-block d-lg-flex">
-					<h3 class = "title"  >cùng nhà cung cấp</h3>
-					<button class="navbar-toggler bg-black"  type="button" data-toggle="collapse" data-target="#navbarNav-cncc" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<h3 class = "title"  >SẢN PHẨM CÙNG NHÀ CUNG CẤP</h3>
+					<button class="navbar-toggler d-lg-none d-flex"  type="button" data-toggle="collapse" data-target="#navbarNav-cncc" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 				</div>
 				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-8 col-sm-12 d-block d-lg-flex  align-items-center">
 					
-					<nav class="collapse navbar-collapse" id="navbarNav-cncc">
+					<nav class="collapse" id="navbarNav-cncc">
 		
-						<li class="nav-item ml-3 last"><a class="nav-link" href="#">Xem tất cả >></a></li>
+						<li class="nav-item ml-3 last readtotoal"><a class="nav-link" href="#">Xem tất cả</a></li>
 					</nav>
 				</div>
 			</div>
-			<div class = "article-banner d-flex">
-				<div class = "col-4 pr-0">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner1.jpg" />
+			<div class = "article-banner d-flex ads-container mx-3">
+				<div class = "swiper-wrapper">
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner1.jpg" />
+					</div>
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner3.jpg" />
+					</div>
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner2.jpg" />
+					</div>
 				</div>
-				<div class = "col-4 px-2">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner3.jpg" />
-				</div>
-				<div class = "col-4 pl-0">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner2.jpg" />
-				</div>
-			</div> 
+			</div>
 			
 			<div class ="article-content p-2 mt-2 products-container swiper-container bg-white">
 				<div class = "swiper-wrapper">
@@ -437,13 +486,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod2.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -454,13 +503,13 @@
 								<div class = "percent">5%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod1.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -470,13 +519,13 @@
 							<a href = "#">  
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod3.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -487,13 +536,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod4.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -504,13 +553,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod5.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -521,13 +570,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod6.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -538,13 +587,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod7.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -555,13 +604,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod8.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -572,13 +621,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod9.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -589,13 +638,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod10.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -620,24 +669,26 @@
 				</div>
 				<div class = "navbar navbar-expand-lg category-menu col-12 col-lg-8 col-sm-12 d-block d-lg-flex  align-items-center">
 					
-					<nav class="collapse navbar-collapse" id="navbarNav-sptt">
-						<li class="nav-item ml-3 last"><a class="nav-link" href="#">Xem tất cả >></a></li>
+					<nav class="collapse" id="navbarNav-sptt">
+						<li class="nav-item ml-3 last readtotoal"><a class="nav-link" href="#">Xem tất cả</a></li>
 					</nav>
 				</div>
 			</div>
 			<article> 
 			
-			<div class = "article-banner d-flex">
-				<div class = "col-4 pr-0">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner1.jpg" />
+			<div class = "article-banner d-flex ads-container mx-3">
+				<div class = "swiper-wrapper">
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner1.jpg" />
+					</div>
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner3.jpg" />
+					</div>
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner2.jpg" />
+					</div>
 				</div>
-				<div class = "col-4 px-2">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner3.jpg" />
-				</div>
-				<div class = "col-4 pl-0">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner2.jpg" />
-				</div>
-			</div> 
+			</div>
 			
 			<div class ="article-content p-2 mt-2 products-container swiper-container bg-white">
 				<div class = "swiper-wrapper">
@@ -647,13 +698,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod2.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -664,13 +715,13 @@
 								<div class = "percent">5%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod1.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -680,13 +731,13 @@
 							<a href = "#">  
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod3.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -697,13 +748,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod4.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -714,13 +765,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod5.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -731,13 +782,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod6.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -748,13 +799,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod7.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -765,13 +816,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod8.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -782,13 +833,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod9.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -799,13 +850,13 @@
 								<div class = "percent">30%</div>
 								<div class = "image"><img class="card-img-top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/prod10.jpg" alt="Card image cap"></div>
 								<div class="card-body">
-									<h5 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h5>
+									<h6 class="card-title">Xe tải chạy bằng cơm MINI-1234 Còn mới 100%</h6>
 									<div class = "d-flex justify-content-between mt-1">
 										<span class = "d-flex address text-muted justify-content-start">Hà Nội</span>
 										<span class = "d-flex time text-muted justify-content-end">2 ngày trước</span>
 									</div>	 
 									<h4 class = "price">911.500.000 <span class = "curency">đ</span></h4>
-									<h5 class = "original-price">911.500.000 <span class = "curency">đ</span></h5>
+									<span class = "original-price">911.500.000 <span class = "curency">đ</span></span>
 								</div>
 							</a>
 						</div>
@@ -821,15 +872,17 @@
 		 
 		<article> 
 			
-			<div class = "article-banner d-flex">
-				<div class = "col-4 pr-0">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner1.jpg" />
-				</div>
-				<div class = "col-4 px-2">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner3.jpg" />
-				</div>
-				<div class = "col-4 pl-0">
-					<img src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA=="  data-src="./images/article-banner2.jpg" />
+			<div class = "article-banner d-flex ads-container mx-3">
+				<div class = "swiper-wrapper">
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner1.jpg" />
+					</div>
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner3.jpg" />
+					</div>
+					<div class = "swiper-slide">
+						<img  src = "./images/article-banner2.jpg" />
+					</div>
 				</div>
 			</div>
 		</article>
@@ -838,7 +891,7 @@
 	</section>
 	
 	
-	
+
 	<!-- footer -->
 	<section class = "footer pb-4 mt-3">
 		<div class = "send-letter">
@@ -853,7 +906,7 @@
 				</div>
 				<div class = "col-12 col-lg-6 col-md-6 col-sm-12 justify-content-md-end justify-content-center d-flex">
 					<form class = "send-mail-form form-inline" action = "#">
-						<div class="form-group mx-4 ">
+						<div class="form-group mx-1 mx-sm-4 my-0">
 							<input type="email" class="form-control" id="inputPassword2" placeholder="Nhập địa chỉ email của bạn">
 						</div>
 						<button type="submit" class="btn btn px-4 py-2">Đăng ký</button>
@@ -952,17 +1005,17 @@
 			</div>
 			<div class = "d-flex ">
 				<div class = "copyright col-12">
-					<div class = "d-flex align-items-center ">
-						<a href = "#" class = "d-inline-block text-truncate mr-2">
+					<div class = "d-block d-md-flex align-items-center mb-1 text-center text-md-left mb-sm-0">
+						<a href = "#" class = "d-inline-block mr-2 mb-2 mb-md-0">
 							<img  src = "./images/logo2.png" alt = "logo"/>
 						</a>
-						<h4 class = "d-inline-block text-truncate">Nền Tảng Kinh Doanh Máy Móc Thiết Bị Và Phương Tiện Vận Tải Số 1 Việt Nam</h4>
+						<h4 class = "d-inline-block ">Nền Tảng Kinh Doanh Máy Móc Thiết Bị Và Phương Tiện Vận Tải Số 1 Việt Nam</h4>
 					</div>
-					<h5 class = "mt-1">Bản Quyền Thuộc Về Công Ty Cổ Phần ILOTT. Nghiêm Cấm Sao Chép Mà Không Có Sự Đồng Ý Bằng Văn Bản</h5>
-					<h5 class = "mt-1">Giấy Phép Hoạt Động Mạng Xã Hội Số 58/GP-BTTTT Do Bộ Thông Tin & Truyền Thông Cấp Ngày 15/02/2019</h5>
+					<h5 class = "mt-2 mt-sm-1">Bản Quyền Thuộc Về Công Ty Cổ Phần ILOTT. Nghiêm Cấm Sao Chép Mà Không Có Sự Đồng Ý Bằng Văn Bản</h5>
+					<h5 class = "mt-2 mt-sm-1">Giấy Phép Hoạt Động Mạng Xã Hội Số 58/GP-BTTTT Do Bộ Thông Tin & Truyền Thông Cấp Ngày 15/02/2019</h5>
 				</div>
 			</div> 
-			<div class = " d-block d-lg-flex my-2 mt-lg-4 mb-lg-0 text-center align-items-center">
+			<div class = " d-block d-lg-flex my-2 mt-lg-4 mb-lg-0 text-center text-lg-left align-items-center">
 				<div class = "col-12  col-lg-5 col-md-12 col-sm-12">
 					<h4>Mua Bán Dễ Dàng Hơn Trên Điện Thoại Thông Minh:</h4>
 					<div class = "d-block d-lg-flex  my-2 mt-lg-4 mb-lg-0 "> 
@@ -1007,14 +1060,15 @@
 	<section> 
 		<div class = "navigation d-block d-lg-none">
 			<div class = "d-flex align-items-center text-center list-unstyled mb-0 bg-white">
-				<a href = "#" class = "menu-item home"><img src = "./images/home.png"/><span> Trang chủ</span></a>  
-				<a href = "#" class = "menu-item news"><img src = "./images/news.png"/><span>Tin Tức</span></a>  
-				<a href = "#" class = "menu-item noti"><img src = "./images/bell.png"/><span class = "count">12</span><span>Thông báo</span></a>  
-				<a href = "#" class = "menu-item account"><img src = "./images/profile.png"/><span>Tài khoản</span></a>  
+				<a href = "./index.html" class = "menu-item home"><img src = "./images/home.png"/><span> Trang chủ</span></a>  
+				<a href = "./tintuc.html" class = "menu-item news"><img src = "./images/news.png"/><span>Tin Tức</span></a>  
+				<a href = "./taikhoan.html#taikhoanthongbao" class = "menu-item noti"><img src = "./images/bell.png"/><span class = "count">12</span><span>Thông báo</span></a>  
+				<a href = "./taikhoan.html" class = "menu-item account"><img src = "./images/profile.png"/><span>Tài khoản</span></a>  
 			</div>			
 		
 		</div>
 	</section>
+  
   
 
     <!-- Optional JavaScript -->
@@ -1026,5 +1080,7 @@
 	<script src="./js/navScript.js"></script>
 	<script src="./js/mmenu.js"></script>
 	<script src="./js/custom.js"></script>
+	 
+	
   </body>
 </html>

@@ -14,9 +14,15 @@ new Swiper('.ads-container',
 		slidesPerView: 3,
 		spaceBetween: 12,
 		freeMode: true,
+		autoplay: {
+			delay: 2000
+		},
 		breakpoints: {
 			0: {
-			  slidesPerView: 2
+			  slidesPerView: 1
+			},
+			321: {
+				slidesPerView: 2
 			},
 			640: {
 			  slidesPerView: 2
@@ -69,9 +75,9 @@ new Swiper('.products-container', {
 	slidesPerColumnFill: 'row',
 	breakpoints: {
 		0: {
-			slidesPerView: 1
+			slidesPerView: 1.5
 		}, 321: {
-			slidesPerView: 2
+			slidesPerView: 1.5
 		}, 415: {
 			slidesPerView: 2.5
 		}, 640: {
@@ -93,9 +99,6 @@ var newsContainer =  new Swiper('.news-container', {
 	spaceBetween: 10,
 	slidesPerColumn: 2, 
 	slidesPerColumnFill: 'row',
-	onSlideChangeStart: function(){
-		$('.news-container').height( $(newsContainer.activeSlide()).height() )
-	  },
 	breakpoints: {
 		0: {
 			slidesPerView: 1
@@ -116,24 +119,26 @@ var newsContainer =  new Swiper('.news-container', {
 new Swiper('.products-container-layout1', {
 	slidesPerView: 5,
 	spaceBetween: 10,
+	slidesPerColumnFill: 'row',
 	breakpoints: {
 		0: {
-			slidesPerView: 1
+			slidesPerView: 1.5
 		}, 321: {
-			slidesPerView: 2.5
-		},  640: {
+			slidesPerView: 1.5
+		}, 415: {
+			slidesPerView: 2
+		}, 640: {
 		  slidesPerView: 3
 		},
 		768: {
 		  slidesPerView: 4
 		},
-		1024: {
-		  slidesPerView: 5
-		},
 		1200: {
 		  slidesPerView: 5
+		},
+		1024: {
+		  slidesPerView: 5
 		}
-		
 	}
 });
 

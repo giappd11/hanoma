@@ -2,8 +2,17 @@
 @media (min-width: 992px) {
 	.navbar nav {
 		list-style: none;
-		display: flex;
+		width: 100%;
 		flex-wrap: wrap;
+	}
+	.navbar .collapse {
+		display: block;
+	}
+	.navbar nav li {
+		display: inline-block;
+	}
+	.navbar nav li.readtotoal {
+		float: right;
 	}
 	.toturial .navbar-collapse {
 		display: block !important;
@@ -12,24 +21,6 @@
 		max-width: 20%;
 		flex: 0 0 0 20%;
 		padding: 0 5px;
-		position: relative;
-		width: 100%;
-	}
-	.products-container .swiper-slide { 
-		max-width: calc(20% - 8px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
-	.products-container-layout1 .swiper-slide { 
-		max-width: calc(20% - 8px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
-	.news-container .swiper-slide {
-		max-width: calc(25% - 8px);
-		margin-right: 10px;
 		position: relative;
 		width: 100%;
 	}
@@ -69,13 +60,20 @@
 	.menu .card-body {
 		display: none;
 		position: absolute;
-		min-width: 200px;
+		min-width: 250px;
 		width: 100%;
 	}
 	
 	.modal-dialog {
 		max-width: 900px;
 		margin: 1.75rem auto;
+	}
+
+	.personal-info .card .image { 
+		height: 156px;
+	}
+	.card .image {
+		height: 175px;
 	}
 
 }
@@ -85,13 +83,24 @@
 		width: 250px;
 	}
 	
-	
-	
+	.personal-info .card .image { 
+		height: 130px;
+	} 
 	
 	
 }
-
+@media (max-width: 1024px) {
+	.personal-info .card .image { 
+		height: 156px;
+	}
+	.card .image {
+		height: 219px;
+	}
+}
 @media (max-width: 992px) {
+	.navbar nav li {
+		display: block;
+	} 
 	.nav-link {
 		padding: .5rem .5rem;	
 			
@@ -131,7 +140,7 @@
 		border-bottom: 1px solid #ddd;
 	}
 	.send-mail-form input.form-control {
-		width: 175px;
+		width: 160px;
 		margin-left: 0;
 	}
 	.toturial-title {
@@ -163,24 +172,7 @@
 	.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 		transform: rotate(90deg);
 	}
-	.products-container .swiper-slide { 
-		max-width: calc(25% - 8px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
-	.products-container-layout1 .swiper-slide { 
-		max-width: calc(25% - 8px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
-	.news-container .swiper-slide {
-		max-width: calc(25% - 8px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
+	 
 	.navigation {
 		position: fixed;
 		bottom: 0;
@@ -214,60 +206,50 @@
 	.memu-noti li { 
 		margin: 0 5px;
 	}
+	.card .image {
+		height: 160px;
+	}
+	.personal-info .card .image { 
+		height: 125px;
+	}
 }
 
 
 @media (max-width: 768px) {
-	
-	.products-container .swiper-slide { 
-		max-width: calc(33.333% - 5px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
-	.products-container-layout1 .swiper-slide { 
-		max-width: calc(33.333% - 5px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
-	.news-container .swiper-slide {
-		max-width: calc(33.333% - 5px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}	
+	 
 	.memu-noti li {
 		margin: 0 5px;
 	}
 	.send-mail-form input.form-control {
 		width: 150px;
 	}
-}
+	span.model-name {
+		min-width: auto;
+		float: left;
+	}
+	span.model {
+		float: right;
+	}
+	span.model-name:after {
+		display: none;
+	}
+	.personal-info .card .image {
+		height: 140px;
+	}
 
+}
+@media (max-width: 640px) {
+	.card .image {
+		height: 175px;
+	}
+	
+}
 @media (max-width: 576px) {
 	
 	section.content {
 		padding-top: 110px !important;
 	} 
-	.products-container .swiper-slide { 
-		max-width: calc(40% - 8px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
-	.products-container-layout1 .swiper-slide { 
-		max-width: calc(40% - 8px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}
-	.news-container .swiper-slide {
-		max-width: calc(50% - 8px);
-		margin-right: 10px;
-		position: relative;
-		width: 100%;
-	}	
+	 
 	.action-noti {
 		display: block;
 		text-align: right;
@@ -283,10 +265,35 @@
 	.send-mail-form input.form-control {
 		width: 150px;
 	}
+	span.model {
+		float: none;
+		padding-left: 10px;
+	}
+	span.model-name {
+		float: none;
+	}
+	.personal-info .card .image {
+		height: 130px;
+	}
+
 }
 @media (max-width: 413px) {
 	.memu-noti li a {
 		font-size: 0.75rem;
 		padding: 1px ;
+	}
+	.nav-tabs {
+		display: block;
+	}
+	.com-details .com-detail {
+		font-size: 0.65rem;
+	}
+	.card .image,
+	.personal-info .card .image{
+		height: auto;
+	}
+	.category-panel .col-6 {
+		flex: 100% !important;
+		max-width: 100% ;
 	}
 }
