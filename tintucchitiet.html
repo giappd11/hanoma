@@ -141,15 +141,19 @@
 					</div>
 					<ul class = "nav my-0">
 						<li class="nav-item"><a class = "active" href = "./tintuc.html">Tin tức</a></li>
-						<li class="nav-item"><a href = "#">Kiến thức</a></li>
+						<li class="nav-item"><a href = "./kienthuc.html">Kiến thức</a></li>
 						<li class="nav-item"><a href = "./tintucvideo.html">Video</a></li>
 					</ul>
 				</div>
 				
 			</div>
-			<div class ="bg-white mx-3 menu-news-bottom d-flex">
-				
-				<ul class = "nav my-0 py-2 col-11 menu-news-bottom">
+			<div class ="bg-white mx-3 menu-news-bottom d-block d-lg-flex">
+				<span class="navbar-brand d-inline-block d-lg-none px-2" href="#">Danh mục</span>
+   
+				<button class="navbar-toggler d-inline-block d-lg-none btn-news-menu"  type="button" data-toggle="collapse" data-target="#navbarNav-catemenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button> 
+				<ul class = "nav my-0 py-2 col-xl-11 col-lg-10 menu-news-bottom collapse" id="navbarNav-catemenu">
 					<li class="nav-item"><a href = "#">Trang Chủ</a></li>
 					<li class="nav-item"><a href = "#">Tin Nóng</a></li>
 					<li class="nav-item"><a href = "#">Thời Sự</a></li>
@@ -159,15 +163,16 @@
 					<li class="nav-item"><a href = "#">Ngành Công Thương</a></li>
 					<li class="nav-item"><a href = "#">Thị trường tài chính</a></li>
 					
+					<li class="nav-item"><a href = "#">Thị trường tài chính</a></li>
+					<li class="nav-item"><a href = "#">Thương hiệu Việt</a></li>
+					<li class="nav-item"><a href = "#">Công nghệ mới</a></li>
+					<li class="nav-item"><a href = "#">Giải trí</a></li>
 				</ul> 
-				<div class = "col-1 p-0 border-left news-more">
+				<div class = "col-xl-1 col-lg-2 p-0 border-left news-more d-none d-lg-block">
 					<a class = "more-news" href = "#">Thêm</a>
 					<div class = "more-news-dropdow" style = "display: none;">
 						<ul class = "list-unstyled my-2" >
-							<li class="nav-item"><a href = "#">Thị trường tài chính</a></li>
-							<li class="nav-item"><a href = "#">Thương hiệu Việt</a></li>
-							<li class="nav-item"><a href = "#">Công nghệ mới</a></li>
-							<li class="nav-item"><a href = "#">Giải trí</a></li>
+							<!-- auto set values li -->
 						</div>
 					</div>
 				</div>
@@ -329,34 +334,45 @@
 		<!-- Relative post -->
 		<article> 
 			<div class = "px-3 article-content mt-2">
-				<div class = "relavie-post row bg-white py-1">
+				<div class = "relate-post row bg-white py-1">
+					<div class="col-8 col-sm-6 col-md-4">
+						<img src = "./images/relative-post.png" />
+					</div>
+					<div class="col-6 col-md-8 pl-0">
+						<h4 class = "font-weight-bold mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sed non amet et id dictum dictumst. Eget vitae ante mattis vitae viverra viverra. Ipsum amet, amet, amet nisl malesuada tristique volutpat libero. At sed amet pellentesque vitae a ac nibh in. Vitae sed sem placerat lectus massa condimentum. Nisl lobortis urna, risus purus nunc facilisis nec lacinia ornare. Enim aliquam arcu hac eleifend sed ridiculus fames ornare.</p>
+						<p >
+							Vitae integer duis tellus tellus. Elementum ornare laoreet et eros id adipiscing urna quis non. Faucibus amet adipiscing ipsum ipsum eget fusce pellentesque et natoque. A diam at vel, tempus felis rhoncus dui arcu. Nibh maecenas quis tortor praesent. Tempus, eget aliquam risus nec. Massa pellentesque magna arcu, habitant tempus ipsum...
+							</p>
+						<span class = "time mt-1 d-block">1 giờ trước</span>
+					</div>
+				</div>
+				<div class = "relate-post row bg-white py-1">
 					<div class="col-4 ">
 						<img src = "./images/relative-post.png" />
 					</div>
 					<div class="col-8 pl-0">
-						<h4 class = "font-weight-bold mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
-						<p  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sed non amet et id dictum dictumst. Eget vitae ante mattis vitae viverra viverra. Ipsum amet, amet, amet nisl malesuada tristique volutpat libero. At sed amet pellentesque vitae a ac nibh in. Vitae sed sem placerat lectus massa condimentum. Nisl lobortis urna, risus purus nunc facilisis nec lacinia ornare. Enim aliquam arcu hac eleifend sed ridiculus fames ornare.</p>
-						<p  >
+						<h4 class = "font-weight-bold mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sed non amet et id dictum dictumst. Eget vitae ante mattis vitae viverra viverra. Ipsum amet, amet, amet nisl malesuada tristique volutpat libero. At sed amet pellentesque vitae a ac nibh in. Vitae sed sem placerat lectus massa condimentum. Nisl lobortis urna, risus purus nunc facilisis nec lacinia ornare. Enim aliquam arcu hac eleifend sed ridiculus fames ornare.</p>
+						<p >
 							Vitae integer duis tellus tellus. Elementum ornare laoreet et eros id adipiscing urna quis non. Faucibus amet adipiscing ipsum ipsum eget fusce pellentesque et natoque. A diam at vel, tempus felis rhoncus dui arcu. Nibh maecenas quis tortor praesent. Tempus, eget aliquam risus nec. Massa pellentesque magna arcu, habitant tempus ipsum...
 							</p>
-						<span class = "time mt-3 d-block">1 giờ trước</span>
+						<span class = "time mt-1 d-block">1 giờ trước</span>
 					</div>
 				</div>
-				
-				<div class = "relavie-post row bg-white py-1">
-					<div class="col-4">
+				<div class = "relate-post row bg-white py-1">
+					<div class="col-4 ">
 						<img src = "./images/relative-post.png" />
 					</div>
 					<div class="col-8 pl-0">
-						<h4 class = "font-weight-bold mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
-						<p  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sed non amet et id dictum dictumst. Eget vitae ante mattis vitae viverra viverra. Ipsum amet, amet, amet nisl malesuada tristique volutpat libero. At sed amet pellentesque vitae a ac nibh in. Vitae sed sem placerat lectus massa condimentum. Nisl lobortis urna, risus purus nunc facilisis nec lacinia ornare. Enim aliquam arcu hac eleifend sed ridiculus fames ornare.</p>
-						<p  >
+						<h4 class = "font-weight-bold mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus sed non amet et id dictum dictumst. Eget vitae ante mattis vitae viverra viverra. Ipsum amet, amet, amet nisl malesuada tristique volutpat libero. At sed amet pellentesque vitae a ac nibh in. Vitae sed sem placerat lectus massa condimentum. Nisl lobortis urna, risus purus nunc facilisis nec lacinia ornare. Enim aliquam arcu hac eleifend sed ridiculus fames ornare.</p>
+						<p >
 							Vitae integer duis tellus tellus. Elementum ornare laoreet et eros id adipiscing urna quis non. Faucibus amet adipiscing ipsum ipsum eget fusce pellentesque et natoque. A diam at vel, tempus felis rhoncus dui arcu. Nibh maecenas quis tortor praesent. Tempus, eget aliquam risus nec. Massa pellentesque magna arcu, habitant tempus ipsum...
 							</p>
-						<span class = "time mt-3 d-block">1 giờ trước</span>
+						<span class = "time mt-1 d-block">1 giờ trước</span>
 					</div>
 				</div>
-
 			</div>
 		</article>
 		

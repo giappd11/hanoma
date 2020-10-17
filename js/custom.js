@@ -6,9 +6,29 @@ $(document).ready(function () {
 	}).focusout(function() {
 		$(".result").slideToggle(200);
 	});
- 
+	editMenuNews();
 	
 	
+new Swiper('.menu-search-result', 
+{ 
+		slidesPerView: 6,
+		spaceBetween: 0,
+		breakpoints: {
+			0: {
+				slidesPerView: 2
+			},
+			640: {
+				slidesPerView: 2
+			},
+			768: {
+				slidesPerView: 4
+			},
+			1024: {
+				slidesPerView: 6
+			}
+		}
+	}
+);	
 new Swiper('.ads-container', 
 { 
 		slidesPerView: 3,
@@ -82,7 +102,7 @@ new Swiper('.products-container', {
 		}, 321: {
 			slidesPerView: 1.5
 		}, 415: {
-			slidesPerView: 2.5
+			slidesPerView: 2
 		}, 640: {
 		  slidesPerView: 3
 		},
@@ -106,7 +126,7 @@ var newsContainer =  new Swiper('.news-container', {
 		0: {
 			slidesPerView: 1
 		}, 414: {
-			slidesPerView: 2
+			slidesPerView: 1
 		},  640: {
 		  slidesPerView: 2
 		},
@@ -129,7 +149,7 @@ new Swiper('.products-container-layout1', {
 		}, 321: {
 			slidesPerView: 1.5
 		}, 415: {
-			slidesPerView: 2.5
+			slidesPerView: 2
 		}, 640: {
 		  slidesPerView: 3
 		},
@@ -208,7 +228,9 @@ $(".loadajax").click(function (e) {
 });
 });
 
-
+$(window).resize(function () {
+	editMenuNews();
+})
 
 
 function searchModule() {
@@ -271,6 +293,39 @@ function edit(name ) {
 	}
 }
 
+function editMenuNews() {
+	var width = $( window ).width();
+	var maxItem = 8;
+	if (width > 1200) {
+		maxItem = 8;
+	} else if (width > 984) {
+		maxItem = 6;
+	} else {
+		maxItem = -1;
+	}
+	if ($('.knowledge').length > 0 && maxItem != -1) {
+		maxItem = maxItem - 2;
+	}
+	var count = 0;
+	var listDispay = "";
+	var listShowMore = "";
+	$('ul.menu-news-bottom li').each(function () {
+		if (maxItem == -1 || count++ < maxItem) {
+			listDispay += '<li class = "nav-item">' + $(this).html() + '</li>';
+		} else {
+			listShowMore += '<li class = "nav-item">' + $(this).html() + '</li>';
+		}
+	});
+	$('.more-news-dropdow > ul li').each(function () {
+		if (maxItem == -1 || count++ < maxItem) {
+			listDispay += '<li class = "nav-item">' + $(this).html() + '</li>';
+		} else {
+			listShowMore += '<li class = "nav-item">' + $(this).html() + '</li>';
+		}
+	});
+	$('ul.menu-news-bottom').html(listDispay);
+	$('.more-news-dropdow > ul').html(listShowMore);
+}
 
 
 

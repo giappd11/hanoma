@@ -1354,9 +1354,25 @@ button:focus {
 audio {
     width: 100%;
 }
+.video-list .image {
+    position: relative;
+}
+.numperpage {
+    white-space: nowrap;
+}
+.video-list .image:before {
+    content: "";
+    width: 62px;
+    height: 62px;
+    background: url(../images/video-button.png) no-repeat 0 0;
+    position: absolute;
+    top: calc(50% - 32px);
+    right: calc(50% - 32px);
+    z-index: 30;
+}
 span.eye {
     padding: 3px 0 1px 18px;
-    background: url(../images/eye.png) no-repeat 0 2px;
+    background: url(../images/eye.png) no-repeat 0 4px;
     font-size: 0.6875rem;
 }
 iframe {
@@ -1368,8 +1384,10 @@ iframe {
 .news-info .time {
     margin-right: 20px;
 }
-.relavie-post p {
+.relate-post p {
     margin-bottom: 0;
+    font-size: 15px;
+    line-height: 17px;
 }
 .action-noti {
     margin-top: -10px;
@@ -1382,7 +1400,9 @@ iframe {
     color: #0A0015 !important;
     
 }
-
+.readtotoal:hover {
+    color: #FB3C00;
+}
 a:hover p.card-text {
     color: #414141;
 }
@@ -1418,8 +1438,13 @@ a:hover p.card-text {
     color: #414141;
 }
 label {
-    font-weight: 600;
     color: #565656;
+}
+a .card-title:hover {
+    color: #FFC107;
+}
+.btn-news-menu {
+    float: right;
 }
 .profile-image .image {
     position: relative;
@@ -1462,6 +1487,127 @@ span.sm-lable {
     transform: scale(1.1);
     transition: 400ms;
 }
+.tab-search-result {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.tab-search-result li {
+    width: calc(100% / 6 );
+    text-align: center;
+}
+.tab-search-result a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 2px solid #fff;
+}
+.tab-search-result li.active a,
+.tab-search-result a:hover {
+    border-bottom-color:#FFC107;
+}
+ 
+.search-notfound {
+    max-width: 295px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.progressbar-account {
+    counter-reset: step;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.progressbar-account li {
+    list-style: none;
+    position: relative;
+    display: table-cell;
+    z-index: 3;
+}
+.progressbar-account li.step1.complete:after,
+.progressbar-account li.step2.complete:after
+ {
+    background: url(../images/complete-line.png) repeat-x #fff;
+    color: #fff;
+    width: 150%;
+    
+}
+.progressbar-account li.active div {
+    border-color: #FFC107;
+    color: #FFC107;
+}
+
+.progressbar-account li.active div,
+.progressbar-account li.complete div {
+    border-color: #FFC107;
+    color: #FFC107;
+}
+.progressbar-account li.complete div  {
+    background-color: #FFC107;
+    color: #fff;
+    border-color: #FFC107;
+}
+.progressbar-account li.step1:after,
+.progressbar-account li.step2:after
+ {
+    background: url(../images/incomplete-line.png) repeat-x transparent;
+    content: '';
+    height: 3px;
+    left: 0px;
+    position: absolute;
+    top: 15px;
+    width: 150%;
+    z-index: -1;
+}
+.progressbar-account li.step2:after {
+    left: 50%;
+}
+.progressbar-account .step2 {
+    text-align: center;
+}
+.progressbar-account .step3 {
+    text-align: right;
+}
+.progressbar-account li div {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #A2A2A2;
+    text-align: center;
+    color: #A2A2A2;
+    z-index: 5;
+    display: inline-block;
+    line-height: 26px;
+    background: #fff;
+}
+.account .content-box  {
+    width: 100%;
+    max-width: 345px;
+}
+.account {
+    width: 100%;
+    max-width: 700px;
+}
+.account button.btn {
+    width: 100%;
+}
+.account .form-control {
+    background-color: #FFFEF5;
+    border-color: #DBDBDB;
+}
+.time-otp {
+    font-size: 11px;
+}
+.time-count {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
 
 
 

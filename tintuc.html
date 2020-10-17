@@ -141,15 +141,19 @@
 					</div>
 					<ul class = "nav   my-0">
 						<li class="nav-item"><a class = "active" href = "#">Tin tức</a></li>
-						<li class="nav-item"><a href = "#">Kiến thức</a></li>
+						<li class="nav-item"><a href = "./kienthuc.html">Kiến thức</a></li>
 						<li class="nav-item"><a href = "./tintucvideo.html">Video</a></li>
 					</ul>
 				</div>
 				
 			</div>
-			<div class ="bg-white mx-3 menu-news-bottom d-flex">
-				
-				<ul class = "nav my-0 py-2 col-11 menu-news-bottom">
+			<div class ="bg-white mx-3 menu-news-bottom d-block d-lg-flex">
+				<span class="navbar-brand d-inline-block d-lg-none px-2" href="#">Danh mục</span>
+   
+				<button class="navbar-toggler d-inline-block d-lg-none btn-news-menu"  type="button" data-toggle="collapse" data-target="#navbarNav-catemenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button> 
+				<ul class = "nav my-0 py-2 col-xl-11 col-lg-10 menu-news-bottom collapse" id="navbarNav-catemenu">
 					<li class="nav-item"><a href = "#">Trang Chủ</a></li>
 					<li class="nav-item"><a href = "#">Tin Nóng</a></li>
 					<li class="nav-item"><a href = "#">Thời Sự</a></li>
@@ -159,15 +163,16 @@
 					<li class="nav-item"><a href = "#">Ngành Công Thương</a></li>
 					<li class="nav-item"><a href = "#">Thị trường tài chính</a></li>
 					
+					<li class="nav-item"><a href = "#">Thị trường tài chính</a></li>
+					<li class="nav-item"><a href = "#">Thương hiệu Việt</a></li>
+					<li class="nav-item"><a href = "#">Công nghệ mới</a></li>
+					<li class="nav-item"><a href = "#">Giải trí</a></li>
 				</ul> 
-				<div class = "col-1 p-0 border-left news-more">
+				<div class = "col-xl-1 col-lg-2 p-0 border-left news-more d-none d-lg-block">
 					<a class = "more-news" href = "#">Thêm</a>
 					<div class = "more-news-dropdow" style = "display: none;">
 						<ul class = "list-unstyled my-2" >
-							<li class="nav-item"><a href = "#">Thị trường tài chính</a></li>
-							<li class="nav-item"><a href = "#">Thương hiệu Việt</a></li>
-							<li class="nav-item"><a href = "#">Công nghệ mới</a></li>
-							<li class="nav-item"><a href = "#">Giải trí</a></li>
+							<!-- auto set values li -->
 						</div>
 					</div>
 				</div>
@@ -179,7 +184,7 @@
 		<article  >
 			<div class ="article-content py-3 px-1 mt-2 bg-white">
 				<div class = "row m-0">
-					<div class = "col-lg-6 col-md-12 col-sm-12 border-right">
+					<div class = "news-left col-xl-6 col-lg-8 col-md-8 col-sm-12 border-right">
 						<div class = "news">
 							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/news.jpg" alt="Card image cap">
 								<div class="card-body"> 
@@ -194,8 +199,8 @@
 							</a>
 						</div>
 					</div>
-					<div class = "col-lg-3 col-md-6 col-sm-6 col-6 border-right">
-						<div class = "news news-sm border-bottom mb-4 pb-1">
+					<div class = "news-center col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 border-right">
+						<div class = "news news-sm border-bottom mb-4 pb-1 col-md-12 col-sm-6 col-12 px-0">
 							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm.jpg" alt="Card image cap">
 								<div class="card-body p-0 pb-2"> 
 									<h6 class="card-title mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut.</h6>
@@ -205,7 +210,7 @@
 								</div>
 							</a>
 						</div>
-						<div class = "news news-sm pb-1">
+						<div class = "news news-sm pb-1  col-md-12 col-sm-6 col-12 px-0">
 							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm1.jpg" alt="Card image cap">
 								<div class="card-body p-0  pb-1"> 
 									<h6 class="card-title mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
@@ -216,39 +221,39 @@
 							</a>
 						</div>
 					</div>
-					<div class = "col-lg-3 col-md-6 col-sm-6 col-6">
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2 ">
+					<div class = "news-right col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 ">
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2  px-0">
 							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2 px-0">
 							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum aliquet tincidunt at velit in. </h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm1.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum aliquet tincidunt at velit in. </h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm1.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2 px-0">
 							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm2.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm2.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm">
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm px-0">
 							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm3.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm3.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
@@ -280,9 +285,9 @@
 				</div>
 			
 				<div class = "row m-0">
-					<div class = "col-lg-6 col-md-12 col-sm-12 border-right">
+					<div class = "news-left col-xl-6 col-lg-8 col-md-8 col-sm-12 border-right">
 						<div class = "news">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/news.jpg" alt="Card image cap">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/news.jpg" alt="Card image cap">
 								<div class="card-body"> 
 									<h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
 									<p class="card-text my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tellus risus ac faucibus at. 
@@ -295,9 +300,9 @@
 							</a>
 						</div>
 					</div>
-					<div class = "col-lg-3 col-md-6 col-sm-6 col-6 border-right">
-						<div class = "news news-sm border-bottom mb-4 pb-1">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm.jpg" alt="Card image cap">
+					<div class = "news-center col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 border-right">
+						<div class = "news news-sm border-bottom mb-4 pb-1 col-md-12 col-sm-6 col-12 px-0">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm.jpg" alt="Card image cap">
 								<div class="card-body p-0 pb-2"> 
 									<h6 class="card-title mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut.</h6>
 									<div class = "d-flex justify-content-end mt-3">
@@ -306,8 +311,8 @@
 								</div>
 							</a>
 						</div>
-						<div class = "news news-sm pb-1">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm1.jpg" alt="Card image cap">
+						<div class = "news news-sm pb-1  col-md-12 col-sm-6 col-12 px-0">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm1.jpg" alt="Card image cap">
 								<div class="card-body p-0  pb-1"> 
 									<h6 class="card-title mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
 									<div class = "d-flex justify-content-end mt-3">
@@ -317,39 +322,39 @@
 							</a>
 						</div>
 					</div>
-					<div class = "col-lg-3 col-md-6 col-sm-6 col-6">
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+					<div class = "news-right col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 ">
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2  px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2 px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum aliquet tincidunt at velit in. </h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm1.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum aliquet tincidunt at velit in. </h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm1.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2 px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm2.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm2.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm3.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm3.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
@@ -376,9 +381,9 @@
 				</div>
 			
 				<div class = "row m-0">
-					<div class = "col-lg-6 col-md-12 col-sm-12 border-right">
+					<div class = "news-left col-xl-6 col-lg-8 col-md-8 col-sm-12 border-right">
 						<div class = "news">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/news.jpg" alt="Card image cap">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/news.jpg" alt="Card image cap">
 								<div class="card-body"> 
 									<h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
 									<p class="card-text my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tellus risus ac faucibus at. 
@@ -391,9 +396,9 @@
 							</a>
 						</div>
 					</div>
-					<div class = "col-lg-3 col-md-6 col-sm-6 col-6 border-right">
-						<div class = "news news-sm border-bottom mb-4 pb-1">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm.jpg" alt="Card image cap">
+					<div class = "news-center col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 border-right">
+						<div class = "news news-sm border-bottom mb-4 pb-1 col-md-12 col-sm-6 col-12 px-0">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm.jpg" alt="Card image cap">
 								<div class="card-body p-0 pb-2"> 
 									<h6 class="card-title mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut.</h6>
 									<div class = "d-flex justify-content-end mt-3">
@@ -402,8 +407,8 @@
 								</div>
 							</a>
 						</div>
-						<div class = "news news-sm pb-1">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm1.jpg" alt="Card image cap">
+						<div class = "news news-sm pb-1  col-md-12 col-sm-6 col-12 px-0">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm1.jpg" alt="Card image cap">
 								<div class="card-body p-0  pb-1"> 
 									<h6 class="card-title mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
 									<div class = "d-flex justify-content-end mt-3">
@@ -413,39 +418,39 @@
 							</a>
 						</div>
 					</div>
-					<div class = "col-lg-3 col-md-6 col-sm-6 col-6">
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+					<div class = "news-right col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 ">
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2  px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2 px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum aliquet tincidunt at velit in. </h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm1.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum aliquet tincidunt at velit in. </h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm1.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2 px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm2.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm2.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm3.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm3.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
@@ -471,9 +476,9 @@
 				</div>
 			
 				<div class = "row m-0">
-					<div class = "col-lg-6 col-md-12 col-sm-12 border-right">
+					<div class = "news-left col-xl-6 col-lg-8 col-md-8 col-sm-12 border-right">
 						<div class = "news">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/news.jpg" alt="Card image cap">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/news.jpg" alt="Card image cap">
 								<div class="card-body"> 
 									<h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h4>
 									<p class="card-text my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tellus risus ac faucibus at. 
@@ -486,9 +491,9 @@
 							</a>
 						</div>
 					</div>
-					<div class = "col-lg-3 col-md-6 col-sm-6 col-6 border-right">
-						<div class = "news news-sm border-bottom mb-4 pb-1">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm.jpg" alt="Card image cap">
+					<div class = "news-center col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 border-right">
+						<div class = "news news-sm border-bottom mb-4 pb-1 col-md-12 col-sm-6 col-12 px-0">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm.jpg" alt="Card image cap">
 								<div class="card-body p-0 pb-2"> 
 									<h6 class="card-title mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut.</h6>
 									<div class = "d-flex justify-content-end mt-3">
@@ -497,8 +502,8 @@
 								</div>
 							</a>
 						</div>
-						<div class = "news news-sm pb-1">
-							<a href = "#"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm1.jpg" alt="Card image cap">
+						<div class = "news news-sm pb-1  col-md-12 col-sm-6 col-12 px-0">
+							<a href = "./tintucchitiet.html"> <img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newsm1.jpg" alt="Card image cap">
 								<div class="card-body p-0  pb-1"> 
 									<h6 class="card-title mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
 									<div class = "d-flex justify-content-end mt-3">
@@ -508,39 +513,39 @@
 							</a>
 						</div>
 					</div>
-					<div class = "col-lg-3 col-md-6 col-sm-6 col-6">
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+					<div class = "news-right col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 ">
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2  px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2 px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum aliquet tincidunt at velit in. </h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm1.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum aliquet tincidunt at velit in. </h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm1.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm border-bottom pb-xl-4 pb-lg-2 mb-xl-4 mb-lg-2 mb-2 pb-2">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm border-bottom mb-2 pb-2 px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm2.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm2.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
 						</div> 
-						<div class = "news news-vsm">
-							<a href = "#"> 
+						<div class = "col-xl-12 col-md-6 col-sm-6 col-12 news news-vsm px-0">
+							<a href = "./tintucchitiet.html"> 
 								<div class="card-body d-flex align-items-center p-0"> 
-									<div class = "col-8 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
-									<div class = "col-4 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm3.jpg" alt="Card image cap"></div>
+									<div class = "col-7 mx-0 p-0"><h6 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mauris habitant nulla.</h6></div>
+									<div class = "col-5 ml-1 mr-0 p-0"><img  class="card-img -top" src = "data:image/gif;base64,R0lGODlhAQABAIABAEdJRgAAACwAAAAAAQABAAACAkQBAA==" data-src="./images/newvsm3.jpg" alt="Card image cap"></div>
 									  
 								</div>
 							</a>
@@ -551,8 +556,6 @@
 				
 			</div>
 		</article>
-		
-		
 	</section>
 
 
