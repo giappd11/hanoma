@@ -147,10 +147,7 @@
 @media (max-width: 1024px) {
 	.personal-info .card .image { 
 		height: 156px;
-	}
-	.card .image {
-		height: 219px;
-	}
+	} 
 }
 @media (max-width: 992px) {
 	.relate-post > div:first-child {
