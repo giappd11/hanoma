@@ -1483,6 +1483,7 @@ span.sm-lable {
     overflow: hidden;
     display: block;
 }
+.banner1 a:hover img,
 .article-banner .swiper-slide a:hover img {
     transform: scale(1.1);
     transition: 400ms;
@@ -1603,9 +1604,17 @@ span.sm-lable {
 #popup .modal-dialog {
     max-width: 700px;
 }
-
-
-
+.banner1 {
+    margin-bottom: 12px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.ads-slider .swiper-slide a {
+    border-radius: 10px;
+}
+.banner .swiper-container.banner-container {
+    border-radius: 10px;
+}
 
 
 
