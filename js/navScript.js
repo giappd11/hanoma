@@ -13,7 +13,7 @@ $(document).ready(function(){
 	$(".menu-container .manu ul li:has('ul')").children("a").not(".manu ul li ul li a").append("<span class='drop_down_icon fa fa-angle-down'></span>");
 	
 	
-	if ($(window).width() < 756) {
+	if ($(window).width() < 992) {
 		//If width is less or equal to 943px dropdowns are displayed on click
 		$(".menu-container .manu ul li a").not("ul li ul li a").click(function(){
 			$(this).removeAttr("href");
