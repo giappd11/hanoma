@@ -1,0 +1,100 @@
+
+<div class="bg-white px-5   mx-auto px-2">
+	<div class = "header-box text-center  mb-2">
+		<h3 class = "text-uppercase mt-1">ĐĂNG TIN CẦN MUA THIẾT BỊ</h3>
+	</div>
+	<div class = "content-box  mx-auto text-left">
+		<form class = "" action = "./forgot3.html" onsubmit="callAjaxModal(this, '#popup')">
+			<div class="form-group">
+				<label for="inputAddress">Tiêu đề bài đăng:*</label>
+				<input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
+				 
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="inputAddress">Tên phụ tùng*:</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="VD: ABC XYZ">
+				</div>
+				<div class="col">
+
+					<label for="inputAddress">Tình trạng:*</label>
+					<select name = "tb" class="form-control">
+						<option value ="">Chọn</option>
+						<option value ="1">Máy cẩu</option>
+						<option value ="2">Máy xúc</option>
+
+					</select>
+				 </div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="inputAddress">Ký hiệu/ Model:</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="VD: M1234">
+				</div>
+				<div class="col">
+					<label for="inputAddress">Serial/ Part-number:</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="VD: 12345">
+				</div>
+			</div>
+
+			<div class="row">
+				
+				<div class="col">
+					<label for="inputAddress">Dùng cho bộ phận*:</label>
+					<select name = "tb" class="form-control">
+						<option value ="">VD: Hệ thống động cơ</option>
+						<option value ="1">Máy cẩu</option>
+						<option value ="2">Máy xúc</option>
+					</select>
+				 </div>
+				 <div class="col input-group">
+					<label for="inputAddress">Số lượng cần mua*:</label>
+					<div class="input-group-prepend">
+						<div class="input-group-prepend">
+							<span class="input-group-text decrease">-</span>
+						</div>
+						<div class="input-group-prepend">
+							<input type="text" class="form-control" id = "quantity" name = "soluong" value="1">
+						</div>
+						<div class="input-group-prepend">
+							<span class="input-group-text increase">+</span>
+						</div>
+						<div class="input-group-prepend">
+							<select name = "tb" class="form-control">
+								<option value ="">Chiếc</option>
+								<option value ="1">Bộ</option>
+								<option value ="2">Máy xúc</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress">Phụ tùng này lắp cho các thiết bị sau*:</label>
+				<textarea name = "content" class="form-control"></textarea>
+				 <span class = "openPopUp">Thêm</span>
+			</div>
+			
+			<div class="form-group">
+				<label for="inputAddress">Nội dung chi tiết:*</label>
+				<textarea name = "content" class="form-control"></textarea>
+				 
+			</div>
+			
+			<div class = "text-center">
+                <div class = "note pt-4">
+                    <p>Bước 2: xxxx  yyy zzz</p>
+                </div>
+                <ul class="progressbar-post m-0 d-table">
+                    <li class = "step1 complete"><div class="counter">1</div></li>
+                    <li class = "step2 active"><div class="counter">2</div></li>
+                </ul>
+                <div class=" justify-content-center d-block text-center mt-3">
+                    <button type="submit" class="btn btn-primary mb-2">Đăng bài</button>
+                </div>
+            </div>
+		</form>
+	</div>
+</div>
+					 

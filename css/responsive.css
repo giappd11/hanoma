@@ -66,7 +66,7 @@
 	
 	.modal-dialog {
 		max-width: 900px;
-		margin: 1.75rem auto;
+		margin: 0 auto;
 	}
 	.menu-news-bottom .nav-item {
 		display: inline-block;
@@ -101,6 +101,10 @@
 	}
 	.menu-news-bottom.collapse {
 		display: block;
+	}
+	.gallery-thumbs .swiper-slide {
+		max-width: 140px;
+		overflow: hidden;
 	}
 
 }
@@ -146,6 +150,22 @@
 		font-size: 13px;
 		line-height: 14px;
 	}
+}
+@media (min-width: 1200px) {
+	.news-right > div {
+		min-height: 24%;
+		vertical-align: middle;
+		align-items: center;
+		display: flex;
+	}
+
+}
+@media (min-width: 1024px) {
+	.gallery-thumbs .swiper-slide {
+		max-width: 170px;
+		overflow: hidden;
+	}
+	
 }
 @media (max-width: 1024px) {
 	.personal-info .card .image { 
@@ -356,7 +376,10 @@
 } 
 
 @media (max-width: 768px) {
-	 
+	.gallery-thumbs .swiper-slide {
+		max-width: 180px;
+		overflow: hidden;
+	}
 	.memu-noti li {
 		margin: 0 5px;
 	}
@@ -403,7 +426,9 @@
 	.card .image {
 		height: 175px;
 	}
-	
+	.ads-slider .swiper-slide {
+		max-width: 50%;
+	}
 }
 @media (max-width: 576px) {
 	.news-right > .news:nth-child(n) {
@@ -464,7 +489,10 @@
 		text-align: left;
 		font-size: 1rem;
 	}
-	
+	.gallery-thumbs .swiper-slide {
+		max-width: 130px;
+		overflow: hidden;
+	}
 }
 @media (max-width: 413px) {
 	.relate-post > div:first-child {

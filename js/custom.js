@@ -6,8 +6,11 @@ $(document).ready(function () {
         var $trigger = $(".menu .card");
         if($trigger !== event.target && !$trigger.has(event.target).length) {
 			$(".show_menu").next().slideUp("fast");
-        }            
-    });
+		}      
+	});
+	
+	
+	
 
 
 	$(".search-form input").focus(function() {
@@ -241,7 +244,7 @@ $(".loadajax").click(function (e) {
 
 $('.ajaxcall').click(function(event) {
 	event.preventDefault();
-	callAjaxModal(this); 
+	callAjaxModal(this , "#popup"); 
 });
 
 
@@ -299,16 +302,85 @@ copyAdsToSlider();
 $(window).resize(function () {
 	copyAdsToSlider();
 });
+ 
 
 });
 
 $( document ).ajaxComplete(function() {
 	$('.ajaxcall').click(function(event) {
 		event.preventDefault();
-		callAjaxModal(this); 
+		callAjaxModal(this , "#popup"); 
 	});
+	$('.ajaxNCcall').click(function(event) {
+		event.preventDefault();
+		callAjaxModal(this , "#main-popup", "#startpopup"); 
+	});
+
+	$(".startModal").click(function () {
+		$('#startpopup').modal('show');
+	}); 
+	$('.cover-image').imageUploader({
+			label : "Chọn ảnh đại diện bài viết",
+			maxSize: 2 * 1024 * 1024,
+			maxFiles : 1,
+			imagesInputName: "cover"
+		}
+	);
+	
+	$('.thumb-images').imageUploader(
+		{
+			label : "Ảnh mô tả",
+			maxSize: 2 * 1024 * 1024,
+			maxFiles : 20,
+			imagesInputName: "thumb"
+		}
+	);
+	$('.selectpicker').select2();
+	$(".more-action").click(function() {
+		$(this).next('.action').slideToggle(200);
+
+	});
+
+	$(".openPopUp").click(function () {
+		$("#main-popup").modal('hide');
+		$("#optionpopup").modal('show');
+
+	});
+	// $(document).on("click", function(event) {
+	// 	var $trigger = $(".more-action");
+	// 	alert(event.target);
+    //     if($trigger !== event.target && !$trigger.has(event.target).length) {
+	// 		$(".action").slideUp("fast");
+    //     }         
+	// });
+	$(".decrease").click(function () {
+		decreaseQty("#quantity");
+	})
+	$(".increase").click(function () {
+		increaseQty("#quantity");
+	})
 });
-function callAjaxModal(obj) {
+
+function decreaseQty (qtyTexbox) {
+	var qty =  Number.parseInt($(qtyTexbox).val());
+	
+	if (qty <= 1) {
+		$(qtyTexbox).val(1);
+	} else {
+		$(qtyTexbox).val(qty - 1);
+	}
+}
+function increaseQty (qtyTexbox) {
+	var qty = Number.parseInt($(qtyTexbox).val());
+	console.log(qty);
+	if (qty < 1) {
+		$(qtyTexbox).val(1);
+	} else {
+		$(qtyTexbox).val(qty + 1);
+	}
+}
+
+function callAjaxModal(obj, openPopup, closePopup) {
 	var url = $(obj).attr('action');
 	if (url == null || url == '') {
 		url = $(obj).attr('href');
@@ -320,9 +392,10 @@ function callAjaxModal(obj) {
 		async : false,
         success: function(res) {
             // update modal content
-            $('#popup .modal-body').html(res);
-            // show modal
-            $('#popup').modal('show');
+			$(openPopup  + ' .modal-body').html(res); 
+			$(closePopup).modal('hide');
+			// show modal 
+            $(openPopup).modal('show');
             
         },
         error:function(request, status, error) {
