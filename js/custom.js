@@ -303,7 +303,22 @@ $(window).resize(function () {
 	copyAdsToSlider();
 });
  
+$('.cover-image').imageUploader({
+	label : "Chọn ảnh đại diện bài viết",
+	maxSize: 2 * 1024 * 1024,
+	maxFiles : 1,
+	imagesInputName: "cover"
+}
+);
 
+$('.thumb-images').imageUploader(
+{
+	label : "Ảnh mô tả",
+	maxSize: 2 * 1024 * 1024,
+	maxFiles : 20,
+	imagesInputName: "thumb"
+}
+);
 });
 
 $( document ).ajaxComplete(function() {

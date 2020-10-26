@@ -379,7 +379,7 @@ button.close {
     border-radius: 50%;
     padding: .3rem;
     line-height: 1;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: #FFC107;
     -webkit-appearance: none;
     border: none;
 }
@@ -387,21 +387,51 @@ button.close {
 .image-uploader .uploaded .uploaded-image:hover .delete-image {
     display: block;
 }
-
+.upload-more {
+    background: url(../images/carbon_add-alt.png) no-repeat 50% 50% #fff !important;
+    border-radius: 10px;
+    border: 1px dashed #39ABFD;
+}
 .image-uploader .uploaded .uploaded-image .delete-image i {
     display: block;
     color: #fff;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1rem;
+    height: 1rem;
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    line-height: 0.8rem;
 }
-
+.thumb-images .uploaded {
+    max-height: 16rem;
+    overflow-y: scroll;
+}
+.image-uploader .uploaded .upload-more {
+    display: none;
+}
+.image-uploader .uploaded .upload-more { 
+    width: calc(16.6666667% - 1rem);
+    padding-bottom: calc(16.6666667% - 1rem);
+    height: 0;
+    position: relative;
+    margin: .5rem;
+    background: #f3f3f3;
+    cursor: default;
+}
+.image-uploader .uploaded .uploaded-image .delete-image i:before {
+    content: "X";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+.image-uploader.has-files .uploaded .upload-more {
+    display: inline-block;
+}
 @media screen and (max-width: 1366px) {
+    .image-uploader .uploaded .upload-more,
     .image-uploader .uploaded .uploaded-image {
         width: calc(20% - 1rem);
         padding-bottom: calc(20% - 1rem);
     }
+    .image-uploader.single-image .uploaded .upload-more,
     .image-uploader.single-image .uploaded .uploaded-image {
         width: calc(100% - 1rem);
         text-align: left;
@@ -414,10 +444,14 @@ button.close {
         padding: .4rem;
     }
 
+    .image-uploader .uploaded .upload-more,
     .image-uploader .uploaded .uploaded-image {
         width: calc(25% - .8rem);
         padding-bottom: calc(25% - .4rem);
         margin: .4rem;
+    }
+    .image-uploader .uploaded .uploaded-image .delete-image {
+        display: block;
     }
 }
 
@@ -426,6 +460,7 @@ button.close {
         padding: .3rem;
     }
 
+    .image-uploader .uploaded .upload-more,
     .image-uploader .uploaded .uploaded-image {
         width: calc(33.3333333333% - .6rem);
         padding-bottom: calc(33.3333333333% - .3rem);
@@ -438,6 +473,7 @@ button.close {
         padding: .2rem;
     }
 
+    .image-uploader .uploaded .upload-more,
     .image-uploader .uploaded .uploaded-image {
         width: calc(50% - .4rem);
         padding-bottom: calc(50% - .4rem);
