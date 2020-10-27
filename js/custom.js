@@ -303,22 +303,7 @@ $(window).resize(function () {
 	copyAdsToSlider();
 });
  
-$('.cover-image').imageUploader({
-	label : "Chọn ảnh đại diện bài viết",
-	maxSize: 2 * 1024 * 1024,
-	maxFiles : 1,
-	imagesInputName: "cover"
-}
-);
-
-$('.thumb-images').imageUploader(
-{
-	label : "Ảnh mô tả",
-	maxSize: 2 * 1024 * 1024,
-	maxFiles : 20,
-	imagesInputName: "thumb"
-}
-);
+ 
 });
 
 $( document ).ajaxComplete(function() {
@@ -335,13 +320,13 @@ $( document ).ajaxComplete(function() {
 		$('#startpopup').modal('show');
 	}); 
 	$('.cover-image').imageUploader({
-			label : "Chọn ảnh đại diện bài viết",
-			maxSize: 2 * 1024 * 1024,
-			maxFiles : 1,
-			imagesInputName: "cover"
-		}
+		label : "Chọn ảnh đại diện bài viết",
+		maxSize: 2 * 1024 * 1024,
+		maxFiles : 1,
+		imagesInputName: "cover"
+	}
 	);
-	
+
 	$('.thumb-images').imageUploader(
 		{
 			label : "Ảnh mô tả",
@@ -349,7 +334,7 @@ $( document ).ajaxComplete(function() {
 			maxFiles : 20,
 			imagesInputName: "thumb"
 		}
-	);
+	);	 
 	$('.selectpicker').select2();
 	$(".more-action").click(function() {
 		$(this).next('.action').slideToggle(200);
@@ -453,27 +438,22 @@ var showmenu = function showMenu () {
 $("img").lazy({
 	scrollDirection: 'vertical'
 });
-
-document.addEventListener(
-	"DOMContentLoaded", () => {
-		const menu = new MmenuLight(
-			document.querySelector( "#my-menu" ),
-			"(max-width: 991px)"
-		);
-
-		const navigator = menu.navigation({
-			title: "Danh Mục",
-		});
-		const drawer = menu.offcanvas();
-
-		document.querySelector( "a[href='#my-menu']" )
-			.addEventListener( "click", ( evnt ) => {
+ 
+$(function() {
+				
+	var menu = new MmenuLight( document.getElementById( "my-menu" ), "(max-width: 991px)" );
+ 
+	const navigator = menu.navigation({
+		title: "Danh Mục",
+	});
+	const drawer = menu.offcanvas();
+	document.querySelector( "a[href='#my-menu']").addEventListener("click", function (evnt) {
 				evnt.preventDefault();
 				drawer.open();
 			});
-	}
-);
+});
 
+ 
 
 function edit(name ) { 
 	if ($("input[name=" + name + "]").attr('readonly')) {
