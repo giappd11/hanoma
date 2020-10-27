@@ -518,10 +518,8 @@
 	.com-details .com-detail {
 		font-size: 0.65rem;
 	}
-	.card .image,
-	.personal-info .card .image{
-		height: auto;
-	}
+	
+	
 	.category-panel .col-6 {
 		flex: 100% !important;
 		max-width: 100% ;

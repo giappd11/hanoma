@@ -1992,6 +1992,14 @@ button.startModal {
     top: 32px;
     z-index: 12;
 }
+.image .img {
+    height: 100%;
+    background-size: cover;
+    transition-duration: 800ms;
+}
+.card:hover .image .img {
+    transform: scale(1.5);
+}
 .action a:hover {
     background: #F6F6F9;
 }
