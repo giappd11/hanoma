@@ -307,41 +307,33 @@ $(window).resize(function () {
 });
 
 $( document ).ajaxComplete(function() {
-	$('.ajaxcall').click(function(event) {
+	$('.ajaxcall').unbind("click").bind("click", function(event) {
 		event.preventDefault();
 		callAjaxModal(this , "#popup"); 
 	});
-	$('.ajaxNCcall').click(function(event) {
+	$('.ajaxNCcall').unbind("click").bind("click", function(event) {
 		event.preventDefault();
+		console.log('1');
 		callAjaxModal(this , "#main-popup", "#startpopup"); 
-	});
-
+	}); 
+		 
+	$('.ajaxNCpopupcall').unbind("click").bind("click", function(event) {
+		event.preventDefault();
+		console.log('1');
+		callAjaxModal(this , "#main-popup", "#startpopup"); 
+	}); 
+		 
 	$(".startModal").click(function () {
 		$('#startpopup').modal('show');
 	}); 
-	$('.cover-image').imageUploader({
-		label : "Chọn ảnh đại diện bài viết",
-		maxSize: 2 * 1024 * 1024,
-		maxFiles : 1,
-		imagesInputName: "cover"
-	}
-	);
-
-	$('.thumb-images').imageUploader(
-		{
-			label : "Ảnh mô tả",
-			maxSize: 2 * 1024 * 1024,
-			maxFiles : 20,
-			imagesInputName: "thumb"
-		}
-	);	 
+	
 	$('.selectpicker').select2();
-	$(".more-action").click(function() {
+	$(".more-action").unbind("click").bind("click", function() {
 		$(this).next('.action').slideToggle(200);
 
 	});
 
-	$(".openPopUp").click(function () {
+	$(".openPopUp").unbind("click").bind("click", function () {
 		$("#main-popup").modal('hide');
 		$("#optionpopup").modal('show');
 
@@ -381,6 +373,7 @@ function increaseQty (qtyTexbox) {
 }
 
 function callAjaxModal(obj, openPopup, closePopup) {
+	
 	var url = $(obj).attr('action');
 	if (url == null || url == '') {
 		url = $(obj).attr('href');

@@ -372,7 +372,14 @@
 	.relate-post > div:nth-child(2) p {
 		line-height: 14px;
 	}
-
+	label.custom-file-container__custom-file {
+		width: calc(50% - 1rem);
+    	padding-bottom: calc(50% - 1rem);
+	}
+	.custom-file-container__image-multi-preview {
+		width: calc(50% - 1rem);
+    	padding-bottom: calc(50% - 1rem);
+	}
 } 
 
 @media (max-width: 768px) {
