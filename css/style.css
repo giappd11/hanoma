@@ -1735,7 +1735,14 @@ span.sm-lable {
     text-align: center;
     background: rgb(0,0,0,.3);
 }
+.gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+}
 
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
 .ads-slider .swiper-slide {
     max-width: 34%;
 }
@@ -2040,6 +2047,16 @@ span.input-group-text {
     color: #fff;
     font-size: 21px;
 }
+.com-logo {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    height: 0;
+}
+
+
 /* Footer */
 .footer {
 	background-color: #fff;
