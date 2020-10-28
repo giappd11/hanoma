@@ -106,7 +106,9 @@
 		max-width: 140px;
 		overflow: hidden;
 	}
-
+	.category-list .nav-item.col-2-5:nth-child(5n + 1) {
+		clear: left;
+	}
 }
 @media (max-width: 1200px) {
 	.card .image {

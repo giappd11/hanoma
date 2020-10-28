@@ -24,28 +24,23 @@ $(document).ready(function(){
 
 		$(".menu-container .manu ul li").click(function(){
 			$(this).children(".have_dropdown_n_style").not(".have_dropdown_n_style li a").slideToggle(100);
-		}); 
-		
-		//================================================================
+		});
 		
 		$(".nav_menu_toggler_icon").click(function(){
 			$(".menu-container .manu").slideToggle();
 		});
 		
      } else {
-		
-		//If width is more than 756px dropdowns are displayed on hover
-		 
 		$(".menu-container .manu ul li").hover(function(){
 			$(this).children(".have_dropdown").not(".have_dropdown li a").slideDown(100);
 		},function(){
-			$(this).children(".have_dropdown").not(".have_dropdown li a").slideUp(100);
+			$(this).children(".have_dropdown").not(".have_dropdown li a").css("display", "none");
 		});
 
 		$(".menu-container .manu ul li").hover(function(){
 			$(this).children(".have_dropdown_n_style").not(".have_dropdown_n_style li a").slideDown(100);
 		},function(){
-			$(this).children(".have_dropdown_n_style").not(".have_dropdown_n_style li a").slideUp(100);
+			$(this).children(".have_dropdown_n_style").not(".have_dropdown_n_style li a").css("display", "none");
 		}); 
 	 }
 });
