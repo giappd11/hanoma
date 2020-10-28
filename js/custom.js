@@ -328,6 +328,9 @@ $( document ).ajaxComplete(function() {
 	}); 
 	
 	$('.selectpicker').select2();
+	$('.selectpickerTag').select2({
+		tags: true
+	});
 	$(".more-action").unbind("click").bind("click", function() {
 		$(this).next('.action').slideToggle(200);
 
