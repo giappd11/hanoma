@@ -1231,10 +1231,19 @@ span.icon-lable.logout {
     display: flex;
 	align-items: center;
 }
-.profile-menu a.active {
+.profile-menu a.tab-link.active {
     border-right: 4px solid #FFC107;
     color: #FFA215;
+    border-bottom: 0;
     background-color: rgba(219, 219, 219, 0.2);
+}
+.profile-menu li {
+    display: block;
+    width: 100%;
+}
+.profile-menu.nav-tabs {
+    border-bottom: 0;
+    margin-bottom: 2rem;
 }
 .profile-image {
     text-align: center;

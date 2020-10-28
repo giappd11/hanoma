@@ -293,17 +293,77 @@ function copyAdsToSlider () {
 			'<div class="swiper-slide"> ' + html + '</div>'
 		]);
 	});
-
-	 
-
 }
-copyAdsToSlider();
 
+copyAdsToSlider();
 $(window).resize(function () {
 	copyAdsToSlider();
 });
  
- 
+$('.ajaxcall').unbind("click").bind("click", function(event) {
+	event.preventDefault();
+	callAjaxModal(this , "#popup"); 
+});
+$('.ajaxNCcall').unbind("click").bind("click", function(event) {
+	event.preventDefault();
+	callAjaxModal(this , "#main-popup", "#startpopup"); 
+}); 
+	 
+$('.ajaxNCpopupcall').unbind("click").bind("click", function(event) {
+	event.preventDefault();
+	callAjaxModal(this , "#main-popup", "#startpopup"); 
+}); 
+	 
+$(".startModal").click(function () {
+	$('#startpopup').modal('show');
+}); 
+
+$('.selectpicker').select2();
+$('.selectpickerTag').select2({
+	tags: true
+});
+$(".more-action").unbind("click").bind("click", function() {
+	$(this).next('.action').slideToggle(200);
+
+});
+
+$(".openPopUp").unbind("click").bind("click", function () {
+	$("#main-popup").modal('hide');
+	$("#optionpopup").modal('show');
+
+});
+// $(document).on("click", function(event) {
+// 	var $trigger = $(".more-action");
+// 	alert(event.target);
+//     if($trigger !== event.target && !$trigger.has(event.target).length) {
+// 		$(".action").slideUp("fast");
+//     }         
+// });
+$(".decrease").click(function () {
+	decreaseQty("#quantity");
+})
+$(".increase").click(function () {
+	increaseQty("#quantity");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 $( document ).ajaxComplete(function() {
@@ -313,13 +373,11 @@ $( document ).ajaxComplete(function() {
 	});
 	$('.ajaxNCcall').unbind("click").bind("click", function(event) {
 		event.preventDefault();
-		console.log('1');
 		callAjaxModal(this , "#main-popup", "#startpopup"); 
 	}); 
 		 
 	$('.ajaxNCpopupcall').unbind("click").bind("click", function(event) {
 		event.preventDefault();
-		console.log('1');
 		callAjaxModal(this , "#main-popup", "#startpopup"); 
 	}); 
 		 
@@ -367,7 +425,6 @@ function decreaseQty (qtyTexbox) {
 }
 function increaseQty (qtyTexbox) {
 	var qty = Number.parseInt($(qtyTexbox).val());
-	console.log(qty);
 	if (qty < 1) {
 		$(qtyTexbox).val(1);
 	} else {
@@ -428,7 +485,6 @@ function searchModule() {
 
 var showmenu = function showMenu () {
 	$(".show_menu").next().slideToggle(300);
-		
 }
 
 $("img").lazy({
