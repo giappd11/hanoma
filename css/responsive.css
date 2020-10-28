@@ -429,7 +429,9 @@
 	.news-center > .news:nth-child(2n) {
 		padding-left: .5rem !important;
 	}
-	
+	.ads-slider .swiper-slide {
+		max-width: 50%;
+	}	
 }
 @media (max-width: 640px) {
 	.card .image {
@@ -552,5 +554,8 @@
 	}
 	.person-info .image img {
 		width: auto;
+	}
+	.ads-slider .swiper-slide {
+		max-width: 100%;
 	}
 }
