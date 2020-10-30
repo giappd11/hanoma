@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css"  >
+	<link rel="stylesheet" href="./css/style.css" >
+	<link rel="stylesheet" href="./css/responsive.css" >
+	<title>Máy để bán.</title>
+</head>
+<body>
+	<!-- Header -->
+	<section class = "header navbar-expand-sm ">
+		<div class = "  container-fluid p-0">
+			<div class = "d-block d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1 justify-content-between">
+				 
+				<div class = "col-9 col-lg-2 col-md-3 col-sm-3 pr-0 text-center pl-2 pl-sm-2  d-inline-block align-top">
+					<a href = "./index.html">
+						<img  src = "./images/logo.png" alt = "logo"/>
+					</a>
+				</div>
+				  
+				<div class = "col-12 col-lg-3 col-md-3 col-sm-3 pl-0 d-none d-lg-block ">
+					<nav class="nav justify-content-sm-end justify-content-center d-flex">
+						
+						<li class="nav-item ml-3 ml-sm-1">
+							<a class="nav-link" href="#"><span>AnhNT69</span> <img  src = "./images/user.png"/></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#"><img  src = "./images/noti.png"/></a>
+							<span class = "noti-count">4</span>
+						</li>
+						<li class="nav-item ml-3  ml-sm-1">
+							<a class="nav-link" href="#"><img  src = "./images/f-vn.png"/></a>
+						</li>
+					</nav>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+	
+	<!-- Content -->
+	<section class = "content container-custom bg-white mt-3">
+		<article class = "container py-5 mb-4">
+			<form action="./ncmuaphutung.html" enctype="multipart/form-data" onsubmit="callAjaxModal(this, '#main-popup')" >
+				<div class = "content-title px-3 d-flex justify-content-between">
+					<a href = "taikhoan1.html">Trở về trang quản lý tài khoản</a>
+					<h1>TẠO MỚI GIAN HÀNG</h1>
+				</div>
+				
+				<div class = "px-3 py-2">
+					<h4>HÌNH ẢNH</h4>
+				</div>
+				
+				<div class = "d-flex ">
+					<div class = "col-12 col-lg-3 col-md-5 pr-md-0 mb-3 mb-md-0"> 
+						<div class="custom-file-container" data-upload-id="img-logo">
+							<label style = "display: none;">Upload File
+								<a href="javascript:void(0)"
+									class="custom-file-container__image-clear"
+									title="Clear Image">&times;</a></label
+							>
+							<input
+							type="file"
+							class="custom-file-container__custom-file__custom-file-input"
+							accept="image/jpeg, image/png, image/gif, image/svg+xml"
+							aria-label="Choose File"
+						/>
+						<input type="hidden" name="MAX_FILE_SIZE" value="2097152" />
+							<div class="custom-file-container__image-preview">
+								<label class="custom-file-container__custom-file">
+								   
+									<span
+										class="custom-file-container__custom-file__custom-file-control"
+									></span>
+								</label>
+	
+							</div>
+						</div>
+						   
+					</div>
+					<div class = "col-12 col-lg-9 col-md-7">
+						<div class="custom-file-container" data-upload-id="img-cover">
+							<label style = "display: none;">Upload File
+								<a href="javascript:void(0)"
+									class="custom-file-container__image-clear"
+									title="Clear Image">&times;</a></label
+							>
+							<input
+									type="file"
+									class="custom-file-container__custom-file__custom-file-input"
+									accept="image/jpeg, image/png, image/gif, image/svg+xml"
+									 
+									aria-label="Choose File"
+								/>
+								<input type="hidden" name="MAX_FILE_SIZE" value="2097152" />
+							
+							<div class="custom-file-container__image-preview">
+								<label class="custom-file-container__custom-file">
+									<span
+										class="custom-file-container__custom-file__custom-file-control"
+									></span>
+								</label>
+	
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class = "px-3 mt-3">
+					<h4 class = "py-3">THÔNG TIN CỬA HÀNG</h4>
+					<div class="form-group">
+						<label for="inputAddress">Tên cửa hàng</label>
+						<input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
+						
+					</div>
+					<div class="row form-group">
+						<div class="col-12 col-sm-6">
+							<label for="inputAddress">Số điện thoại:*</label>
+							<input type="text" class="form-control" name = "tieude"   placeholder="VD: M1234">
+						</div>
+						<div class="col-12 col-sm-6">
+							<label for="inputAddress">Email:</label>
+							<input type="text" class="form-control" name = "tieude"   placeholder="VD: 12345">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputAddress">Website:</label>
+						<input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
+						
+					</div>
+					<div class="form-group">
+						<label for="inputAddress">Địa chỉ:*</label>
+						<input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
+						
+					</div>
+					<div class="row form-group">
+						<div class="col-12 col-md-4">
+							<label for="inputAddress">Quốc gia:*</label>
+							<select name = "tb" class="form-control">
+								<option value ="">Chọn</option>
+								<option value ="1">Máy cẩu</option>
+								<option value ="2">Máy xúc</option>
+
+							</select>
+						</div>
+						
+						<div class="col-12 col-md-4">
+							<label for="inputAddress">Tỉnh / Thành phố:*</label>
+							<select name = "tb" class="form-control">
+								<option value ="">Chọn</option>
+								<option value ="1">Máy cẩu</option>
+								<option value ="2">Máy xúc</option>
+
+							</select>
+						</div>
+						<div class="col-12 col-md-4">
+							<label for="inputAddress">Quận / Huyện:</label>
+							<select name = "tb" class="form-control">
+								<option value ="">Chọn</option>
+								<option value ="1">Máy cẩu</option>
+								<option value ="2">Máy xúc</option>
+
+							</select>
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-12 col-md-4">
+							<label for="inputAddress">Mã bưu điện:</label>
+							<input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
+						
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputAddress">Giới thiệu cửa hàng:</label>
+						<textarea name = "content" class="form-control"></textarea>
+						
+					</div>
+					<div class=" justify-content-center d-block text-center mt-3">
+						<button type="submit" class="btn btn-primary mb-2">Hoàn tất</button>
+					</div>
+				</div>
+			</form>
+		</article>
+		 
+		
+	</section>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/bootstrap.bundle.min.js" ></script>
+	 
+	<script src="./js/file-upload-with-preview.min.js" ></script>
+	<script>
+		var upload = new FileUploadWithPreview("img-logo",{
+					text: {
+						chooseFile: "",
+						browse: "Chọn logo"
+					},
+					presetFiles: ["./images/article-banner1.jpg"]
+					});
+		var upload1 = new FileUploadWithPreview("img-cover", { 
+					text: {
+						chooseFile: "",
+						browse: "Chọn ảnh bìa cho gian hàng. <br />(Tỉ lệ 3:1)"
+					},presetFiles: ["./images/article-banner1.jpg"]
+					});
+	</script>
+  </body>
+</html>

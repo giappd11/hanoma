@@ -343,7 +343,8 @@ button.close {
     background: #FFFFFF;
     position: fixed;
     width: 100%;
-	z-index: 9999;
+    z-index: 9999;
+    top: 0;
 }
 .header .nav-link.active {
     border-bottom: 2px solid #FFC107;
@@ -440,7 +441,7 @@ span.noti-count {
     width: 25px;
 }
 section.content {
-    padding-top: 55px !important;
+    margin-top: 60px !important;
 }
 .nav-link {
     display: block;
@@ -2117,7 +2118,10 @@ li.info-com {
     box-shadow: 0px 4px 20px rgba(0, 160, 251, 0.08);
     padding: 10px 0;
 }
-
+.container-custom {
+    width: 95%;
+    margin: 0 auto;
+}
 
 .custom-file-container {
     box-sizing: border-box;
@@ -2149,7 +2153,9 @@ label.custom-file-container__custom-file {
     overflow: hidden;
     position: relative;
 }
-.custom-file-container[data-upload-id="cover-img"] .custom-file-container__image-preview--active .custom-file-container__custom-file {
+.custom-file-container[data-upload-id="cover-img"] .custom-file-container__image-preview--active .custom-file-container__custom-file ,
+.custom-file-container[data-upload-id="img-cover"] .custom-file-container__image-preview--active .custom-file-container__custom-file ,
+.custom-file-container[data-upload-id="img-logo"] .custom-file-container__image-preview--active .custom-file-container__custom-file {
     opacity: 0;
 }
 span.custom-file-container__custom-file__custom-file-control__button {
@@ -2159,13 +2165,32 @@ span.custom-file-container__custom-file__custom-file-control__button {
     width: 100%;
     text-align: center;
 }
-.custom-file-container[data-upload-id="cover-img"] label.custom-file-container__custom-file {
+.custom-file-container[data-upload-id="cover-img"] label.custom-file-container__custom-file ,
+.custom-file-container[data-upload-id="img-logo"] label.custom-file-container__custom-file {
     width: 100%;
     margin: 0px;
     padding-bottom: 100%;
     background-size: 42px;
     background-position: 50% 40%;
 }
+.custom-file-container[data-upload-id="img-cover"] .custom-file-container__image-preview {
+    padding-bottom: calc(33.3% - 4px);
+    border: 1px dashed #39ABFD;
+}
+.custom-file-container[data-upload-id="img-logo"] .custom-file-container__image-preview {
+    border: 1px dashed #39ABFD;
+}
+.custom-file-container[data-upload-id="img-logo"]  label.custom-file-container__custom-file {
+    border: 0;
+    margin: 0;
+}
+.custom-file-container[data-upload-id="img-cover"]  label.custom-file-container__custom-file {
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding-bottom: 33%;
+}
+
 .custom-file-container__image-preview {
     box-sizing: border-box;
     transition: all 0.2s ease;
