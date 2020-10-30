@@ -504,12 +504,17 @@ section.content {
     margin-bottom: 0;
     color: #0A0015;
 }
+.swiper-slide {
+    height: auto;
+}
 .article-content .card {
     border-radius: 10px 10px 0 0;
     border: 0;
+    height: 100%;
 }
 .article-content .card a {
     border-radius: 10px 10px 0 0;
+    height: 100%;
 }
 .article-content .card-body {
     padding: 0.5rem;
