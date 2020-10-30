@@ -198,7 +198,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 	slidesPerView: 3.5,
 	loop: false,
 	freeMode: true,
-	loopedSlides: 5, //looped slides should be the same
+	loopedSlides: 5, 
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true,
 	autoHeight: true,
@@ -211,7 +211,6 @@ var galleryTop = new Swiper('.gallery-top', {
 	loop: false,
 	zoom: true,
 	loopedSlides: 5,
-	autoHeight: true,	//looped slides should be the same
 	thumbs: {
 		swiper: galleryThumbs,
 	}, pagination: {
