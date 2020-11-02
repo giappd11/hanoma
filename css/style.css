@@ -2061,6 +2061,44 @@ span.input-group-text {
     background-position: 50% 50%;
     height: 0;
 }
+.header-title {
+    color: #FFC107;
+}
+.header-link span {
+    text-align: center;
+    display: block;
+    color: #FFC107;
+    font-size: 12px;
+}
+.header-link a {
+    display: block;
+    margin: 0 10px;
+}
+.container-custom .nav-link {
+    padding: .3rem .8rem;
+    text-align: right;
+}
+.header .container-custom .nav li.nav-item {
+    margin: 0 .5rem;
+}
+a.cancel:before {
+    font-family: swiper-icons;
+    content: 'prev';
+    margin-right: 10px;
+}
+a.cancel {
+    color: #FFC107;
+}
+.content-title {
+    color: #39ABFD;
+    font-weight: bold;
+    margin-top: -25px;
+    margin-bottom: 2rem;
+}
+.content-title h1 {
+    font-weight: bold;
+}
+
 
 
 /* Footer */
@@ -2184,11 +2222,12 @@ span.custom-file-container__custom-file__custom-file-control__button {
     border: 0;
     margin: 0;
 }
-.custom-file-container[data-upload-id="img-cover"]  label.custom-file-container__custom-file {
+.custom-file-container[data-upload-id="img-cover"] label.custom-file-container__custom-file {
     width: 100%;
     border: 0;
     margin: 0;
     padding-bottom: 33%;
+    background: url(../images/bx-image-add.png) no-repeat 50% 35%;
 }
 
 .custom-file-container__image-preview {

@@ -14,20 +14,25 @@
 <body>
 	<!-- Header -->
 	<section class = "header navbar-expand-sm ">
-		<div class = "  container-fluid p-0">
+		<div class = "container-custom  p-0">
 			<div class = "d-block d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1 justify-content-between">
 				 
-				<div class = "col-9 col-lg-2 col-md-3 col-sm-3 pr-0 text-center pl-2 pl-sm-2  d-inline-block align-top">
-					<a href = "./index.html">
+				<div class = "col-12 col-lg-7 col-md-12 col-sm-12 pr-0 text-center pl-sm-2 pl-md-0  d-flex align-items-center">
+					<a href = "./index.html" class = "border-right pr-2">
 						<img  src = "./images/logo.png" alt = "logo"/>
 					</a>
+					<h5 class = "px-2 header-title font-weight-bold">TRANG BÁN HÀNG</h5>
+					<ul class = "nav header-link d-none d-sm-flex">
+						<li><a href = "#"><img src = "./images/icon_home.png"/><span>Trang chủ</span></a></li>
+						<li><a href = "#"><img src = "./images/icon_store.png"/><span>Gian hàng</span></a></li>
+
+					</ul>
 				</div>
 				  
-				<div class = "col-12 col-lg-3 col-md-3 col-sm-3 pl-0 d-none d-lg-block ">
+				<div class = "col-12 col-lg-5 col-md-5 col-sm-6 pr-0 d-none d-lg-block ">
 					<nav class="nav justify-content-sm-end justify-content-center d-flex">
-						
-						<li class="nav-item ml-3 ml-sm-1">
-							<a class="nav-link" href="#"><span>AnhNT69</span> <img  src = "./images/user.png"/></a>
+						<li class="nav-item ml-3 ml-sm-1 ">
+							<a class="nav-link border-right" href="#"><img  src = "./images/user.png"/><span class = "ml-2">AnhNT69</span> </a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link " href="#"><img  src = "./images/noti.png"/></a>
@@ -47,17 +52,17 @@
 	<section class = "content container-custom bg-white mt-3">
 		<article class = "container py-5 mb-4">
 			<form action="./ncmuaphutung.html" enctype="multipart/form-data" onsubmit="callAjaxModal(this, '#main-popup')" >
-				<div class = "content-title px-3 d-flex justify-content-between">
-					<a href = "taikhoan1.html">Trở về trang quản lý tài khoản</a>
+				<a href = "taikhoan1.html"  class = "cancel  px-3">Trở về trang quản lý tài khoản</a>
+				<div class = "content-title px-3 d-flex justify-content-center align-items-center">
 					<h1>TẠO MỚI GIAN HÀNG</h1>
 				</div>
 				
 				<div class = "px-3 py-2">
-					<h4>HÌNH ẢNH</h4>
+					<h4 class = "font-weight-bold">HÌNH ẢNH</h4>
 				</div>
 				
-				<div class = "d-flex ">
-					<div class = "col-12 col-lg-3 col-md-5 pr-md-0 mb-3 mb-md-0"> 
+				<div class = "d-block d-sm-flex ">
+					<div class = "col-12 col-lg-3 col-md-3 col-sm-3 pr-sm-0 mb-3 mb-md-0"> 
 						<div class="custom-file-container" data-upload-id="img-logo">
 							<label style = "display: none;">Upload File
 								<a href="javascript:void(0)"
@@ -83,7 +88,7 @@
 						</div>
 						   
 					</div>
-					<div class = "col-12 col-lg-9 col-md-7">
+					<div class = "col-12 col-lg-9 col-md-9 col-sm-9">
 						<div class="custom-file-container" data-upload-id="img-cover">
 							<label style = "display: none;">Upload File
 								<a href="javascript:void(0)"
@@ -112,7 +117,7 @@
 				</div> 
 				
 				<div class = "px-3 mt-3">
-					<h4 class = "py-3">THÔNG TIN CỬA HÀNG</h4>
+					<h4 class = "py-3 font-weight-bold">THÔNG TIN CỬA HÀNG</h4>
 					<div class="form-group">
 						<label for="inputAddress">Tên cửa hàng</label>
 						<input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
@@ -188,6 +193,18 @@
 		</article>
 		 
 		
+	</section>
+	<!-- menu mobile -->
+	<section> 
+		<div class = "navigation d-block d-lg-none">
+			<div class = "d-flex align-items-center text-center list-unstyled mb-0 bg-white">
+				<a href = "./index.html" class = "menu-item home"><img src = "./images/home.png"/><span> Trang chủ</span></a>  
+				<a href = "./gianhang.html" class = "menu-item news"><img src = "./images/icon_store.png"/><span>Gian hàng</span></a>  
+				<a href = "./taikhoan.html#taikhoanthongbao" class = "menu-item noti"><img src = "./images/bell.png"/><span class = "count">12</span><span>Thông báo</span></a>  
+				<a href = "./taikhoan.html" class = "menu-item account"><img src = "./images/profile.png"/><span>Tài khoản</span></a>  
+			</div>			
+		
+		</div>
 	</section>
   
 
