@@ -513,6 +513,10 @@
 		max-width: 130px;
 		overflow: hidden;
 	}
+	.list-nhucau img {
+		width: 40px;
+		margin-right: 5px;
+	}
 }
 @media (max-width: 413px) {
 	.relate-post > div:first-child {
@@ -579,5 +583,11 @@
 	}
 	.content-title h1 {
 		font-size: 20px;
+	}
+	#startpopup .header-box h3 {
+		font-size: 18px;
+	}
+	#quantity {
+		width: 50px;
 	}
 }
