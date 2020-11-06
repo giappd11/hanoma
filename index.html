@@ -112,11 +112,11 @@
 									</li>
 									
 								</ul>
-								<a class = "" href = "./taikhoan.html#taikhoanthongbao">Xem tất cả</a>
+								<a class = "" href = "./taikhoan1.html#taikhoanthongbao">Xem tất cả</a>
 							</div>
 						</li>
 						<li class="nav-item ml-3 ml-sm-1">
-							<a class="nav-link" href="./taikhoan.html"><img  src = "./images/user.png"/></a>
+							<a class="nav-link" href="./taikhoan1.html"><img  src = "./images/user.png"/></a>
 						</li>
 						<li class="nav-item ml-3  ml-sm-1">
 							<a class="nav-link" href="#"><img  src = "./images/f-vn.png"/></a>
@@ -2254,7 +2254,61 @@
 		
 		</div>
 	</section>
-  
+	
+	<!-- gửi báo giá -->
+	<section id = "baogia">
+		<div id="showbaogia">
+			<div class = "text-desc">
+				<span>Đặt hàng - Báo giá</span>
+				<small>Bấm vào để liên hệ</small>
+			</div>
+			<span id ="showblockbaogia" ></span>
+		</div>
+		<div class="formbaogia">
+			<button class = "close">&times;</button>
+			<form class ="col py-3 " action = "#" method="post" enctype="multipart/form-data" >
+				
+				<div class = "baogia-header">
+					<h3>GỬI YÊU CẦU BÁO GIÁ, ĐẶT HÀNG</h3>
+					<p class = "mt-2">
+						Khi có nhu cầu về đơn hàng riêng, quý khách hàng có thể nhận sự tư vấn trực tiếp của đội ngũ đầy kinh nghiệm của Hanoma. Hanoma sẽ nỗ lực hết mình để làm hài lòng quý khách hàng.
+					</p>
+				</div>
+				
+				<div class="form-group">
+					<label for="inputAddress">Họ và tên: *</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="VD: Nguyen Van A">
+				</div>
+				<div class="form-group">
+					<label for="inputAddress">Số điện thoại: *</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="123456789">
+				</div>
+				<div class="form-group">
+					<label for="inputAddress">Email: </label>
+					<input type="email" class="form-control" name = "tieude"   placeholder="Example@gmail.com">
+				</div>
+				<div class="form-group">
+					<label for="inputAddress">Nội dung yêu cầu:</label>
+					<textarea name = "content" class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="inputAddress">File đính kèm:</label>
+					<div class="file-upload">
+						<div class="file-select d-flex justify-content-between">
+						  <div class="file-select-name" id="noFile">Không có tập tin được lựa chọn</div> 
+						  <div class="file-select-button" id="fileName">Lựa chọn</div>
+						  <input type="file" name="chooseFile" id="chooseFile">
+						</div>
+					  </div>
+				</div>
+				<div class=" justify-content-center d-block text-center mt-3">
+					<button type="submit" class="btn btn-primary mb-2">GỬI YÊU CẦU</button>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
   
 
     <!-- Optional JavaScript -->

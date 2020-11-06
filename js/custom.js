@@ -9,8 +9,24 @@ $(document).ready(function () {
 		}      
 	});
 	
-	
-	
+	$(".formbaogia button.close").click(function () {
+		$("#baogia .formbaogia").css('right', '-100%');
+	});
+	$("#showbaogia").click(function () {
+		$("#baogia .formbaogia").css('right', '10px');
+	})
+
+	$('#chooseFile').bind('change', function () {
+		var filename = $("#chooseFile").val();
+		if (/^\s*$/.test(filename)) {
+		  $(".file-upload").removeClass('active');
+		  $("#noFile").text("Không có tập tin được lựa chọn"); 
+		}
+		else {
+		  $(".file-upload").addClass('active');
+		  $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+		}
+	  });
 
 
 	$(".search-form input").focus(function() {

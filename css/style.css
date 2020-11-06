@@ -228,6 +228,7 @@ button.close {
     margin-top: 10px;
     margin-right: 8px;
 }
+.formbaogia button.close:hover,
 button.close:hover {
     background: #FFC107;
     color: #fff;
@@ -2105,6 +2106,104 @@ a.cancel {
 #taikhoanprofile .col-form-label {
     color: #414141;
 }
+#showbaogia {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    z-index: 999;
+    display: flex;
+}
+ 
+#baogia .formbaogia {
+    position: fixed;
+    top: 50px;
+    right: -100%; 
+    max-width: 370px;
+    width: 90%;
+    background: #fff;
+    z-index: 9999;
+    max-height: calc(100% - 60px);
+    box-shadow: -4px 6px 20px rgba(0, 0, 0, 0.15);
+    transition: 300ms;
+}
+#baogia .formbaogia form {
+    overflow-y: scroll;
+    max-height: calc(100vh - 100px);
+}
+.baogia-header {
+    text-align: center;
+    
+}
+.baogia-header h3{ 
+    color: #414141; 
+    font-weight: bold;
+}
+.baogia-header p {
+    color: #414141; 
+}
+.formbaogia button.close {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    margin: 0;
+    z-index: 1000;
+    background-color: #fff;
+    opacity: 1;
+}
+span#showblockbaogia {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/bell-icon.png) no-repeat 0 0 #fff;
+    background-size: 100%;
+    border-radius: 50%;
+}
+.text-desc {
+    display: inline-block;
+    background: #fff;
+    border-radius: 9px;
+    padding: 5px 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+.text-desc span {
+    display: block;
+}
+div#noFile {
+    width: 65%;
+    overflow: hidden;
+    border: 1px solid #FFC107;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    white-space: nowrap;
+}
+div#fileName {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #FFC107;
+    background: #FFC107;
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.file-upload {
+    position: relative;
+}
+input#chooseFile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+
+
+
+
+
 
 /* Footer */
 .footer {
