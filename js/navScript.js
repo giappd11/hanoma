@@ -14,11 +14,7 @@ $(document).ready(function(){
 	
 	
 	if ($(window).width() < 992) {
-		//If width is less or equal to 943px dropdowns are displayed on click
-		$(".menu-container .manu ul li a").not("ul li ul li a").click(function(){
-			$(this).removeAttr("href");
-		});
-         $(".menu-container .manu ul li").click(function(){
+		$(".menu-container .manu ul li").click(function(){
 			$(this).children(".have_dropdown").not(".have_dropdown li a").slideToggle(100);
 		});
 
