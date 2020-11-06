@@ -2198,9 +2198,21 @@ input#chooseFile {
     width: 100%;
     opacity: 0;
 }
-
-
-
+.img-profile {
+    width: 100%;
+    padding-bottom: 122%;
+    height: 0;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.image-profile {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card:hover .img-profile {
+    transform: scale(1.5);
+}
 
 
 
