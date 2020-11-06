@@ -441,6 +441,9 @@
 	.custom-file-container[data-upload-id="img-logo"] label.custom-file-container__custom-file {
 		background-size: 30px;
 	}
+	.popup-button {
+		width: 100%;
+	}
 }
 @media (max-width: 640px) {
 	.card .image {

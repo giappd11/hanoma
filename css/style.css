@@ -2102,7 +2102,9 @@ a.cancel {
     content: 'prev';
     font-family: 'swiper-icons';
 }
-
+#taikhoanprofile .col-form-label {
+    color: #414141;
+}
 
 /* Footer */
 .footer {
