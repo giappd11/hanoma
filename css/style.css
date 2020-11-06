@@ -76,7 +76,7 @@ a:focus {
 .menu-container{
 	width:100%;
 	display: none;
-	z-index: 100;
+	z-index: 9;
 }
 .menu-container:after,
 .menu-container:before{
@@ -2098,7 +2098,10 @@ a.cancel {
 .content-title h1 {
     font-weight: bold;
 }
-
+.back span:before {
+    content: 'prev';
+    font-family: 'swiper-icons';
+}
 
 
 /* Footer */
