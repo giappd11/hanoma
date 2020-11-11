@@ -78,48 +78,55 @@
 			</div>
 			
 			<div class="col-10 "> 
-					<div class = "chart row">
-						<div class ="col-6 ">
-							<div class="bg-white d-flex">
-								<div class ="col-4 px-0">
-									<div class = "text-center m-auto">
-										<canvas id="chart-area" ></canvas>
-									</div>
-								
-								</div>
-								<div class ="col-8">
-									<h3>NHÀ CUNG CẤP NHỎ</h3>
-									 
-								</div>
-							</div>
-						</div>
-						<div class ="col-6 ">
-							<div class="bg-white d-flex">
-								<div class ="col-4 px-0">
-									<div class = "text-center m-auto">
-										<canvas id="usersChart" ></canvas>
-									</div>
-								
-								</div>
-								<div class ="col-8">
-									<h3 class  = "total-document">750</h3>
-									<p class = "font-weight-bold">Tin đăng thành công</p>
-									<ul class = "legend-document">
-										<li><span class = "sanpham"></span><span class = "font-weight-bold">300</span>Sản phẩm</li>
-										<li><span class = "bainhatky"></span><span class = "font-weight-bold">100</span>Bài nhật ký</li>
-										<li><span class = "khuyenmai"></span><span class = "font-weight-bold">200</span>Khuyến mại</li>
-										<li><span class = "kienthuc"></span><span class = "font-weight-bold">150</span>Kiến thức</li>
+				<form action = "#" class = "">
+					<div class = my-2>
+						<button type="button"  class = 'btn btn-primary px-4 openModal'  >ĐĂNG SẢN PHẨM MỚI</button>
+					</div>
 
-									</ul>
-									 
-								</div>
+					<div class = "filter">
+						<div class = "search-module mt-3 pb-4 bg-white">
+							<div class = "title">
+								<h3 class = "text-uppercase px-2 py-3">Bộ lọc sản phẩm</h3>
 							</div>
+							<div class = "search-content d-flex m-2 mb-3">
+								<div class = "step input-box pl-0 col-3">
+									<select  >
+										<option value = "">Loại bài đăng</option>
+										<option value = "1">Tất cả máy công trình</option>
+										<option value = "2">Tất cả máy công trình</option>
+										<option value = "3">Tất cả máy công trình</option>
+										<option value = "4">Tất cả máy công trình</option>
+									</select>
+								</div>
+								<div class = "step input-box pl-0 col-3">
+									<select  >
+										<option value = "">Chủng loại</option>
+										<option value = "2">Hitachi</option>
+										<option value = "3">Huyndai</option>
+										<option value = "2">Honda</option>
+										<option value = "1">Test</option>
+									</select>
+								</div>
+								<div class = "step input-box pl-0 col-3">
+									<input name = "" placeholder="Từ khoá" value = "" class = "form-control"/>
+								</div> 
+								<div class = "step input-box pl-0 col-3">
+									<button type="button"  class = 'btn mr-1'>Tìm</button>
+									<button type="button"  class = 'btn bg-white'>Nhập lại</button>
+
+								</div>
+							</div> 
+							
+						
 						</div>
 					</div>
-					<div class = "content">
-						<div class = "content-header my-2">
-							<h4 class = "font-weight-bold">SẢN PHẨM MỚI ĐĂNG</h4>
-						</div>
+
+					<div class = my-2>
+						<button type="button"  class = 'btn btn-default bg-white px-3 mr-1'>HUỶ ĐĂNG</button>
+						<button type="button"  class = 'btn btn-default  bg-white px-5 '>XOÁ</button>
+
+					</div>
+					<div class = "content"> 
 						<table style="width:100%" class = "bg-white  ">
 							<thead>
 								<th width = "5"><input name ="checkbox" type = "checkbox" value =""></th>
@@ -253,9 +260,35 @@
 							</tbody>
 
 						</table>
-
+					</form>
 						<div class = "text-center mb-5">
-							<a href = "#" class = "btn btn-primary mt-3 px-5">Trang quản lý sản phẩm</a>
+							<div class = "d-block d-lg-flex justify-content-lg-end align-items-center text-center mt-2 mb-4">
+								<div class = "justify-content-md-end justify-content-center align-items-center d-block d-sm-flex text-center">
+									<span   class = "justify-content-end m-0 mr-2 numperpage" >Số sản phẩm / Trang:</span> 
+									<select name = "" class = "justify-content-end">
+										<option value = "5">5</option>
+										<option value = "10">10</option>
+										<option value = "15">15</option>
+										<option value = "20">20</option>
+										<option value = "25">25</option>
+										<option value = "30">30</option>
+									</select>
+									<nav aria-label="Page navigation " class = "justify-content-sm-end justify-content-center ml-2">
+										<ul class="pagination m-0">
+										  <li class="page-item disabled">
+											<a class="page-link previous" href="#" tabindex="-1" aria-disabled="true"></a>
+										  </li>
+										  <li class="page-item"><a class="page-link" href="#">1</a></li>
+										  <li class="page-item"><a class="page-link" href="#">2</a></li>
+										  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">...</a></li>
+										  <li class="page-item"><a class="page-link" href="#">6</a></li>
+										  <li class="page-item">
+											<a class="page-link next" href="#"> </a>
+										  </li>
+										</ul>
+									</nav>
+								</div>
+							</div>
 
 						</div>
 						
@@ -267,6 +300,7 @@
 		 
 		
 	</section>
+
   	<!-- menu mobile -->
 	<section> 
 		<div class = "navigation d-block d-lg-none">
@@ -279,6 +313,38 @@
 		
 		</div>
 	</section>
+	<div class="modal fade" id="startpopup" tabindex="-1" role="dialog" aria-labelledby="popup" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-sm modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="text-right mx-1">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<div class="bg-white py-1 mx-auto px-2">
+						<div class = "header-box text-center  ">
+							<h3 class = "text-uppercase mt-1">CHỌN LOẠI BÀI ĐĂNG</h3>
+						</div>
+						<div class = "content-box  mx-auto text-center">
+							<ul class = "row list-nhucau">
+								<li class ="col-sm-6 col-12"><a class = "" href = "./ncmuathietbiupimg.html" ><img src = "./images/maydeban.png"/>Bán thiết bị</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./ncthuethietbiupimg.html" ><img src = "./images/canthue.png"/>Đăng tin cho thuê</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./ncmuaphutungupimg.html" ><img src = "./images/phutung.png"/>Bán phụ tùng</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./ncthuedichvuupimg.html" ><img src = "./images/dichvu.png"/>Đăng tin dịch vụ</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./ncmuavattuupimg.html" ><img src = "./images/vattu.png"/>Bán vật tư</a></li>
+
+							</ul>
+
+							
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -290,6 +356,9 @@
 	<script src="./js/Chart.RadialGauge.umd.js" ></script>
 	<script> 
 	  
+	  $(".openModal").click(function () {
+		$('#startpopup').modal('show');
+	}); 
       var image = document.createElement('img');
       image.src = './images/ncc1.png';
 

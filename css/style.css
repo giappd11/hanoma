@@ -2312,10 +2312,13 @@ a.delete {
 .nangcap p {
     color: #FFC107;
 }
-#chart-area {
+#usersChart {
     margin: 0 auto;
-    background: transparent url(../images/ncc1.png) no-repeat 50% 54%;
-    background-size: 50px 50px;
+    background: transparent url(../images/ion_document.png) no-repeat 50% 54%;
+    background-size: 60px 60px;
+}
+.list-nhucau img {
+    margin-right: 5px;
 }
 
 /* Footer */
@@ -2462,8 +2465,8 @@ input.custom-file-container__custom-file__custom-file-input {
     display: none;
 }
 .custom-file-container[data-upload-id="thumb-img"] .custom-file-container__image-preview {
-    padding: 0;
-    height: 205px;
+    padding-bottom: calc(100% / 3 - 2px);
+    height: 0;
 }
 .custom-file-container[data-upload-id="thumb-img"] .custom-file-container__image-preview {
     overflow-y: scroll;
