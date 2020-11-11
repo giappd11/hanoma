@@ -635,7 +635,7 @@ span.bigcompany {
 .link-box {
     border: 1px solid #DBDBDB;
     margin-top: 10px;
-    padding: 10px 0;
+    
     border-radius: 5px;
 }
 
@@ -654,7 +654,7 @@ span.bigcompany {
     color: #FFC107;
 }
 .category-list .nav-link {
-    padding: 0px 5px;
+    padding: 10px 5px;
     display: block;
 }
 .menu-container ul {
@@ -2320,6 +2320,123 @@ a.delete {
 .list-nhucau img {
     margin-right: 5px;
 }
+table img {
+    border-radius: 10px;
+}
+.topup-history th:first-child, 
+.topup-history td:first-child {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.text-wait {
+    color: #FB3C00;
+}
+.btn-default {
+    color: #FFC327;
+}
+.btn-default:hover {
+    background-color: #FFC327 !important;
+    color: #fff;
+}
+.btn-delete {
+    color:#FD686A;
+}
+.btn-search {
+    background: #FFC107;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #FFC107;
+}
+.btn-clear {
+    border: 1px solid #FFC107;
+    color: #FFC107;
+}
+.btn-search:hover {
+    color: #FFC107;
+    background-color:  #fff;
+}
+.btn-clear:hover {
+    color:  #fff;
+    background-color: #FFC107;
+}
+.nav-status a {
+    padding: 10px 25px;
+    display: block;
+    font-weight: bold;
+}
+
+.nav-status a.active {
+    color: #FFC107;
+}
+.nav-status li {
+    width: 16%;
+    text-align: center;
+}
+.total-document {
+    color: #FF755A;
+    font-weight: bold;
+}
+
+span.cicle {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 5px;
+}
+span.cicle.sanpham {
+    background-color: #FF755A;
+}
+span.cicle.bainhatky {
+    background-color: #3A7DFE;
+}
+span.cicle.khuyenmai {
+    background-color: #FF98B8;
+}
+span.cicle.kienthuc {
+    background-color: #6E49FA;
+}
+span.cicle.baidangcl {
+    background-color: #2AC5BB;
+}
+
+.legend-document li {
+    display: inline-flex;
+    width: 49%;
+    margin-bottom: 10px;
+}
+span.total-count {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.dashboard-table th {
+    white-space: nowrap;
+}
+
+.box-chart {
+    border-radius: 10px;
+}
+
+.link-nangcap {
+    background: linear-gradient(88.84deg, #FFB800 -30.57%, #F877AD 57.19%, #C624FF 131.69%);
+    border-radius: 20px;
+    color: #fff;
+}
+.nangcap-des {
+    color: #FF6442;
+}
+.text-title {
+    color: #515C6F;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+
+
 
 /* Footer */
 .footer {

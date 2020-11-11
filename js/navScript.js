@@ -14,15 +14,16 @@ $(document).ready(function(){
 	
 	
 	if ($(window).width() < 992) {
-		$(".menu-container .manu ul li").click(function(){
-			$(this).children(".have_dropdown").not(".have_dropdown li a").slideToggle(100);
-		});
-
-		$(".menu-container .manu ul li").click(function(){
-			$(this).children(".have_dropdown_n_style").not(".have_dropdown_n_style li a").slideToggle(100);
-		});
+		$(".menu-container .manu > nav > ul > li > div > a").click(function(e) { 
+			if ($(this).parent().parent().find('ul').hasClass('have_dropdown')) {
+				e.preventDefault();
+				$(this).parent().parent('li').children(".have_dropdown").not(".have_dropdown li a").slideToggle(100);
+			} 
+		}); 
 		
-		$(".nav_menu_toggler_icon").click(function(){
+		$(".nav_menu_toggler_icon").click(function(e) {
+			e.preventDefault();
+			alert(1);
 			$(".menu-container .manu").slideToggle();
 		});
 		

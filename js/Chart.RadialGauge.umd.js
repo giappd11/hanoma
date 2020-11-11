@@ -169,14 +169,14 @@
       }
     }
   });
-
+  let startAngleG = 0;
   // eslint-disable-next-line no-shadow
   var RadialGaugeController = (function (Chart$$1) {
     Chart$$1.controllers.radialGauge = Chart$$1.DatasetController.extend({
       dataElementType: Chart$$1.elements.RoundedArc,
 
       linkScales: helpers.noop,
-
+       
       draw: function draw() {
         this.drawTrack();
 
@@ -195,10 +195,10 @@
           _view: {
             backgroundColor: this.chart.options.trackColor,
             borderColor: this.chart.options.trackColor,
-            startAngle: 0,
+            startAngle : 0  ,
             endAngle: Math.PI * 2,
-            x: this.centerX ,
-            y: this.centerY,
+            x: this.centerX  ,
+            y: this.centerY  ,
             innerRadius: this.innerRadius + 5,
             outerRadius: this.outerRadius -5,
             borderWidth: this.borderWidth
