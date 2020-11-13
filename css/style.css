@@ -2444,6 +2444,195 @@ span.total-count {
 .profile-img img {
     width: 100%;
 }
+.total-price {
+    display: block;
+    text-align: right;
+}
+.plan {
+    box-shadow: 2px 2px 10px rgba(65, 65, 65, 0.1);
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+}
+.plan-title {
+    color: #000;
+}
+span.unticked {
+    width: 24px;
+    height: 24px;
+    background: url(../images/close-icon.png) no-repeat 50% 50%;
+}
+span.ticked {
+    width: 24px;
+    height: 24px;
+    background: url(../images/tick-icon.png) no-repeat 50% 50%;
+}
+.plan-benefit li {
+    padding: 3px 0;
+    font-size: 13px;
+    color: #000;
+    vertical-align: middle;
+    align-items: center;
+    line-height: 24px;
+}
+.total-price {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+span.mask-hot {
+    position: absolute;
+    top: -2px;
+    right: -8px;
+    background: #FB3C00;
+    color: #fff;
+    transform: rotate(45deg);
+    padding: 10px 10px 5px 10px;
+    font-weight: bold;
+}
+span.mask-hot:before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    background: #FB3C00;
+    position: absolute;
+    right: 99%;
+    bottom: 0;
+}
+span.mask-hot:after {
+    width: 20px;
+    height: 20px;
+    content: "";
+    background: #FB3C00;
+    position: absolute;
+    left: 99%;
+    bottom: 0;
+}
+.btn-disable {
+    border: 1px solid #7E7E7E;
+    color: #7E7E7E;
+    border-radius: 23px;
+}
+.btn-unticked {
+    border: 1px solid #FFC107;
+    border-radius: 23px;
+    color: #FFC107;
+}
+.btn-unticked:hover {
+    background-color: #FFC107;
+    color: #FFF;
+}
+.btn-ticked {
+    border: 1px solid #FFC107;
+    border-radius: 23px;
+    background-color: #FFC107;
+    color: #fff;
+}
+.btn-ticked:hover {
+    color: #fff;
+}
+.total-price span {
+    color: #414141;
+    font-size: 14px;
+    font-weight: normal;
+}
+.btn:focus {
+    box-shadow: 0 0 0 0;
+}
+.exec-plan label {
+    display: block;
+    margin: 0;
+    padding: 10px 12px;
+    box-shadow: 3.56213px 3.56213px 10.6864px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.exec-plan li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+}
+.exec-plan li span {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+.exec-plan .selected label {
+    background: #FFC107;
+    color: #fff;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #FFC107;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #FFC107;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #FFC107;
+}
+.bank-info {
+    box-shadow: 1.69231px 1.69231px 5.07692px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+input.copytoclipboard {
+    border: 1px dashed #dbdbdb;
+    background: url(../images/copytoclipboard.png) no-repeat  90% 50% #F1F1F1;
+    border-radius: 10px;
+    padding: 10px 70px 10px 10px;
+     
+}
+input.copytoclipboard:focus {
+    outline: 0;
+}
+
+.text-black  {
+    color: #000;
+}
+.payment-evidence div#noFile {
+    padding-left: 80px;
+    width: auto;
+    padding-right: 20px;
+    border: 1px dashed #39ABFD;
+    background: url(../images/bx-image-add.png) no-repeat 20px 50% #F1FAFF;
+    background-size: 42px;
+}
+.payment-evidence input#chooseFile {
+    height: 100%;
+}
+.text-primary {
+    color: FFC107;
+}
+
+
+
+
+
+
+
+
 
 
 /* Footer */
