@@ -2524,13 +2524,13 @@ span.mask-hot:after {
     background-color: #FFC107;
     color: #FFF;
 }
-.btn-ticked {
+.btn-unticked.selected {
     border: 1px solid #FFC107;
     border-radius: 23px;
     background-color: #FFC107;
     color: #fff;
 }
-.btn-ticked:hover {
+.btn-unticked.selected:hover {
     color: #fff;
 }
 .total-price span {
@@ -2611,6 +2611,9 @@ input.copytoclipboard:focus {
 .text-black  {
     color: #000;
 }
+.text-fail {
+    color: #FB3C00
+}
 .payment-evidence div#noFile {
     padding-left: 80px;
     width: auto;
@@ -2623,14 +2626,32 @@ input.copytoclipboard:focus {
     height: 100%;
 }
 .text-primary {
-    color: FFC107;
+    color: #FFA215 !important;
+}
+.box-shadow {
+    box-shadow: 10.3333px 12.9167px 25.8333px rgba(76, 132, 172, 0.13);
+}
+.box-shadow li {
+    border-bottom: 1px solid #F7F7F7;
+    padding: 5px 0;
+}
+a.text-primary:focus, a.text-primary:hover {
+    color: #3CD053!important;
 }
 
-
-
-
-
-
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #3CD053!important;
+    border-color: #3CD053!important;
+    outline: 0;
+}
+.btn-primary.focus, .btn-primary:focus {
+    background-color: #3CD053!important;
+    border-color: #3CD053!important;
+    outline: 0;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0;
+}
 
 
 

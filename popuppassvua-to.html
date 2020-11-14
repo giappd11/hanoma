@@ -1,0 +1,81 @@
+
+<div class="bg-white px-0 mx-auto px-lg-5">
+	<div class = "header-box text-center noti-success mb-2">
+		<lottie-player src="./json/success.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px; display: inline-block" loop autoplay></lottie-player>
+						
+		<h3 class = "text-uppercase mt-1 text-primary">GIAO DỊCH THÀNH CÔNG!</h3>
+	</div>
+	<form class = "" action = "./forgot3.html" onsubmit="callAjaxModal(this, '#popup')"></form>
+		<div class = "content-box mx-auto text-left px-0 px-md-4 my-2 py-4 box-shadow">
+			 <h4 class ="font-weight-bold mb-3">Nâng cấp gian hàng lên quy mô "Nhà cung cấp lớn"</h4>	
+			 <ul class = "list-unstyled">
+				<li class ="d-flex justify-content-between"><span>Mã số giao dịch</span>  <span>NCC840914686899</span></li>
+				<li class ="d-flex justify-content-between"><span>Thời gian</span>  <span>14/07/2020 đến 14/12/2020</span></li>
+				<li class ="d-flex justify-content-between"><span>Giá tiền</span>  <span>3,000,000 đ</span></li>
+				<li class ="d-flex justify-content-between"><span>Giảm giá</span>  <span>10,000 đ</span></li>
+				<li class ="d-flex justify-content-between"><span>Số tiền sau giảm giá (1):</span>  <span>2,990,000 đ</span></li>
+				
+			</ul>
+			<h5 class ="font-weight-bold my-2">KHẤU TRỪ QUY MÔ VỪA</h5>
+			<ul class = "list-unstyled">
+				<li class ="d-flex justify-content-between"><span>Số tháng còn lại quy mô vừa</span>  <span>6 tháng</span></li> 
+				<li class ="d-flex justify-content-between"><span>Số tiền 1 tháng</span>  <span>100,000 đ</span></li> 
+				<li class ="d-flex justify-content-between"><span>Tổng tiền khấu trừ (2):</span>  <span>600,000 đ</span></li> 
+				<li class ="d-flex justify-content-between"><span>Tổng tiền sau khấu trừ (1)-(2):</span>  <span>2,390,000 đ</span></li> 
+				<li class ="d-flex justify-content-between"><span>VAT (10%):</span>  <span>239,000 đ</span></li> 
+			</ul>
+			<ul class = "list-unstyled">
+				<li class ="d-flex justify-content-between"><span class ="h6 font-weight-bold">Thành tiền:</span>  <span class = "h6 font-weight-bold">2,629,000 đ</span></li> 
+			</ul>
+		</div>
+
+		<div class = "form-group d-flex align-items-center my-2">
+			<input name = "" value = "" id  = "xuathoadon" class = "" type = "radio">
+			<label for = "xuathoadon" class  = " my-0 mx-2"> Xuất hoá đơn VAT</label> 
+		</div>
+		<div class = "tax-info" style ="display: none;">
+			<div class="row form-group">
+				<div class="col-12 col-sm-6">
+					<label for="inputAddress">Tên công ty *</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="Hà Nội Máy">
+					
+				</div>
+				<div class="col-12 col-sm-6"> 
+					<label for="inputAddress">Mã số thuế *</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="123456789">
+				</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-12 col-sm-6">
+					<label for="inputAddress">Địa chỉ công ty *</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="Cầu Giấy, Hà Nội">
+					
+				</div>
+				<div class="col-12 col-sm-6"> 
+					<label for="inputAddress">Địa chỉ nhận hoá đơn</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="Ba Đình, Hà Nội">
+				</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-12 col-sm-6">
+					<label for="inputAddress">Tên người mua hàng *</label>
+					<input type="text" class="form-control" name = "tieude"   placeholder="Phạm Quang Đức">
+					
+				</div>  
+			</div>
+		</div>
+
+		<div class=" justify-content-center d-block text-center mt-3">
+			<button type="submit" class="btn btn-primary mb-2">Hoàn tất</button>
+		</div>
+
+	</form>
+
+	<script>
+		$('#xuathoadon').on("change",function (e) {
+			$('.tax-info').slideDown(); 
+		})
+
+	</script>
+</div>
+					 

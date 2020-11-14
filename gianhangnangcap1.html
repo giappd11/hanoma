@@ -51,7 +51,9 @@
 	<!-- Content -->
 	<section class = "content container-custom  ">
 		<article class = "   mb-4">
-			<form action="./ncmuaphutung.html" enctype="multipart/form-data" class = "row" >
+			<!--form action="./popupnangcap-fail.html" enctype="multipart/form-data" class = "row nangcapsubmit" -->
+			<form action="./popuppassvua-to.html" enctype="multipart/form-data" class = "row nangcapsubmit" >
+			
 				<div class="col-9 ">
 					<div class = "bg-white pt-4 pb-5">
 						<a href = "taikhoan1.html"  class = "cancel  px-3">Trở về</a>
@@ -81,7 +83,7 @@
 										<li class ="d-flex justify-content-between"><span>Phí đăng thêm tin           </span><span class = "unticked"></span></li>
 									</ul>
 									<span class = "total-price">MIỄN PHÍ</span>
-									<input name = "choolseplan" value = "0"  id ="default-plan" type = "radio" class = "d-none"/>
+									<!--input name = "choolseplan" value = "0"  id ="default-plan" type = "radio" class = "d-none"/-->
 									<label type = "button" for ="default-plan"  class ="btn mt-2 btn-block btn-disable"><span>Mặc định</span></label>
 								</div>
 							</div>
@@ -104,7 +106,7 @@
 									</ul>
 									<span class = "total-price">1.000.000 đ / <span>tháng</span></span>
 									<input name = "choolseplan" value = "1" id ="nomal-plan" type = "radio" class = "d-none"/>
-									<label type = "button" for ="nomal-plan" class ="btn mt-2 btn-block btn-unticked"><span>Mặc định</span></label>
+									<label type = "button" for ="nomal-plan" class ="btn mt-2 btn-block btn-unticked"><span>Chọn</span></label>
 								</div>
 							</div>
 							<div class = "col-12 col-md-4">
@@ -125,7 +127,7 @@
 									</ul>
 									<span class = "total-price">3.000.000 đ / <span>tháng</span></span>
 									<input name = "choolseplan" id ="big-plan" value = "2" type = "radio" class = "d-none"/>
-									<label type = "button" for = "big-plan" class ="btn mt-2 btn-block btn-ticked"><span>Mặc định</span></label>
+									<label type = "button" for = "big-plan" class ="btn mt-2 btn-block btn-unticked"><span>Chọn</span></label>
 								</div>
 							</div>
 							
@@ -241,12 +243,8 @@
 								  </div>
 
 								<p class = "mt-2">* Gian hàng sẽ được nâng cấp sau 24 giờ ngay sau khi chúng tôi nhận được tiền vào tài khoản.</p>
-							</div>
-
-
-							
+							</div> 
 						</div>
-
 					</div>
 				</div>
 				<div class="col-3 pl-0">
@@ -271,10 +269,10 @@
 					</div>
 					<div class = "button-box">
 						<div class = "form-group mt-3">
-							<input name ="saf" id = "agree" type = "checkbox"> <lable for  = "agree">Tôi đồng ý với các <span class = "text-primary">chính sách của Hanoma</span></lable>
+							<input name ="saf" id = "agree" type = "checkbox"> <lable for  = "agree">Tôi đồng ý với các <a href = "./popupprivacy.html" class = "text-primary privacy-popup">chính sách của Hanoma</a></lable>
 						</div>
-						<button type = "submit" class = "btn btn-disable btn-block">THỰC HIỆN THANH TOÁN</button>
-						<button type = "submit" class = "btn btn-primary btn-block">THỰC HIỆN THANH TOÁN</button>
+						<button type = "submit" class = "btn btn-disable btn-block" disabled>THỰC HIỆN THANH TOÁN</button>
+						<button type = "submit" class = "btn  btn-block btn-unticked selected">THỰC HIỆN THANH TOÁN</button>
 					</div>
 				</div>
  
@@ -295,12 +293,32 @@
 		
 		</div>
 	</section>
-  
+	<div class="modal fade" id="main-popup" tabindex="-1" role="dialog" aria-labelledby="popup" aria-hidden="true"  data-keyboard = "false" data-backdrop= "static">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="text-right mx-1">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+				
+				</div>
+			</div>
+		</div>
+	</div>	
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script> 
 	<script src="./js/bootstrap.bundle.min.js" ></script>
+	<script src="./js/select2.min.js" ></script>
+	<script src="./js/file-upload-with-preview.min.js" ></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/jquery.lazy.min.js"></script>
+	<script src="./js/lottie-player.js"></script>
+	<script src="./js/navScript.js"></script>
+	<script src="./js/mmenu.js"></script>
 	<script src="./js/custom.js"></script>
 	<script>
 		$('input[name="plan-execute"]').on('change', function() {
@@ -314,8 +332,18 @@
 		$(".copytoclipboard").click(function() {
 			$(this).select();
 			document.execCommand("copy");
-		})
-  
+		});
+		$('input[name="choolseplan"]').on('change', function() {
+			$('input[name="choolseplan"]').each(function (){
+				$(this).next('label[for="' + this.id + '"]').toggleClass('selected', this.checked);
+				if (this.checked) {
+					$(this).next('label[for="' + this.id + '"]').children('span').html("Đã chọn");
+				} else {
+					$(this).next('label[for="' + this.id + '"]').children('span').html("Chọn");
+				}
+			})  
+		}).trigger('change');
+		
 	 </script>
 	 
   </body>
