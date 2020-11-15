@@ -2670,6 +2670,7 @@ a.text-primary:focus, a.text-primary:hover {
     height: 100%;
     position: absolute;
     width: 100%;
+    background-repeat: no-repeat;
 }
 /* Footer */
 .footer {
