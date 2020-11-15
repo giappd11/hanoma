@@ -52,9 +52,9 @@
 	<section class = "content container-custom  ">
 		<article class = "   mb-4">
 			<!--form action="./popupnangcap-fail.html" enctype="multipart/form-data" class = "row nangcapsubmit" -->
-			<form action="./popuppassvua-to.html" enctype="multipart/form-data" class = "row nangcapsubmit" >
+			<form action="./popuppassvua-to.html" enctype="multipart/form-data" class = " d-block d-lg-flex nangcapsubmit" >
 			
-				<div class="col-9 ">
+				<div class="col-lg-9 col-12 ">
 					<div class = "bg-white pt-4 pb-5">
 						<a href = "taikhoan1.html"  class = "cancel  px-3">Trở về</a>
 						<div class = "content-title text-black px-3 d-flex justify-content-center align-items-center">
@@ -66,9 +66,9 @@
 						</div>
 						
 						<div class = "row px-3">
-							<div class = "col-12 col-md-4">
+							<div class = "col-12 col-md-4 mb-2">
 								<div class = "plan px-3 py-4 ">
-									<div class = "plan-title mb-3">
+									<div class = "plan-title mb-3 ">
 										<h5 class = "font-weight-bold">NHÀ CUNG CẤP NHỎ</h5>
 									</div>
 									<ul class = "plan-benefit list-unstyled">
@@ -87,7 +87,7 @@
 									<label type = "button" for ="default-plan"  class ="btn mt-2 btn-block btn-disable"><span>Mặc định</span></label>
 								</div>
 							</div>
-							<div class = "col-12 col-md-4">
+							<div class = "col-12 col-md-4 mb-2">
 								<div class = "plan px-3 py-4 ">
 									<div class = "plan-title mb-3">
 										<h5 class = "font-weight-bold">NHÀ CUNG CẤP NHỎ</h5>
@@ -109,7 +109,7 @@
 									<label type = "button" for ="nomal-plan" class ="btn mt-2 btn-block btn-unticked"><span>Chọn</span></label>
 								</div>
 							</div>
-							<div class = "col-12 col-md-4">
+							<div class = "col-12 col-md-4 mb-2">
 								<div class = "plan px-3 py-4 ">
 									<div class = "plan-title mb-3">
 										<h5 class = "font-weight-bold">NHÀ CUNG CẤP NHỎ</h5>
@@ -171,29 +171,29 @@
 							<h4 class = "font-weight-bold">Chọn hình thức thanh toán</h4>
 						</div>
 						<div class="px-3">
-							<ul class = "payment-plan list-unstyled mb-1">
-								<li>
+							<ul class = "payment-plan list-unstyled mb-1 col-12 col-md-8 row align-items-center px-0">
+								<li class = "col-12 col-sm-6 d-flex align-items-center mb-2">
 									<input name ="plan-payment" type = "radio"  id = "payment-credit" value = "1">
-									<label for="payment-credit"  >Thẻ tín dụng</label>
+									<label for="payment-credit" class = "ml-2" >Thẻ tín dụng</label>
 
 								</li>
-								<li>
+								<li class = "col-12 col-sm-6 d-flex align-items-center mb-2">
 									<input name ="plan-payment" type = "radio"   id = "payment-debit" value = "3">
-									<label for="payment-debit">Chuyển khoản ngân hàng</label>
+									<label for="payment-debit" class = "ml-2">Chuyển khoản ngân hàng</label>
 
 								</li>
-								<li>
+								<li class = "col-12 col-sm-6 d-flex align-items-center mb-2">
 									<input name ="plan-payment" type = "radio"   id = "payment-atm" value = "6">
-									<label for="payment-atm">ATM nội địa</label>
+									<label for="payment-atm" class = "ml-2">ATM nội địa</label>
 
 								</li>
-								<li>
+								<li class = "col-12 col-sm-6 d-flex align-items-center mb-2">
 									<input name ="plan-payment" type = "radio"   id = "payment-vnpay" value = "6">
-									<label for="payment-vnpay">Ví điện tử VNPAY</label>
+									<label for="payment-vnpay" class = "ml-2">Ví điện tử VNPAY</label>
 
 								</li>
 							</ul>
-							<div class="form-group col-12 col-sm-6">
+							<div class="form-group col-12 col-sm-6 px-0">
 								<label>Chọn ngân hàng *</label>
 								<select class = "form-control">
 									<option value = "A">TP Bank</option>
@@ -201,30 +201,30 @@
 								</select>
 							</div>
 
-							<div class = "px-3 py-4">
+							<div  >
 								<h4 class = "font-weight-bold">Thông tin chuyển khoản</h4>
 								<p class = "my-2">Quý khách vui lòng chuyển khoản vào một trong những tài khoản phía dưới vối nội dung sau:</p>
 								<input name ="payment-comment" value = "NCGHL-0989969969-01" class = "copytoclipboard">
 
 								<div class = "d-block d-md-flex mt-4">
-									<div class ="col-12 col-md-6 pl-0">
+									<div class ="col-12 col-md-6 px-0 pl-md-2 mb-2">
 										<div class ="bank-info d-flex">
-											<div class = "col-3">
+											<div class = "col-2 col-sm-3  px-0 px-sm-2">
 												<img src = "./images/bidv.png"  alt = "BIDV bank"/>
 											</div>
-											<div class = "col-9">
+											<div class = "col-10 col-sm-9">
 												<h4 class = "font-weight-bold">BIDV, chi nhánh Mỹ Đình</h4>
 												<span class = "d-block mt-2">Số tài khoản:<span class = "font-weight-bold ml-3">26010000920468</span></span>
 												<span class = "d-block  mt-2 pb-2">Người nhận: Công ty cổ phần ILOTT</span>
 											</div>
 										</div>
 									</div>
-									<div class ="col-12 col-md-6 pr-0">
+									<div class ="col-12 col-md-6 px-0 pr-md-2 mb-2">
 										<div class ="bank-info d-flex">
-											<div class = "col-3">
+											<div class = "col-2 col-sm-3 px-0 px-sm-2">
 												<img src = "./images/tpbank.png"  alt = "Tien Phong bank"/>
 											</div>
-											<div class = "col-9">
+											<div class = "col-10 col-sm-9">
 												<h4 class = "font-weight-bold">TPBank, chi nhánh Phạm Hùng</h4>
 												<span class = "d-block mt-2">Số tài khoản:<span class = "font-weight-bold ml-3">11991978001</span></span>
 												<span class = "d-block  mt-2 pb-2">Người nhận: Công ty cổ phần ILOTT</span>
@@ -247,7 +247,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3 pl-0">
+				<div class="col-12 pl-lg-0 pl-3 col-lg-3 mt-2 mt-lg-0 ">
 					<div class = "bg-white py-4 px-4 ">
 						<div class = "font-weight-bold text-black px-3 d-flex justify-content-center align-items-center">
 							<h3>ĐƠN HÀNG</h3>

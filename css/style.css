@@ -459,6 +459,7 @@ section.content {
 .category-title {
     background: #FFC107;
     color: #fff;
+    position: relative;
 }
 .category-title h3.title {
     font-weight: 700;
@@ -1556,6 +1557,7 @@ a:hover p.card-text {
 }
 label {
     color: #565656;
+    margin-bottom: 0;
 }
 a .card-title:hover {
     color: #FFC107;
@@ -2291,10 +2293,7 @@ a.delete {
 }
 .menu-item-left li {
     padding: 5px 0;
-}
-.menu-item-left li a {
-    padding-left: 10px;
-}
+} 
 .menu-item-left li.active a {
     color: #FFC107;
     font-weight: 600;
@@ -2405,7 +2404,7 @@ span.cicle.baidangcl {
 
 .legend-document li {
     display: inline-flex;
-    width: 49%;
+    min-width: 49%;
     margin-bottom: 10px;
 }
 span.total-count {
@@ -2474,6 +2473,7 @@ span.ticked {
     vertical-align: middle;
     align-items: center;
     line-height: 24px;
+    border-bottom: 1px solid #F7F7F7;
 }
 .total-price {
     display: block;
@@ -2554,6 +2554,7 @@ span.mask-hot:after {
     display: inline-block;
     text-align: center;
     margin-right: 25px;
+    margin-bottom: 10px;
 }
 .exec-plan li span {
     display: block;
@@ -2601,7 +2602,7 @@ input.copytoclipboard {
     border: 1px dashed #dbdbdb;
     background: url(../images/copytoclipboard.png) no-repeat  90% 50% #F1F1F1;
     border-radius: 10px;
-    padding: 10px 70px 10px 10px;
+    padding: 10px 50px 10px 10px;
      
 }
 input.copytoclipboard:focus {
@@ -2652,10 +2653,24 @@ a.text-primary:focus, a.text-primary:hover {
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0;
 }
-
-
-
-
+.box-chart {
+    height: 100%;
+}
+.img-menu {
+    display: inline-block;
+}
+.table-responsive .table{   
+    min-width: 900px;
+}
+.relate-post .image {
+    padding-bottom: 100%;
+    height: 0;
+}
+.relate-post .image .img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
 /* Footer */
 .footer {
 	background-color: #fff;

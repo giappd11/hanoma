@@ -543,6 +543,22 @@ $(function() {
 });
 
  
+$(function() {
+	if (document.getElementById( "m-menu" ) == null) {
+		return;
+	}
+	var menu = new MmenuLight( document.getElementById( "m-menu" ), "(max-width: 766px)" );
+	 
+	const navigator = menu.navigation({
+		title: "Danh Mục",
+	});
+	const drawer = menu.offcanvas();
+	document.querySelector( "a[href='#m-menu']").addEventListener("click", function (evnt) {
+				evnt.preventDefault();
+				drawer.open();
+			});
+});
+ 
 
 function edit(name ) { 
 	if ($("input[name=" + name + "]").attr('readonly')) {

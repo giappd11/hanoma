@@ -178,6 +178,9 @@
 	} 
 }
 @media (max-width: 991px) {
+	section.content {
+		padding-bottom: 80px;
+	}
 	.relate-post > div:first-child {
 		float: left;
 		padding-bottom: 5px;
@@ -388,9 +391,73 @@
 	.content-title {
 		margin-top: 5px;
 	}
+	.menu-left {
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 99;
+		width: 36px;
+		padding-top: 65px;
+	}
+	.content-right {
+		padding-left: 50px;
+	}
+	.text-menu {
+		display: none;
+		position: absolute;
+		top: 0; 
+		left: 100%;
+		min-width: 150px;
+		background: #fff;
+		align-items: center;
+		height: 100%;
+	}
+	.menu-item-left li {
+		position: relative;
+		
+	}
+	.img-menu {
+		text-align: center;
+		display: block;
+	} 
+	.menu-item-left li a:hover .text-menu {
+		display: flex;
+		align-items: center;
+		padding-left: 10px;
+	}
+	.profile-info,
+	.nangcap {
+		display: none;
+	} 
+
+
+
 } 
 
 @media (max-width: 768px) {
+	.menu-left {
+		position: unset;
+		z-index: 99;
+		width: auto;
+	}
+	.menu-item-left li {
+		padding: 0;
+	}
+	.content-right {
+		padding-left: 15px;
+	}
+	.text-menu {
+		display: inline-block  !important;
+		position: unset !important;
+		padding: 0 !important;
+	}
+	.menu-left {
+		margin-top: 0;
+	}
+	.img-menu {
+		text-align: center;
+		display: inline-block;
+	} 
 	.gallery-thumbs .swiper-slide {
 		max-width: 180px;
 		overflow: hidden;
@@ -522,6 +589,9 @@
 	.list-nhucau img {
 		width: 40px;
 		margin-right: 5px;
+	}
+	h5.header-title {
+		display: none;
 	}
 }
 @media (max-width: 413px) {

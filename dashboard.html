@@ -15,9 +15,13 @@
 	<!-- Header -->
 	<section class = "header navbar-expand-sm ">
 		<div class = "container-custom  p-0">
-			<div class = "d-block d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1 justify-content-between">
-				 
-				<div class = "col-12 col-lg-7 col-md-12 col-sm-12 pr-0 text-center pl-sm-2 pl-md-0  d-flex align-items-center">
+			<div class = "d-flex d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1 justify-content-between">
+				<div class = "col-2 col-sm-1 d-inline-block d-md-none pr-0 pt-sm-0 pl-0">
+					<a href = "#m-menu" class = "mburger">
+						<span></span>
+					</a>
+				</div>
+				<div class = "col-11 col-lg-7 col-md-11 col-sm-11 pr-0 text-center pl-sm-2 pl-md-0  d-flex align-items-center">
 					<a href = "./index.html" class = "border-right pr-2">
 						<img  src = "./images/logo.png" alt = "logo"/>
 					</a>
@@ -25,7 +29,6 @@
 					<ul class = "nav header-link d-none d-sm-flex">
 						<li><a href = "#"><img src = "./images/icon_home.png"/><span>Trang chủ</span></a></li>
 						<li><a href = "#"><img src = "./images/icon_store.png"/><span>Gian hàng</span></a></li>
-
 					</ul>
 				</div>
 				  
@@ -49,24 +52,76 @@
 	</section>
 	
 	<!-- Content -->
-	<section class = "content container-fluid   ">
+	<section class = "content container-fluid">
 		<article class = "row d-flex pt-0   ">
-			<div class="col-2 bg-white menu-left">
-				<div class = "profile-picture mt-3">
-					<img src = "./images/hs1.jpg" width="72px" height="72px"/>
-					<span class = "status active"></span>
-				</div>
-				<div class  ="mt-2 text-center mb-3">
-					CÔNG TY CỔ PHẦN MÁY VÀ THIẾT BỊ XÂY DỰNG HÀ NỘI
+			<div class="col-lg-2 bg-white menu-left px-0 px-lg-2" id = "m-menu">
+				<div class = "profile-info">
+					<div class = "profile-picture mt-3">
+						<img src = "./images/hs1.jpg" width="72px" height="72px"/>
+						<span class = "status active"></span>
+					</div>
+					<div class  ="mt-2 text-center mb-3">
+						CÔNG TY CỔ PHẦN MÁY VÀ THIẾT BỊ XÂY DỰNG HÀ NỘI
+					</div>
 				</div>
 				<ul class = "list-unstyled menu-item-left">
-					<li class = "active"><img src = "./images/ic_dashboard.png"/><a href = "">Dashboard</a></li>
-					<li><img src = "./images/ic_shopping-bag.png"/><a href = "">Quản lý sản phẩm</a></li>
-					<li><img src = "./images/ic_newspaper.png"/><a href = "">Quản lý bài viết</a></li>
-					<li><img src = "./images/ic_settings-applications.png"/><a href = "">Cài đặt gian hàng</a></li>
-					<li><img src = "./images/ic_arrow-growth.png"/><a href = "">Nâng cấp gian hàng</a></li>
-					<li><img src = "./images/ic_file-history.png"/><a href = "">Lịch sử nâng cấp</a></li>
-					<li><img src = "./images/ic_file-user.png"/><a href = "">Tài khoản</a></li>
+					<li class = "active">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_dashboard.png"/>
+							</div>
+							<span class = "text-menu">Dashboard</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_shopping-bag.png"/>
+							</div>
+							<span class = "text-menu">Quản lý sản phẩm</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_newspaper.png"/>
+							</div>
+							<span class = "text-menu">Quản lý bài viết</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_settings-applications.png"/>
+							</div>
+							<span class = "text-menu">Cài đặt gian hàng</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_arrow-growth.png"/>
+							</div>
+							<span class = "text-menu">Nâng cấp gian hàng</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_file-history.png"/>
+							</div>
+							<span class = "text-menu">Lịch sử nâng cấp</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_file-user.png"/>
+							</div>
+							<span class = "text-menu">Tài khoản</span>
+						</a>
+					</li>
+					 
 				</ul>
 				<div class = "nangcap text-center pt-2">
 					<img src = "./images/rocket.png">
@@ -77,35 +132,35 @@
 				</div>
 			</div>
 			
-			<div class="col-10 "> 
-					<div class = "chart row">
-						<div class ="col-6  ">
+			<div class="col-12 col-lg-10  content-right"> 
+					<div class = "chart d-flex row">
+						<div class ="col-12 col-md-6 mb-3 mb-md-0 d-flex-row">
 							<div class="bg-white d-flex box-chart py-2">
 								<div class ="col-4 px-0">
-									<div class = "text-center m-auto">
-										<canvas id="chart-area" ></canvas>
+									<div class = "text-center m-auto p-3">
+										<div id="chart-area" ></div>
 									</div>
 								
 								</div>
-								<div class ="col-8">
+								<div class ="col-8  pl-0">
 									<h3 class = "text-title">NHÀ CUNG CẤP NHỎ</h3>
-									<ul class = "legend-document list-unstyled mt-2 mb-0">
-										<li><span class = "cicle baidangcl"></span><span class = "total-count">300</span>Sản phẩm</li>
+									<ul class = " list-unstyled mt-2 mb-0">
+										<li class = "d-flex align-items-center"><span class = "cicle baidangcl"></span>Số lượng bài đăng còn lại <span class = "total-count">98/140 Bài</span></li>
 									</ul>
 									<p class = "nangcap-des">Nâng cấp gian hàng để đăng thêm nhiều sản phẩm và sử dụng đầy đủ chức năng.</p>
 									<a href = "#" class = "btn link-nangcap">NÂNG CẤP NGAY</a>
 								</div>
 							</div>
 						</div>
-						<div class ="col-6 ">
+						<div class ="col-12 col-md-6 mb-3 mb-md-0 d-flex-row ">
 							<div class="bg-white d-flex box-chart py-2">
 								<div class ="col-4 px-0">
-									<div class = "text-center m-auto">
-										<canvas id="usersChart" ></canvas>
+									<div class = "text-center m-auto p-3">
+										<div id="usersChart" ></div>
 									</div>
 								
 								</div>
-								<div class ="col-8">
+								<div class ="col-8 pl-0">
 									<h3 class  = "total-document mt-3">750</h3>
 									<p class = "font-weight-bold">Tin đăng thành công</p>
 									<ul class = "legend-document list-unstyled mt-2  mb-0">
@@ -124,7 +179,8 @@
 						<div class = "content-header my-4">
 							<h4 class = "font-weight-bold">SẢN PHẨM MỚI ĐĂNG</h4>
 						</div>
-						<table style="width:100%" class = "bg-white dashboard-table ">
+						<div class="table-responsive">
+						<table style="width:100%" class = "bg-white dashboard-table table">
 							<thead>
 								<th width = "5"><input name ="checkbox" type = "checkbox" value =""></th>
 								<th width = "35">Thông tin sản phẩm</th>
@@ -265,7 +321,7 @@
 							</tbody>
 
 						</table>
-
+					</div>
 						<div class = "text-center mb-5">
 							<a href = "#" class = "btn btn-primary mt-3 px-5">Trang quản lý sản phẩm</a>
 
@@ -296,144 +352,185 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/bootstrap.bundle.min.js" ></script>
-	 
-	<script src="./js/file-upload-with-preview.min.js" ></script>
-	<script src="./js/chart.min.js" ></script> 
-	<script src="./js/Chart.RadialGauge.umd.js" ></script>
+	<script src="./js/select2.min.js" ></script> 
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/jquery.lazy.min.js"></script>
+	<script src="./js/navScript.js"></script>
+	<script src="./js/mmenu.js"></script>
+	<script src="./js/radial-progress-bar.js"></script>
+	<script src="./js/custom.js"></script>
+	<!-- <script src="./js/chart.min.js" ></script>  -->
+	<!-- <script src="./js/Chart.RadialGauge.umd.js" ></script> -->
 	<script> 
 	  
-      var image = document.createElement('img');
-      image.src = './images/ncc1.png';
+    //   var image = document.createElement('img');
+    //   image.src = './images/ncc1.png';
 
-      image.onload = function() {
-        deliveredOpt.centerArea.backgroundImage = image;
-        if (window.myRadialGauge) {
-          window.myRadialGauge.update();
-        }
-      };
+    //   image.onload = function() {
+    //     deliveredOpt.centerArea.backgroundImage = image;
+    //     if (window.RoundedDoughnut) {
+    //       window.RoundedDoughnut.update();
+    //     }
+	//   };
+	  
 
-      var deliveredData = { 
-		datasets: [{
-				data: [65],
-				backgroundColor: [
-				'#2AC5BB',
-				'#5da4e7'
-				],
-				borderWidth: 0
-			}, {
-				data: [69],
-				backgroundColor: [
-				'#FFC327',
-				'#5da4e7'
-				],
-				borderWidth: 0
-			}]
-		};
+    //   var deliveredData = { 
+	// 	datasets: [{
+	// 			data: [40],
+	// 			backgroundColor: [
+	// 			'#FFC327',
+	// 			'#F1F1F1'
+	// 			],
+	// 			hoverBorderColor: [
+	// 				'#FFFFFF',
+	// 				'#FFFFFF'
+	// 			],
+	// 			borderWidth: [5,5]
+	// 		},
+	// 		{
+	// 			data: [(140 - 98) / 140, 98/140],
+	// 			backgroundColor: [
+	// 				'#2AC5BB',
+	// 				'#F1F1F1'
+	// 			],hoverBorderColor: [
+	// 				'#FFFFFF',
+	// 				'#FFFFFF'
+	// 			],
+	// 			borderWidth: [5, 5]
+	// 		}]
+	// 	};
 		
-	var deliveredOpt  = {
-			responsive: true,
-			legend: {
-			display: false
-		}, 
-			centerArea: {
-			padding: 15,
-			displayText: false
-			},layout:{
-			padding: 10
-		},
-		tooltips: {
-			enabled : false,
-		},
-		centerPercentage: 70
-	};
+	// var deliveredOpt  = {
+	// 		responsive: true,
+	// 		legend: {
+	// 		display: false
+	// 	}, 
+	// 		centerArea: {
+	// 		padding: 15,
+	// 		displayText: false
+	// 		},layout:{
+	// 		padding: 10
+	// 	},
+	// 	tooltips: {
+	// 		enabled : false,
+	// 	},
+	// 	centerPercentage: 70
+	// };
 
 
 
-	var nccdata = {
-		datasets: [{
-			data           : [40, 20, 20, 20],
-			backgroundColor: [
-				'#FF755A',
-				'#FF98B8',
-				'#3A7DFE',
-				'#6E49FA'
-			],
-			borderWidth    : 0
-		}]
-	};
+	// var nccdata = {
+	// 	datasets: [{
+	// 		data           : [40, 20, 20, 20],
+	// 		backgroundColor: [
+	// 			'#FF755A',
+	// 			'#FF98B8',
+	// 			'#3A7DFE',
+	// 			'#6E49FA'
+	// 		],
+	// 		borderWidth    : 0
+	// 	}]
+	// };
 
-	var nccOption = {
-		cutoutPercentage: 70,
-		layout:{
-			padding: 10
-		},
-		tooltips: {
-			enabled : false,
-		},
-	};
+	// var nccOption = {
+	// 	cutoutPercentage: 70,
+	// 	layout:{
+	// 		padding: 10
+	// 	},
+	// 	tooltips: {
+	// 		enabled : false,
+	// 	},
+	// };
 
-
-
-
-
-
-
-	Chart.defaults.RoundedDoughnut    = Chart.helpers.clone(Chart.defaults.doughnut);
-	Chart.controllers.RoundedDoughnut = Chart.controllers.doughnut.extend({
-		draw: function(ease) {
-			var ctx           = this.chart.ctx;
-			var easingDecimal = ease || 1;
-			var arcs          = this.getMeta().data;
-			Chart.helpers.each(arcs, function(arc, i) {
-				arc.transition(easingDecimal).draw();
-
-				var pArc   = arcs[i === 0 ? arcs.length - 1 : i - 1];
-				var pColor = pArc._view.backgroundColor;
-
-				var vm         = arc._view;
-				var radius     = (vm.outerRadius + vm.innerRadius) / 2;
-				var thickness  = (vm.outerRadius - vm.innerRadius) / 2;
-				var startAngle = Math.PI - vm.startAngle - Math.PI / 2;
-				var angle      = Math.PI - vm.endAngle - Math.PI / 2;
-
-				ctx.save();
-				ctx.translate(vm.x, vm.y);
-
-				ctx.fillStyle = i === 0 ? vm.backgroundColor : pColor;
-				ctx.beginPath();
-				ctx.arc(radius * Math.sin(startAngle), radius * Math.cos(startAngle), thickness, 0, 2 * Math.PI);
-				ctx.fill();
-
-				ctx.fillStyle = vm.backgroundColor;
-				ctx.beginPath();
-				ctx.arc(radius * Math.sin(angle), radius * Math.cos(angle), thickness, 0, 2 * Math.PI);
-				ctx.fill();
-
-				ctx.restore();
-			});
-		}
-	});
-
-	window.onload = function() {
-		var ctx = document.getElementById("usersChart").getContext("2d");
-			ctx.canvas.width = 110;
-			ctx.canvas.height = 100;
-		new Chart(ctx, { 
-			type: 'RoundedDoughnut',
-			data: nccdata ,
-			options : nccOption
-		}); 
-
-		var ctx1 = document.getElementById("chart-area").getContext("2d");
-			ctx1.canvas.width = 110;
-			ctx1.canvas.height = 100;
-		var chart = new Chart(ctx1, {
-            type: 'radialGauge',
-            data: deliveredData,
-            options: deliveredOpt
-        });
  
-	};
+
+
+
+
+	// Chart.defaults.RoundedDoughnut    = Chart.helpers.clone(Chart.defaults.doughnut);
+	// Chart.controllers.RoundedDoughnut = Chart.controllers.doughnut.extend({
+	// 	draw: function(ease) { 
+	// 		var ctx           = this.chart.ctx;
+	// 		var easingDecimal = ease || 1;
+	// 		var arcs          = this.getMeta().data;
+	// 		Chart.helpers.each(arcs, function(arc, i) {
+	// 			arc.transition(easingDecimal).draw();
+				
+	// 			var pArc   = arcs[i === 0 ? arcs.length - 1 : i - 1];
+	// 			var pColor = pArc._view.backgroundColor;
+				 
+	// 			var vm         = arc._view; 
+	// 			var radius     = (vm.outerRadius + vm.innerRadius ) / 2;
+	// 			var thickness  = (vm.outerRadius - vm.innerRadius - vm.borderWidth) / 2;
+	// 			var startAngle = Math.PI - vm.startAngle - Math.PI / 2 + .1;
+	// 			var angle      = Math.PI - vm.endAngle - Math.PI / 2 ;
+
+	// 			ctx.save();
+	// 			ctx.translate(vm.x, vm.y);
+
+	// 			ctx.fillStyle = i === 0 ? vm.backgroundColor : pColor;
+	// 			ctx.beginPath();
+	// 			ctx.arc(radius  * Math.sin(startAngle), radius * Math.cos(startAngle), thickness, 0, 2 * Math.PI);
+	// 			ctx.fill();
+
+	// 			ctx.fillStyle = vm.backgroundColor;
+	// 			ctx.beginPath();
+	// 			ctx.arc(radius * Math.sin(angle), radius * Math.cos(angle), thickness, 0, 2 * Math.PI);
+	// 			ctx.fill();
+
+	// 			ctx.restore();
+	// 		});
+	// 	} 
+	// });
+
+	// window.onload = function() {
+	// 	var ctx = document.getElementById("usersChart").getContext("2d");
+	// 		ctx.canvas.width = 110;
+	// 		ctx.canvas.height = 100;
+	// 	new Chart(ctx, { 
+	// 		type: 'RoundedDoughnut',
+	// 		data: nccdata ,
+	// 		options : nccOption
+	// 	}); 
+
+		// var ctx1 = document.getElementById("chart-area").getContext("2d");
+		// 	ctx1.canvas.width = 110;
+		// 	ctx1.canvas.height = 100;
+		// var chart = new Chart(ctx1, {
+        //     type: 'RoundedDoughnut',
+        //     data: deliveredData,
+        //     options: deliveredOpt
+        // });
+ 
+	// };
+	var clock = jQuery("#chart-area").radialMultiProgress("init", {
+		'fill': 25,
+		'font-size': 14,
+		'text-color': "transparent",
+		'data': [
+			{'color': "#FFC327", 'range': [0, 100]},
+			{'color': "#2AC5BB", 'range': [0, 100]}
+		]
+	});
+	clock.radialMultiProgress("to", {
+      "index": 0, 'perc': 0, 'time': (1000)
+	});  
+	clock.radialMultiProgress("to", {
+      "index": 1, 'perc': 98 / 140 * 100, 'time': (1000)
+    }); 
+    
+	
+	jQuery("#usersChart").radialPieChart("init", { 
+		'fill': 15,
+		'text-color': "transparent",
+		'data': [
+			{'color': "#FF755A", 'perc': 300 / 750 * 100},
+			{'color': "#3A7DFE", 'perc': 100 / 750 * 100},
+			{'color': "#FF98B8", 'perc': 200 / 750 * 100},
+			{'color': "#6E49FA", 'perc': 150 / 750 * 100}
+
+		]
+	});
 	</script>
   </body>
 </html>
