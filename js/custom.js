@@ -370,9 +370,12 @@ $(document).ready(function () {
 	});
 	
 	
-
-
-
+	
+	$('.openModal').unbind("click").bind("click", function (e) {
+		e.preventDefault(); 
+		$("#startpopup").modal('show');
+	});
+	
 
 
 
@@ -444,7 +447,10 @@ $( document ).ajaxComplete(function() {
 		}
 		$("#main-popup").modal('hide');
 	});
-
+	$(".next-form-button").unbind("click").bind("click", function () {
+		$(".first-form").slideUp(100);
+		$(".next-form").slideDown(100);
+	});
 
 
 });

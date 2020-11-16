@@ -17,7 +17,12 @@
 		<div class = "container-custom  p-0">
 			<div class = "d-block d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1 justify-content-between">
 				 
-				<div class = "col-12 col-lg-7 col-md-12 col-sm-12 pr-0 text-center pl-sm-2 pl-md-0  d-flex align-items-center">
+				<div class = "col-2 col-sm-1 d-inline-block d-md-none pr-0 pt-sm-0 pl-0">
+					<a href = "#m-menu" class = "mburger">
+						<span></span>
+					</a>
+				</div>
+				<div class = "col-11 col-lg-7 col-md-11 col-sm-11 pr-0 text-center pl-sm-2 pl-md-0  d-flex align-items-center">
 					<a href = "./index.html" class = "border-right pr-2">
 						<img  src = "./images/logo.png" alt = "logo"/>
 					</a>
@@ -25,7 +30,6 @@
 					<ul class = "nav header-link d-none d-sm-flex">
 						<li><a href = "#"><img src = "./images/icon_home.png"/><span>Trang chủ</span></a></li>
 						<li><a href = "#"><img src = "./images/icon_store.png"/><span>Gian hàng</span></a></li>
-
 					</ul>
 				</div>
 				  
@@ -51,22 +55,74 @@
 	<!-- Content -->
 	<section class = "content container-fluid   ">
 		<article class = "row d-flex pt-0   ">
-			<div class="col-2 bg-white menu-left">
-				<div class = "profile-picture mt-3">
-					<img src = "./images/hs1.jpg" width="72px" height="72px"/>
-					<span class = "status active"></span>
-				</div>
-				<div class  ="mt-2 text-center mb-3">
-					CÔNG TY CỔ PHẦN MÁY VÀ THIẾT BỊ XÂY DỰNG HÀ NỘI
+			<div class="col-lg-2 bg-white menu-left px-0 px-lg-2" id = "m-menu">
+				<div class = "profile-info">
+					<div class = "profile-picture mt-3">
+						<img src = "./images/hs1.jpg" width="72px" height="72px"/>
+						<span class = "status active"></span>
+					</div>
+					<div class  ="mt-2 text-center mb-3">
+						CÔNG TY CỔ PHẦN MÁY VÀ THIẾT BỊ XÂY DỰNG HÀ NỘI
+					</div>
 				</div>
 				<ul class = "list-unstyled menu-item-left">
-					<li class = "active"><img src = "./images/ic_dashboard.png"/><a href = "">Dashboard</a></li>
-					<li><img src = "./images/ic_shopping-bag.png"/><a href = "">Quản lý sản phẩm</a></li>
-					<li><img src = "./images/ic_newspaper.png"/><a href = "">Quản lý bài viết</a></li>
-					<li><img src = "./images/ic_settings-applications.png"/><a href = "">Cài đặt gian hàng</a></li>
-					<li><img src = "./images/ic_arrow-growth.png"/><a href = "">Nâng cấp gian hàng</a></li>
-					<li><img src = "./images/ic_file-history.png"/><a href = "">Lịch sử nâng cấp</a></li>
-					<li><img src = "./images/ic_file-user.png"/><a href = "">Tài khoản</a></li>
+					<li class = "active">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_dashboard.png"/>
+							</div>
+							<span class = "text-menu">Dashboard</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_shopping-bag.png"/>
+							</div>
+							<span class = "text-menu">Quản lý sản phẩm</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_newspaper.png"/>
+							</div>
+							<span class = "text-menu">Quản lý bài viết</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_settings-applications.png"/>
+							</div>
+							<span class = "text-menu">Cài đặt gian hàng</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_arrow-growth.png"/>
+							</div>
+							<span class = "text-menu">Nâng cấp gian hàng</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_file-history.png"/>
+							</div>
+							<span class = "text-menu">Lịch sử nâng cấp</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_file-user.png"/>
+							</div>
+							<span class = "text-menu">Tài khoản</span>
+						</a>
+					</li>
+					 
 				</ul>
 				<div class = "nangcap text-center pt-2">
 					<img src = "./images/rocket.png">
@@ -77,7 +133,7 @@
 				</div>
 			</div>
 			
-			<div class="col-10 "> 
+			<div class="col-12 col-lg-10  content-right"> 
 				<form action = "#" class = "">
 					<div class = my-2>
 						<button type="button"  class = 'btn btn-primary px-4 openModal'  >ĐĂNG SẢN PHẨM MỚI</button>
@@ -133,6 +189,7 @@
 
 					</div>
 					<div class = "content"> 
+						<div class="table-responsive">
 						<table style="width:100%" class = "bg-white  ">
 							<thead>
 								<th width = "5"><input name ="checkbox" type = "checkbox" value =""></th>
@@ -274,6 +331,7 @@
 							</tbody>
 
 						</table>
+						</div>
 					</form>
 						<div class = "text-center mb-5">
 							<div class = "d-block d-lg-flex justify-content-lg-end align-items-center text-center mt-2 mb-4">
@@ -342,11 +400,11 @@
 						</div>
 						<div class = "content-box  mx-auto text-center">
 							<ul class = "row list-nhucau">
-								<li class ="col-sm-6 col-12"><a class = "" href = "./ncmuathietbiupimg.html" ><img src = "./images/maydeban.png"/>Bán thiết bị</a></li>
-								<li class ="col-sm-6 col-12"><a class = "" href = "./ncthuethietbiupimg.html" ><img src = "./images/canthue.png"/>Đăng tin cho thuê</a></li>
-								<li class ="col-sm-6 col-12"><a class = "" href = "./ncmuaphutungupimg.html" ><img src = "./images/phutung.png"/>Bán phụ tùng</a></li>
-								<li class ="col-sm-6 col-12"><a class = "" href = "./ncthuedichvuupimg.html" ><img src = "./images/dichvu.png"/>Đăng tin dịch vụ</a></li>
-								<li class ="col-sm-6 col-12"><a class = "" href = "./ncmuavattuupimg.html" ><img src = "./images/vattu.png"/>Bán vật tư</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./dashboardbanthietbi.html" ><img src = "./images/maydeban.png"/>Bán thiết bị</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./dashboardchothue.html" ><img src = "./images/canthue.png"/>Đăng tin cho thuê</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./dashboardbanphutung.html" ><img src = "./images/phutung.png"/>Bán phụ tùng</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./dashboardbandichvu.html" ><img src = "./images/dichvu.png"/>Đăng tin dịch vụ</a></li>
+								<li class ="col-sm-6 col-12"><a class = "" href = "./dashboardbanvattu.html" ><img src = "./images/vattu.png"/>Bán vật tư</a></li>
 
 							</ul>
 
@@ -364,8 +422,13 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/bootstrap.bundle.min.js" ></script>
-	 
-	<script src="./js/file-upload-with-preview.min.js" ></script>
+	<script src="./js/select2.min.js" ></script> 
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/jquery.lazy.min.js"></script>
+	<script src="./js/navScript.js"></script>
+	<script src="./js/mmenu.js"></script>
+	<script src="./js/radial-progress-bar.js"></script>
+	<script src="./js/custom.js"></script>
 	 
   </body>
 </html>

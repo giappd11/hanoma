@@ -1,9 +1,10 @@
 <div class="bg-white py-1 mx-auto px-0 px-md-2">
 	<div class = "header-box text-center  ">
-		<h3 class = "text-uppercase mt-1">ĐĂNG TIN CẦN THUÊ THIẾT BỊ</h3>
+		<h3 class = "text-uppercase mt-1">ĐĂNG TIN TÌM VIỆC</h3>
     </div>
-    <div class = "content-box  mx-auto text-center">
+    <div class = "content-box  mx-auto ">
         <form action="./ncvieclam.html" enctype="multipart/form-data" onsubmit="callAjaxModal(this, '#main-popup')" >
+            <div class = "first-form text-center">
             <div class = "row">
                 <div class = "col-12 col-lg-3 col-md-5 pr-md-0 mb-3 mb-md-0"> 
                     <div class="custom-file-container" data-upload-id="cover-img">
@@ -67,7 +68,113 @@
                     <li class = "step2"><div class="counter">2</div></li>
                 </ul>
                 <div class=" justify-content-center d-block text-center mt-3">
-                    <button type="submit" class="btn btn-primary mb-2">Tiếp theo</button>
+                    <button type="button" class="btn btn-primary mb-2 next-form-button">Tiếp theo</button>
+                </div>
+            </div>
+            </div>
+            <div class = "next-form" style = "display: none">
+                <div class="form-group">
+                    <label for="inputAddress">Họ và tên:*</label>
+                    <input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
+                     
+                </div>
+                <div class="row form-group">
+                    <div class="col">
+                        <label for="inputAddress">Ngày sinh:*</label>
+                        <input type="date" class="form-control" name = "tieude"   placeholder="VD: ABC XYZ">
+                    </div>
+                    <div class="col">
+    
+                        <label for="inputAddress">GIới tính:*</label>
+                        <select name = "tb" class="form-control">
+                            <option value ="">Chọn</option>
+                            <option value ="1">Máy cẩu</option>
+                            <option value ="2">Máy xúc</option>
+    
+                        </select>
+                     </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Địa chỉ:*</label>
+                    <input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
+                     
+                </div>
+    
+                <div class="row form-group">
+                    <div class="col">
+                        <label for="inputAddress">Bạn làm nghề gì?*</label>
+                        <select name = "tb" class="form-control">
+                            <option value ="">Chọn</option>
+                            <option value ="1">Máy cẩu</option>
+                            <option value ="2">Máy xúc</option>
+    
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="inputAddress">Bằng cấp, chứng chỉ:</label>
+                        <input type="text" class="form-control" name = "tieude"   placeholder="VD: 12345">
+                    </div>
+                </div>
+    
+                <div class="row form-group">
+                    <div class="col">
+                        <label for="inputAddress">Thiết bị liên quan:</label>
+                        <select name = "tb" class="form-control">
+                            <option value ="">Chọn</option>
+                            <option value ="1">Máy cẩu</option>
+                            <option value ="2">Máy xúc</option>
+    
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="inputAddress">Số năm kinh nghiệm:</label>
+                        <div class="input-group-prepend">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text decrease">-</span>
+                            </div>
+                            <div class="input-group-prepend">
+                                <input type="text" class="form-control" id = "quantity" name = "soluong" value="1">
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text increase">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="inputAddress">Mức lương mong muốn:</label>
+                    <input type="text" class="form-control" name = "tieude"   placeholder="VD: Cần mua máy xúc đào bánh xích">
+                     
+                </div>
+                
+                <div class="form-group">
+                    <label for="inputAddress">Mong muốn làm việc tại (tối đa 3):*</label>
+                    <select name = "tb" class="selectpickerTag form-control " multiple>
+                        <option value ="">Chọn</option>
+                        <option value ="1">Máy cẩu</option>
+                        <option value ="2">Máy xúc</option>
+    
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="inputAddress">Bài viết giới thiệu về bản thân:*</label>
+                    <textarea name = "content" class="form-control" placeholder="Hãy giới thiệu để nhà tuyển dụng có thể hiểu thêm về bạn"></textarea>
+                     
+                </div>
+                
+                <div class = "text-center">
+                    <div class = "note pt-4">
+                        <p>Bước 1: Nhập nội dung tuyển dụng</p>
+                    </div>
+                    <ul class="progressbar-post m-0 d-table">
+                        <li class = "step1 active"><div class="counter">1</div></li>
+                        <li class = "step2 "><div class="counter">2</div></li>
+                    </ul>
+                    <div class=" justify-content-center d-block text-center mt-3">
+                        <button type="submit" class="btn btn-primary mb-2">Đăng bài</button>
+                    </div>
                 </div>
             </div>
         </form>
