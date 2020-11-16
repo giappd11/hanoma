@@ -419,7 +419,7 @@ $( document ).ajaxComplete(function() {
 
 	});
 
-	$(".openPopUp").unbind("click").bind("click", function () {
+	$("body").on("click", ".openPopUp", function () {
 		$("#main-popup").modal('hide');
 		$("#optionpopup").modal('show');
 
@@ -451,6 +451,23 @@ $( document ).ajaxComplete(function() {
 		$(".first-form").slideUp(100);
 		$(".next-form").slideDown(100);
 	});
+
+	$("body").on("click",".remove-item", function () {
+		var index = $(this).attr("index");
+		var allvalue = $("#mutiplevalue").val();
+		var listVal = allvalue.split("||");
+		listVal.splice(index, 1);
+ 
+		$("#mutiplevalue").val(listVal.join("||"));
+		$(".box-selected-data").html("");
+		listVal.forEach(function(item, index) {
+			$(".box-selected-data").append("<div class = 'item-mul'><span>" + item + "</span><span class = 'remove-item' index = '"+index+"'</div>");
+		});
+		$(".box-selected-data").append("<div class = 'item-mul'><span class = 'openPopUp'>Thêm</span></div>");
+	
+	});
+
+
 
 
 });
@@ -608,3 +625,30 @@ function editMenuNews() {
 	$('.more-news-dropdow > ul').html(listShowMore);
 }
 
+function addValue() {
+	var value = $("#model_item").val();
+	if (value == null || value == '') {
+		return;
+	}
+	var allvalue = $("#mutiplevalue").val();
+	var listVal = [];
+	if (!allvalue == '') {
+		listVal = allvalue.split("||");
+	}
+	if (!listVal.includes(value)) {
+		listVal.push(value);
+	}
+	$("#mutiplevalue").val(listVal.join("||"));
+	$(".box-selected-data").html("");
+	listVal.forEach(function(item, index) {
+		$(".box-selected-data").append("<div class = 'item-mul'><span>" + item + "</span><span class = 'remove-item' index = '"+index+"'</div>");
+	});
+	$(".box-selected-data").append("<div class = 'item-mul'><span class = 'openPopUp'>Thêm</span></div>");
+
+
+	
+	if (!$("#checkbox_addmore").is(':checked')) {
+		$("#main-popup").modal('show');
+		$("#optionpopup").modal('hide');
+	}
+}
