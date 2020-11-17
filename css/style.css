@@ -2472,6 +2472,10 @@ span.total-count {
     color: #fff;
     border: 0;
 }
+.link-nangcap:hover {
+    background: linear-gradient(88.84deg, #C624FF -30.57%, #F877AD 57.19%, #FFB800 131.69%);
+    color: #fff;
+}
 span.total-count {
     margin-left: 2px;
 }
@@ -2804,11 +2808,24 @@ a.text-primary:focus, a.text-primary:hover {
     background-position: 0px -32px;
 }
 
+.prod-info tr {
+    border: 0;
+}
+.prod-info td:first-child, 
+.prod-info th:first-child {
+    text-align: left;
+}
 
-
-
-
-
+.gianhangtaomoi .form-control {
+    background-color: #F6F6F9;
+    border-color:  #F6F6F9;
+}
+textarea.form-control {
+    min-height: 90px;
+}
+.gianhangtaomoi textarea.form-control {
+    min-height:  278px;
+}
 
 
 
