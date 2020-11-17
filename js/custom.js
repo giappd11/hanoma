@@ -377,9 +377,25 @@ $(document).ready(function () {
 	});
 	
 
+	$("body").on("click",".remove-item", function () {
+		var index = $(this).attr("index");
+		var allvalue = $("#mutiplevalue").val();
+		var listVal = allvalue.split("||");
+		listVal.splice(index, 1);
+ 
+		$("#mutiplevalue").val(listVal.join("||"));
+		$(".box-selected-data").html("");
+		listVal.forEach(function(item, index) {
+			$(".box-selected-data").append("<div class = 'item-mul'><span>" + item + "</span><span class = 'remove-item' index = '"+ index +"'</div>");
+		});
+		$(".box-selected-data").append("<div class = 'item-mul'><span class = 'openPopUp'>Thêm</span></div>");
+	
+	});
 
-
-
+	$("body").on("click", ".openPopUp", function () { 
+		$("#main-popup").modal('hide');
+		$("#optionpopup").modal('show');
+	});
 
 
 
@@ -418,19 +434,7 @@ $( document ).ajaxComplete(function() {
 		$(this).next('.action').slideToggle(200);
 
 	});
-
-	$("body").on("click", ".openPopUp", function () {
-		$("#main-popup").modal('hide');
-		$("#optionpopup").modal('show');
-
-	});
-	// $(document).on("click", function(event) {
-	// 	var $trigger = $(".more-action");
-	// 	alert(event.target);
-    //     if($trigger !== event.target && !$trigger.has(event.target).length) {
-	// 		$(".action").slideUp("fast");
-    //     }         
-	// });
+ 
 	$(".decrease").click(function () {
 		decreaseQty("#quantity");
 	})
@@ -452,26 +456,13 @@ $( document ).ajaxComplete(function() {
 		$(".next-form").slideDown(100);
 	});
 
-	$("body").on("click",".remove-item", function () {
-		var index = $(this).attr("index");
-		var allvalue = $("#mutiplevalue").val();
-		var listVal = allvalue.split("||");
-		listVal.splice(index, 1);
- 
-		$("#mutiplevalue").val(listVal.join("||"));
-		$(".box-selected-data").html("");
-		listVal.forEach(function(item, index) {
-			$(".box-selected-data").append("<div class = 'item-mul'><span>" + item + "</span><span class = 'remove-item' index = '"+index+"'</div>");
-		});
-		$(".box-selected-data").append("<div class = 'item-mul'><span class = 'openPopUp'>Thêm</span></div>");
-	
-	});
+	 
 
 
 
 
 });
-
+ 
 function decreaseQty (qtyTexbox) {
 	var qty =  Number.parseInt($(qtyTexbox).val());
 	

@@ -1783,6 +1783,12 @@ span.sm-lable {
     border-radius: 20px;
     margin-top: 5px;
 }
+.btn-plus {
+    padding-left: 40px !important;
+    background-image: url(../images/plus.png);
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+}
 .item-mul .openPopUp {
     padding-right: 20px;
     background: url(../images/more-item.png) no-repeat 100% 50% #FFC107;
@@ -2400,16 +2406,18 @@ table img {
     background-color: #FFC107;
 }
 .nav-status a {
-    padding: 10px 25px;
+    padding: 10px 0;
     display: block;
     font-weight: bold;
+}
+.search-module {
+    overflow: hidden;
 }
 
 .nav-status a.active {
     color: #FFC107;
 }
 .nav-status li {
-    width: 16%;
     text-align: center;
 }
 .total-document {
@@ -2639,15 +2647,27 @@ input[type='radio']:checked:after {
 }
 input.copytoclipboard {
     border: 1px dashed #dbdbdb;
-    background: url(../images/copytoclipboard.png) no-repeat  90% 50% #F1F1F1;
+    background: url(../images/copytoclipboard.png) no-repeat  96% 50% #F1F1F1;
     border-radius: 10px;
     padding: 10px 50px 10px 10px;
      
 }
+.backaccount > div {
+    display: flex;
+}
+.content-right .form-control {
+    background: #F1F1F1;
+    border-color: #F1F1F1;
+}
 input.copytoclipboard:focus {
     outline: 0;
 }
-
+.menu-search-result {
+    overflow: hidden;
+}
+.menu-search-result  ul {
+    margin-bottom: 0;
+}
 .text-black  {
     color: #000;
 }

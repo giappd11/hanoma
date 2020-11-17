@@ -152,6 +152,9 @@
 		font-size: 13px;
 		line-height: 14px;
 	}
+	.nangcapgh ul li {
+		font-size: 11px;
+	}
 }
 @media (min-width: 1200px) {
 	.news-right > div {

@@ -15,9 +15,13 @@
 	<!-- Header -->
 	<section class = "header navbar-expand-sm ">
 		<div class = "container-custom  p-0">
-			<div class = "d-block d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1 justify-content-between">
-				 
-				<div class = "col-12 col-lg-7 col-md-12 col-sm-12 pr-0 text-center pl-sm-2 pl-md-0  d-flex align-items-center">
+			<div class = "d-flex d-sm-flex align-items-center pt-2 pb-1  pt-sm-1 pb-sm-1 justify-content-between">
+				<div class = "col-2 col-sm-1 d-inline-block d-md-none pr-0 pt-sm-0 pl-0">
+					<a href = "#m-menu" class = "mburger">
+						<span></span>
+					</a>
+				</div>
+				<div class = "col-11 col-lg-7 col-md-11 col-sm-11 pr-0 text-center pl-sm-2 pl-md-0  d-flex align-items-center">
 					<a href = "./index.html" class = "border-right pr-2">
 						<img  src = "./images/logo.png" alt = "logo"/>
 					</a>
@@ -25,7 +29,6 @@
 					<ul class = "nav header-link d-none d-sm-flex">
 						<li><a href = "#"><img src = "./images/icon_home.png"/><span>Trang chủ</span></a></li>
 						<li><a href = "#"><img src = "./images/icon_store.png"/><span>Gian hàng</span></a></li>
-
 					</ul>
 				</div>
 				  
@@ -51,22 +54,74 @@
 	<!-- Content -->
 	<section class = "content container-fluid   ">
 		<article class = "row d-flex pt-0   ">
-			<div class="col-2 bg-white menu-left">
-				<div class = "profile-picture mt-3">
-					<img src = "./images/hs1.jpg" width="72px" height="72px"/>
-					<span class = "status active"></span>
-				</div>
-				<div class  ="mt-2 text-center mb-3">
-					CÔNG TY CỔ PHẦN MÁY VÀ THIẾT BỊ XÂY DỰNG HÀ NỘI
+			<div class="col-lg-2 bg-white menu-left px-0 px-lg-2" id = "m-menu">
+				<div class = "profile-info">
+					<div class = "profile-picture mt-3">
+						<img src = "./images/hs1.jpg" width="72px" height="72px"/>
+						<span class = "status active"></span>
+					</div>
+					<div class  ="mt-2 text-center mb-3">
+						CÔNG TY CỔ PHẦN MÁY VÀ THIẾT BỊ XÂY DỰNG HÀ NỘI
+					</div>
 				</div>
 				<ul class = "list-unstyled menu-item-left">
-					<li class = "active"><img src = "./images/ic_dashboard.png"/><a href = "">Dashboard</a></li>
-					<li><img src = "./images/ic_shopping-bag.png"/><a href = "">Quản lý sản phẩm</a></li>
-					<li><img src = "./images/ic_newspaper.png"/><a href = "">Quản lý bài viết</a></li>
-					<li><img src = "./images/ic_settings-applications.png"/><a href = "">Cài đặt gian hàng</a></li>
-					<li><img src = "./images/ic_arrow-growth.png"/><a href = "">Nâng cấp gian hàng</a></li>
-					<li><img src = "./images/ic_file-history.png"/><a href = "">Lịch sử nâng cấp</a></li>
-					<li><img src = "./images/ic_file-user.png"/><a href = "">Tài khoản</a></li>
+					<li class = "">
+						<a href = "./dashboard.html">
+							<div class = "img-menu">
+								<img src = "./images/ic_dashboard.png"/>
+							</div>
+							<span class = "text-menu">Dashboard</span>
+						</a>
+					</li>
+					<li class = "active">
+						<a href = "./dashboardqlsp.html">
+							<div class = "img-menu">
+								<img src = "./images/ic_shopping-bag.png"/>
+							</div>
+							<span class = "text-menu">Quản lý sản phẩm</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "./dashboardqlbv.html">
+							<div class = "img-menu">
+								<img src = "./images/ic_newspaper.png"/>
+							</div>
+							<span class = "text-menu">Quản lý bài viết</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "#">
+							<div class = "img-menu">
+								<img src = "./images/ic_settings-applications.png"/>
+							</div>
+							<span class = "text-menu">Cài đặt gian hàng</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "./gianhangnangcap1.html">
+							<div class = "img-menu">
+								<img src = "./images/ic_arrow-growth.png"/>
+							</div>
+							<span class = "text-menu">Nâng cấp gian hàng</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "./dashboardlsnangcap.html">
+							<div class = "img-menu">
+								<img src = "./images/ic_file-history.png"/>
+							</div>
+							<span class = "text-menu">Lịch sử nâng cấp</span>
+						</a>
+					</li>
+					<li class = "">
+						<a href = "./taikhoan1.html">
+							<div class = "img-menu">
+								<img src = "./images/ic_file-user.png"/>
+							</div>
+							<span class = "text-menu">Tài khoản</span>
+						</a>
+					</li>
+					 
 				</ul>
 				<div class = "nangcap text-center pt-2">
 					<img src = "./images/rocket.png">
@@ -77,7 +132,7 @@
 				</div>
 			</div>
 			
-			<div class="col-10 "> 
+			<div class="col-12 col-lg-10  content-right"> 
 				<form class = "bg-white px-3 pt-3 pb-5" action = "#">
 					<div class = "text-center mb-4">
 						<h3 class = "font-weight-bold">ĐĂNG TIN BÁN PHỤ TÙNG</h3>
@@ -215,8 +270,9 @@
  
 						<div class="form-group">
 							<label for="inputAddress">Phụ tùng này lắp cho các thiết bị sau*:</label>
-							<textarea name = "content" class="form-control"></textarea>
-								
+							<input type = "hidden" value = "" name = "thietbi" id = "mutiplevalue"/>
+                    		<div class = "box-selected-data"><div class = "item-mul"><span class = "openPopUp">Thêm</span></div></div>
+                    
 						</div>
 						<div class="form-group">
 							<label for="inputAddress">Nội dung chi tiết:*</label>
@@ -233,6 +289,70 @@
 					</div>
 				</form>
 
+			</div>
+			<div class="modal fade" id="optionpopup" tabindex="-1" role="dialog" aria-labelledby="popup" aria-hidden="true" data-keyboard = "false" data-backdrop= "static">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"  role="document">
+					<div class="modal-content">
+						<div class="text-left mx-1">
+						<button type="button" class="back" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#main-popup">
+							<span aria-hidden="true"></span>
+						</button>
+						</div>
+						<div class="modal-body">
+							<div class="bg-white px-md-5   mx-auto px-2">
+								<div class = "header-box text-center  mb-2">
+									<h3 class = "text-uppercase mt-1">PHỤ TÙNG NÀY LẮP THIẾT BỊ</h3>
+								</div>
+								<div class = "content-box  mx-auto text-left">
+									<form class = "" action = "#" onsubmit="callAjaxModal(this, '#popup')">
+										<div class="form-group">
+											<label for="inputAddress">Chọn chủng loại:*</label>
+											<select class="selectpicker form-control" data-live-search="true">
+												<option value ="">Chọn</option>
+												<option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+												<option data-tokens="mustard">Burger, Shake and a Smile</option>
+												<option data-tokens="frosting">Sugar, Spice and all things nice</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="inputAddress">Chọn hãng:*</label>
+											<select class="selectpicker form-control" data-live-search="true">
+												<option value ="">Chọn</option>
+												<optgroup label="Condiments" >
+												<option>Mustard</option>
+												<option>Ketchup</option>
+												<option>Relish</option>
+												</optgroup>
+												<optgroup label="Breads"  >
+												<option>Plain</option>
+												<option>Steamed</option>
+												<option>Toasted</option>
+												</optgroup>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="inputAddress">Model:*</label>
+											<select class="selectpicker form-control" id = "model_item" data-live-search="true">
+												<option value ="">Chọn</option>
+												<option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+												<option data-tokens="mustard">Burger, Shake and a Smile</option>
+												<option data-tokens="frosting">Sugar, Spice and all things nice</option>
+											</select>
+										</div>
+										<div class="form-group d-flex align-items-center">
+											<input type = "checkbox"  id = "checkbox_addmore">
+											<label for="checkbox_addmore" class = "ml-1">Thêm nhiều thiết bị</label>
+
+										</div>
+										<div class=" justify-content-center d-block text-center mt-3">
+											<button type="button" class="btn btn-primary mb-2" onclick = "javascript:addValue()">Thêm</button>
+										</div>
+									</form>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</article>
@@ -287,12 +407,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script> 
 	<script src="./js/bootstrap.bundle.min.js" ></script>
-	 
+	<script src="./js/select2.min.js" ></script>
 	<script src="./js/file-upload-with-preview.min.js" ></script>
-	<script src="./js/chart.min.js" ></script> 
-	<script src="./js/Chart.RadialGauge.umd.js" ></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/jquery.lazy.min.js"></script>
+	<script src="./js/navScript.js"></script>
+	<script src="./js/mmenu.js"></script>
+	<script src="./js/custom.js"></script>
 	<script> 
 	  
 	  var upload = new FileUploadWithPreview("cover-img",{
