@@ -14,7 +14,8 @@ function radialProgress($obj, options) {
     "background": "rgba(0,0,0,0.1)",
     "size": $obj.outerWidth(),
     "fill": "5px",
-    "range": [0, 100]
+    "range": [0, 100],
+    "z-index" : 1
   };
   this.options = $.extend(defaults, options);
 
@@ -34,7 +35,7 @@ function radialProgress($obj, options) {
     "display": this.options['inline'] ? "inline-block" : "block"
   });
 
-  this.$radialBackground = $("<div>").appendTo($obj).css({
+  this.$radialBackground = $("<div class = 'base'>").appendTo($obj).css({
     "box-sizing": "border-box",
     "-moz-box-sizing": "border-box",
     "-webkit-box-sizing": "border-box",
@@ -45,6 +46,7 @@ function radialProgress($obj, options) {
     "height": this.options['size'] - this.options['margin'] * 2,
     "border": this.options['fill'] + "px solid " + this.options['background'],
     "border-radius": Math.ceil(this.options['size'] / 2) + "px",
+    
   });
 
   this.$radialFirstHalfMask = $("<div>").appendTo($obj).css({
@@ -78,7 +80,8 @@ function radialProgress($obj, options) {
     "height": "100%",
     "border-radius": "50%",
     "left": "-100%",
-    "transform": "rotate(" + this.first_rot_base + "deg)"
+    "transform": "rotate(" + this.first_rot_base + "deg)",
+    "z-index" : 100
   });
 
   this.$radialSecondHalf = $("<div>").appendTo(this.$radialSecondHalfMask).css({
@@ -94,7 +97,8 @@ function radialProgress($obj, options) {
     "height": "100%",
     "border-radius": "50%",
     "left": "0px",
-    "transform": "rotate(" + this.second_rot_base + "deg)"
+    "transform": "rotate(" + this.second_rot_base + "deg)",
+    "z-index" : 100
   });
 
   if (this.options['text-color']) {

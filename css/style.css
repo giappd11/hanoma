@@ -2470,6 +2470,10 @@ span.total-count {
     background: linear-gradient(88.84deg, #FFB800 -30.57%, #F877AD 57.19%, #C624FF 131.69%);
     border-radius: 20px;
     color: #fff;
+    border: 0;
+}
+span.total-count {
+    margin-left: 2px;
 }
 .nangcap-des {
     color: #FF6442;
@@ -2738,8 +2742,67 @@ a.text-primary:focus, a.text-primary:hover {
     background-size: cover;
     background-position: center;
 }
+.img-menu {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.menu-item-left li a {
+    align-items: center;
+    display: flex;
+}
+.ic_user {
+    background: url(../images/ic_file-user.png) no-repeat 0 0 ;
+}
+.ic_history {
+    background: url(../images/ic_file-history.png) no-repeat 0 0 ;
+}
+.ic_arrow {
+    background: url(../images/ic_arrow-growth.png) no-repeat 0 1px ;
+}
+.ic_settings {
+    background: url(../images/ic_settings-applications.png) no-repeat 0 1px ;
+}
+.ic_newspaper {
+    background: url(../images/ic_newspaper.png) no-repeat 0 1px ;
+}
+.ic_shopping-bag {
+    background: url(../images/ic_shopping-bag.png) no-repeat 0 1px ;
+}
+.ic_dashboard {
+    background: url(../images/ic_dashboard.png) no-repeat 0 1px ;
+}
 
-
+.menu-item-left li.active a .ic_user,
+.menu-item-left li a:hover .ic_user {
+    background-position: 0px -31px;
+}
+.menu-item-left li.active a .ic_history,
+.menu-item-left li a:hover .ic_history {
+    background-position: 0px -31px;
+}
+.menu-item-left li.active a .ic_arrow,
+.menu-item-left li a:hover .ic_arrow {
+    background-position: 0px -32px;
+}
+.menu-item-left li.active a .ic_settings,
+.menu-item-left li a:hover .ic_settings {
+    background-position: 0px -32px;
+}
+.menu-item-left li.active a .ic_newspaper,
+.menu-item-left li a:hover .ic_newspaper {
+    background-position: 0px -32px;
+}
+.menu-item-left li.active a .ic_shopping-bag,
+.menu-item-left li a:hover .ic_shopping-bag {
+    background-position: 0px -33px;
+}
+.menu-item-left li.active a .ic_dashboard,
+.menu-item-left li a:hover .ic_dashboard {
+    background-position: 0px -32px;
+}
 
 
 

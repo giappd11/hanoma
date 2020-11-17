@@ -422,6 +422,7 @@
 	.img-menu {
 		text-align: center;
 		display: block;
+		margin: 0 auto;
 	} 
 	.menu-item-left li a:hover .text-menu {
 		display: flex;
