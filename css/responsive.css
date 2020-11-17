@@ -218,10 +218,7 @@
 	.nav-link {
 		display: block;
 	}
-	.article-header h3.title {
-		float: left;
-		margin-top: 7px;
-	}
+ 
 	.article-header button.navbar-toggler {
 		float: right;
 		color: #fff;
@@ -434,11 +431,15 @@
 		display: none;
 	} 
 
-
+	.category-title {
+		display: flex !important;
+		align-items: center;
+		justify-content: space-between;
+	}
 
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 766px) {
 	.menu-left {
 		position: unset;
 		z-index: 99;
@@ -669,5 +670,8 @@
 	}
 	#quantity {
 		width: 50px;
+	}
+	.article-header h3.title {
+		font-size: 16px;
 	}
 }
