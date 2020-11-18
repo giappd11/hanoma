@@ -155,6 +155,12 @@
 	.nangcapgh ul li {
 		font-size: 11px;
 	}
+	.gallery-top {
+		height: 493px;
+	}
+	.gallery-thumbs .swiper-wrapper{
+		height: 110px;
+	}
 }
 @media (min-width: 1200px) {
 	.news-right > div {
@@ -436,6 +442,18 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	.modal-dialog .custom-file-container[data-upload-id="thumb-img"] .custom-file-container__image-preview {
+		height: 188px;
+		padding-bottom: 0;
+	}
+	.gallery-top {
+		height: 479px;
+	}
+	.gallery-thumbs .swiper-wrapper{
+		height: 136px;
+	}
+
+
 
 } 
 
@@ -519,6 +537,13 @@
 	#detail img {
 		height: auto;
 	}
+	.gallery-top {
+		height: 364px;
+	}
+	.gallery-thumbs .swiper-wrapper{
+		height: 97px;
+	}
+
 }
 @media (max-width: 640px) {
 	.card .image {
@@ -598,6 +623,10 @@
 	h5.header-title {
 		display: none;
 	}
+	.gallery-top,
+	.gallery-thumbs .swiper-wrapper {
+		height: auto;
+	} 
 }
 @media (max-width: 413px) {
 	.relate-post > div:first-child {
@@ -673,5 +702,9 @@
 	}
 	.article-header h3.title {
 		font-size: 16px;
+	}
+	button.startModal {
+		font-size: 11px;
+		padding-right: 5px;
 	}
 }

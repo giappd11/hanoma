@@ -629,10 +629,15 @@ span.bigcompany {
     font-size: 0.625rem;
     color: #3CD053;
 }  
-.swiper-wrapper {
+/* .swiper-wrapper {
     height: calc(100% - 20px);
+} */
+.gallery-thumbs .swiper-slide {
+    background-color: rgb(0,0,0,.3);
 }
-
+.gallery-thumbs .swiper-wrapper{
+    height: 130px;
+}
 /* -------------------------------- */
 .breadcrumb {
     background: none;
@@ -2361,6 +2366,22 @@ a.delete {
     background: transparent url(../images/ion_document.png) no-repeat 50% 54%;
     background-size: 60px 60px;
 }
+.nccnho#chart-area {
+    margin: 0 auto;
+    background: transparent url(../images/ncc1.png) no-repeat 50% 54%;
+    background-size: 60px 60px;
+}
+.nccvua#chart-area {
+    margin: 0 auto;
+    background: transparent url(../images/ncc2.png) no-repeat 50% 54%;
+    background-size: 60px 60px;
+}
+.ncclon#chart-area {
+    margin: 0 auto;
+    background: transparent url(../images/ncc3.png) no-repeat 50% 54%;
+    background-size: 60px 60px;
+}
+
 .list-nhucau img {
     margin-right: 5px;
 }
@@ -2663,7 +2684,9 @@ input.copytoclipboard {
 .backaccount > div {
     display: flex;
 }
-.content-right .form-control {
+.content-right .form-control,
+#model-input .form-control
+{
     background: #F1F1F1;
     border-color: #F1F1F1;
 }
@@ -2826,10 +2849,21 @@ textarea.form-control {
 .gianhangtaomoi textarea.form-control {
     min-height:  278px;
 }
+.article-header .navbar {
+    width: 100%;
+}
+.img-wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
-
-
-
+.gallery-top {
+    height: 481px;
+}
 
 
 

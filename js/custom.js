@@ -618,6 +618,9 @@ function editMenuNews() {
 
 function addValue() {
 	var value = $("#model_item").val();
+	if (value == "#") {
+		value = $("#othermodel").val();
+	}
 	if (value == null || value == '') {
 		return;
 	}
@@ -636,10 +639,18 @@ function addValue() {
 	});
 	$(".box-selected-data").append("<div class = 'item-mul'><span class = 'openPopUp'>Thêm</span></div>");
 
-
-	
 	if (!$("#checkbox_addmore").is(':checked')) {
 		$("#main-popup").modal('show');
 		$("#optionpopup").modal('hide');
+	}
+
+	//CLEAR VALUE
+	$("#othermodel").val("");
+}
+function changeModelValue(val) {
+	if (val.value == "#") {
+		$("#model-input").slideDown(200);
+	} else {
+		$("#model-input").slideUp(200);
 	}
 }
