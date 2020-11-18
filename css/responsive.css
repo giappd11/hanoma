@@ -102,8 +102,7 @@
 	.menu-news-bottom.collapse {
 		display: block;
 	}
-	.gallery-thumbs .swiper-slide {
-		max-width: 140px;
+	.gallery-thumbs .swiper-slide { 
 		overflow: hidden;
 	}
 	.category-list .nav-item.col-2-5:nth-child(5n + 1) {
@@ -172,8 +171,7 @@
 
 }
 @media (min-width: 1024px) {
-	.gallery-thumbs .swiper-slide {
-		max-width: 170px;
+	.gallery-thumbs .swiper-slide { 
 		overflow: hidden;
 	}
 	
@@ -481,8 +479,7 @@
 		text-align: center;
 		display: inline-block;
 	} 
-	.gallery-thumbs .swiper-slide {
-		max-width: 180px;
+	.gallery-thumbs .swiper-slide { 
 		overflow: hidden;
 	}
 	.memu-noti li {
@@ -612,8 +609,7 @@
 		text-align: left;
 		font-size: 1rem;
 	}
-	.gallery-thumbs .swiper-slide {
-		max-width: 130px;
+	.gallery-thumbs .swiper-slide { 
 		overflow: hidden;
 	}
 	.list-nhucau img {
