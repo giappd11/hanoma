@@ -24,7 +24,10 @@
 		position: relative;
 		width: 100%;
 	}
-	
+	.px-lg-custom {
+		padding-left: 150px !important;
+		padding-right: 150px !important;
+	}
 	.menu-home ul li ul ,
 	.menu ul li ul {
 		display: none;
@@ -107,6 +110,9 @@
 	}
 	.category-list .nav-item.col-2-5:nth-child(5n + 1) {
 		clear: left;
+	}
+	.modal-dialog-scrollable .modal-content {
+		margin-top: 3.5rem;
 	}
 }
 @media (max-width: 1200px) {
@@ -563,7 +569,6 @@
 		margin-top: 105px !important;
 	}
 	.pagination {
-		justify-content: center;
 		padding-top: 10px;
 	}
 	.action-noti {
@@ -697,7 +702,7 @@
 		width: 50px;
 	}
 	.article-header h3.title {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	button.startModal {
 		font-size: 11px;

@@ -69,16 +69,16 @@ $(document).ready(function () {
 		},
 		breakpoints: {
 			0: {
-			slidesPerView: 1
+			slidesPerView: 2
 			},
 			321: {
-				slidesPerView: 1
+				slidesPerView: 3
 			},
 			415: {
-			slidesPerView: 2
+			slidesPerView: 3
 		},
 		640: {
-			slidesPerView: 2
+			slidesPerView: 3
 		},
 		768: {
 			slidesPerView: 3
@@ -272,10 +272,10 @@ $(document).ready(function () {
 			},
 			breakpoints: {
 				0: {
-				slidesPerView: 1
+				slidesPerView: 2
 				},
 				321: {
-					slidesPerView: 1
+					slidesPerView: 2
 				},
 				415: {
 					slidesPerView: 2
@@ -452,10 +452,15 @@ $( document ).ajaxComplete(function() {
 		$("#main-popup").modal('hide');
 	});
 	$(".next-form-button").unbind("click").bind("click", function () {
+		$(".backtouploadimage").css("display", "block");
 		$(".first-form").slideUp(100);
 		$(".next-form").slideDown(100);
 	});
-
+	$(".backtouploadimage .back").unbind("click").bind("click", function () {
+		$(".backtouploadimage").css("display", "none");
+		$(".first-form").slideDown(100);
+		$(".next-form").slideUp(100);
+	});
 	 
 
 
