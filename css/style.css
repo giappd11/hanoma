@@ -1820,6 +1820,9 @@ span.sm-lable {
     text-transform: uppercase;
     cursor: pointer;
 }
+.box-selected-data .item-mul:last-child a { 
+    color: #fff;
+}
 span.remove-item {
     width: 16px;
     height: 16px;

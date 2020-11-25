@@ -341,11 +341,7 @@ $(document).ready(function () {
 
 	});
 
-	$(".openPopUp").unbind("click").bind("click", function () {
-		$("#main-popup").modal('hide');
-		$("#optionpopup").modal('show');
-
-	});
+	
 	// $(document).on("click", function(event) {
 	// 	var $trigger = $(".more-action");
 	// 	alert(event.target);
@@ -462,7 +458,12 @@ $( document ).ajaxComplete(function() {
 		$(".next-form").slideUp(100);
 	});
 	 
-
+	$(".openPopUp").unbind("click").bind("click", function (event) {
+		event.preventDefault();
+		callAjaxModal(this , "#optionpopup"); 
+		$("#main-popup").modal('hide');
+		$("#optionpopup").modal('show');
+	});
 
 
 
