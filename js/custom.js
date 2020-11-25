@@ -37,7 +37,7 @@ $(document).ready(function () {
 	editMenuNews();
 	
 	
-	new Swiper('.menu-search-result', 
+	var menuconatiner =  new Swiper('.menu-search-result', 
 	{ 
 			slidesPerView: 6,
 			spaceBetween: 0,
@@ -461,7 +461,7 @@ $( document ).ajaxComplete(function() {
 		$(".first-form").slideDown(100);
 		$(".next-form").slideUp(100);
 	});
-	 
+	menuconatiner.
 
 
 
@@ -494,8 +494,11 @@ function callAjaxModal(obj, openPopup, closePopup) {
 	}
     $.ajax({
         type: "GET",
-        url: url,
-		dataType: 'text',
+		url: url,
+		headers: {  'Access-Control-Allow-Origin': '*', 
+		"Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept" ,
+		'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'},
+		dataType: 'html',
 		async : false,
         success: function(res) {
             // update modal content
@@ -507,7 +510,7 @@ function callAjaxModal(obj, openPopup, closePopup) {
         },
         error:function(request, status, error) {
             console.log("ajax call went wrong:" + request.responseText);
-        }
+		}
 	});
 	return false;
 } 

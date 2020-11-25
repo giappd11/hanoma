@@ -666,6 +666,7 @@ span.bigcompany {
 .category-list .nav-link {
     padding: 10px 5px;
     display: block;
+    width: 100%;
 }
 .menu-container ul {
     list-style: none;

@@ -194,8 +194,7 @@
 	section.content {
 		padding-bottom: 80px;
 	}
-	.relate-post > div:first-child {
-		float: left;
+	.relate-post > div:first-child { 
 		padding-bottom: 5px;
 		padding-left: 0;
 	}
@@ -208,9 +207,7 @@
 	.relate-post span.time {
 		float: right;
 	}
-	.relate-post > div:nth-child(2) {
-		display: inline;
-	}
+ 
 	.relate-post > div:nth-child(2) h4 {
 		text-align: left;
 	}
