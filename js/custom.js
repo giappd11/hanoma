@@ -461,7 +461,7 @@ $( document ).ajaxComplete(function() {
 		$(".first-form").slideDown(100);
 		$(".next-form").slideUp(100);
 	});
-	menuconatiner.
+	 
 
 
 
@@ -592,17 +592,13 @@ function edit(name ) {
 
 function editMenuNews() {
 	var width = $( window ).width();
-	var maxItem = 8;
-	if (width > 1200) {
-		maxItem = 8;
-	} else if (width > 984) {
+	var maxItem = 6;
+	 if (width > 984) {
 		maxItem = 6;
 	} else {
 		maxItem = -1;
 	}
-	if ($('.knowledge').length > 0 && maxItem != -1) {
-		maxItem = maxItem - 2;
-	}
+	 
 	var count = 0;
 	var listDispay = "";
 	var listShowMore = "";
