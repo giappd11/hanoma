@@ -10,21 +10,20 @@ $(document).ready(function(){
 	$(".menu-container .manu ul li ul:has(li ul li)").removeClass("have_dropdown").addClass("have_dropdown_n_style");
 	
 	 //Checks if li has sub (ul) and adds class for toggle icon 
-	$(".menu-container .manu ul li:has('ul')").children("a").not(".manu ul li ul li a").append("<span class='drop_down_icon fa fa-angle-down'></span>");
+	$(".menu-container .manu ul li:has('ul')").children("div").not(".manu ul li ul li a").append("<span class='navbar-menu navbar-toggler-icon'></span>");
 	
 	
 	if ($(window).width() < 992) {
-		$(".menu-container .manu > nav > ul > li > div > a").click(function(e) { 
+		$(".menu-container .manu > nav > ul > li > div > .navbar-toggler-icon").click(function(e) {
+			if ($(this).hasClass('active')) {
+				$(this).removeClass("active");
+			} else {
+				$(this).addClass("active");
+			}
 			if ($(this).parent().parent().find('ul').hasClass('have_dropdown')) {
 				e.preventDefault();
 				$(this).parent().parent('li').children(".have_dropdown").not(".have_dropdown li a").slideToggle(100);
 			} 
-		}); 
-		
-		$(".nav_menu_toggler_icon").click(function(e) {
-			e.preventDefault();
-			alert(1);
-			$(".menu-container .manu").slideToggle();
 		});
 		
      } else {

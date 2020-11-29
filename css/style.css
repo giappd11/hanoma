@@ -457,7 +457,10 @@ section.content {
 .article-content {
 	overflow: hidden;
 }
-.navbar nav {
+.category-menu > div {
+    width: 100%;
+}
+.navbar.category-menu {
 	list-style: none;
 }
 .category-title {
@@ -480,7 +483,7 @@ section.content {
     top: 0;
 }
 .article-header {
-    border-bottom: 2px solid #FFC107;
+    border-bottom: 1px solid #FFC107;
 	margin: 0 15px;
 	background: #fff;
 }
@@ -666,7 +669,10 @@ span.bigcompany {
 .category-list .nav-link {
     padding: 10px 5px;
     display: block;
-    width: 100%;
+    width: 95%;
+}
+.active .link-box .navbar-toggler-icon   {
+    color: #FFF;
 }
 .menu-container ul {
     list-style: none;
@@ -872,8 +878,12 @@ li.page-item:last-child {
     border-radius: 10px;
     padding: 0 10px;
 }
-
-
+.search-content .input-box select { 
+    border-radius: 4px;
+}
+.search-content .font-italic {
+    color: #7E7E7E;
+}
 /* Detail */
 .product-name h1 {
     font-size: 1.125rem;
@@ -1535,12 +1545,13 @@ iframe {
     margin-top: -10px;
 }
 
-.readtotoal {
+.readtotoal > a,
+a.readtotoal {
     background: url(../images/nrrowright.png) no-repeat 100% 50%;
     padding-right: 20px !important;
     font-weight: bold;
     color: #0A0015 !important;
-    
+    white-space: nowrap;
 }
 .readtotoal:hover {
     color: #FB3C00;
@@ -1660,6 +1671,7 @@ span.sm-lable {
     display: table;
     table-layout: fixed;
     width: 100%;
+    margin-top: 20px !important;
 }
 .progressbar-account li {
     list-style: none;
@@ -1734,9 +1746,24 @@ span.sm-lable {
 .account button.btn {
     width: 100%;
 }
+
 .account .form-control {
     background-color: #FFFEF5;
     border-color: #DBDBDB;
+    font-size: 15px;
+    border-radius: 0;
+}
+.account label {
+    color: #515C6F;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.account h3 {
+    color: #0A0015;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 50px;
+    margin-top: 20px !important;
 }
 .time-otp {
     font-size: 11px;
@@ -1785,6 +1812,14 @@ span.sm-lable {
     padding: 10px 25px;
     display: block;
     border-bottom: 2px solid #fff;
+    text-align: center;
+}
+.menu-module {
+    overflow: hidden;
+}
+.menu-module ul {
+    margin-bottom:  0;
+
 }
 .menu-module a.active {
     border-bottom-color: #FFC107;
@@ -1822,6 +1857,9 @@ span.sm-lable {
 }
 .box-selected-data .item-mul:last-child a { 
     color: #fff;
+}
+.img-wrap img {
+    width: 100%;
 }
 span.remove-item {
     width: 16px;

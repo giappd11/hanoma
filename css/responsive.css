@@ -114,6 +114,39 @@
 	.modal-dialog-scrollable .modal-content {
 		margin-top: 3.5rem;
 	}
+	.search-content .progressbar li:nth-child(1),
+	.search-content > div > .step:nth-child(1) {
+		flex: 140px;
+		max-width: 140px;
+	}
+	.search-content .progressbar li:nth-child(2),
+	.search-content > div > .step:nth-child(2) {
+		flex: 130px;
+		max-width: 130px;
+	}
+	.search-content .progressbar li:nth-child(3),
+	.search-content > div > .step:nth-child(3) {
+		flex: 140px;
+		max-width: 140px;
+	}
+	.search-content .progressbar li:nth-child(4),
+	.search-content > div > .step:nth-child(4) {
+		flex: 110px;
+		max-width: 110px;
+	}
+	.search-content .progressbar li:nth-child(5),
+	.search-content > div > .step:nth-child(5) {
+		flex: 150px;
+		max-width: 150px;
+	}
+	.search-content .progressbar li:nth-child(6),
+	.search-content > div > .step:nth-child(6) {
+		flex: 125px;
+		max-width: 125px;
+	} 
+	.navbar-menu.navbar-toggler-icon {
+		display: none;
+	}
 }
 @media (max-width: 1200px) {
 	.card .image {
@@ -193,6 +226,10 @@
 @media (max-width: 991px) {
 	section.content {
 		padding-bottom: 80px;
+	}
+	.box-group {
+		flex-wrap: wrap;
+		display: flex;
 	}
 	.relate-post > div:first-child { 
 		padding-bottom: 5px;
@@ -277,6 +314,19 @@
 		transform: rotate(-90deg);
 		text-align: center;
 		transition-duration: 200ms;
+	}
+	.navbar-toggler-icon.active {
+		transform: rotate(90deg);
+	}
+	span.navbar-menu.navbar-toggler-icon {
+		position: relative;
+		height: 32px;
+		cursor: pointer;
+		width: 40px;
+	}
+	span.navbar-menu.navbar-toggler-icon:after {
+		position: absolute;
+		left: 17px;
 	}
 	button.navbar-toggler:focus {
 		outline: 0;
@@ -452,6 +502,14 @@
 	}
 	.gallery-thumbs .swiper-wrapper{
 		height: 136px;
+	}
+	 
+	.readtotoal a {
+		padding: 7px 0 !important;
+	}
+	.com-info-detail .com-details .com-detail {
+		display: block;
+		padding-left: 0;
 	}
 
 

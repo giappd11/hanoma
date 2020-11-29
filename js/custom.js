@@ -58,6 +58,29 @@ $(document).ready(function () {
 		}
 	);	
 
+	var menuconatiner =  new Swiper('.menu-module', 
+	{ 
+			slidesPerView: 6,
+			spaceBetween: 0,
+			breakpoints: {
+				0: {
+					slidesPerView: 2
+				},
+				640: {
+					slidesPerView: 4
+				},
+				768: {
+					slidesPerView: 5
+				},
+				992: {
+					slidesPerView: 5
+				},
+				1024: {
+					slidesPerView: 7
+				}
+			}
+		}
+	);	
 
 	new Swiper('.ads-container', 
 	{ 

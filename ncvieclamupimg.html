@@ -8,7 +8,7 @@
 		<h3 class = "text-uppercase mt-1">ĐĂNG TIN TÌM VIỆC</h3>
     </div>
     <div class = "content-box  mx-auto ">
-        <form action="./ncvieclam.html" enctype="multipart/form-data" onsubmit="callAjaxModal(this, '#main-popup')" >
+        <form action="http://localhost:8080/JspDemo/UploadFile" enctype="multipart/form-data"   method = "POST" >
             <div class = "first-form text-center">
             <div class = "row">
                 <div class = "col-12 col-lg-3 col-md-5 pr-md-0 mb-3 mb-md-0"> 
@@ -48,7 +48,7 @@
                                 type="file"
                                 class="custom-file-container__custom-file__custom-file-input"
                                 accept="image/jpeg, image/png, image/gif, image/svg+xml"
-                                multiple
+                                multiple name = "attrr"
                                 aria-label="Choose File"
                             />
                             <input type="hidden" name="MAX_FILE_SIZE" value="2097152" />
