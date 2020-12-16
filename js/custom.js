@@ -1,12 +1,30 @@
 $(document).ready(function () {
+	$('.closefirstmodal').click(function () {
+		$('#Warning').modal('show').on('show.bs.modal', function () {
+			$('.confirmclosed').click(function () {
+				$('#Warning').modal('hide');
+				$('#main-popup').modal('hide');
+			});
+		});
+	});
+});
+$(document).ready(function () {
 	searchModule();
 	$(".menu .card").click(showmenu);
+
+	
 
 	$(document).on("click", function(event){
         var $trigger = $(".menu .card");
         if($trigger !== event.target && !$trigger.has(event.target).length) {
 			$(".show_menu").next().slideUp("fast");
-		}      
+		}
+		var $triggerpost = $(".more-action");
+		if($triggerpost !== event.target && !$triggerpost.has(event.target).length 
+		&& !event.target.classList.contains("more-action")) {
+			$(".more-action").next().slideUp("fast");
+		}
+		
 	});
 	
 	$(".formbaogia button.close").click(function () {

@@ -1316,6 +1316,13 @@ span.edit {
 span.edit {
     cursor: pointer;
 }
+.btn-light { 
+    background-color:#F1F1F1;
+    border-color: #DBDBDB;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #FFC107;
@@ -3125,9 +3132,21 @@ input.custom-file-container__custom-file__custom-file-input {
     cursor: pointer;
     color: #fff;
 }
+.custom-file-container__image-multi-preview__single-image-clear:hover
+.custom-file-container__image-multi-preview__single-image-clear__icon {
+    color: #fff;
+}
 .custom-file-container__image-multi-preview__single-image-clear__icon {
     color: #6a6a53;
     display: block;
-    margin-top: -2px; 
+    margin-top: -1px; 
 }
-  
+  .custom-file-container__image-multi-preview__single-image-clear__icon {
+    color: #6a6a53;
+    display: block;
+    margin-top: -1px; 
+}
+#Warning .modal-dialog {
+    max-width: 400px;
+
+}
