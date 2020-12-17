@@ -277,6 +277,7 @@ button.close {
 #main-popup .header-box h3 {
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 1.125rem;
 }
 #startpopup .header-box h3 {
     font-weight: bold;
@@ -1423,6 +1424,7 @@ div#taikhoandoipass > div:nth-child(2) {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #FFC107; 
+  border-radius: 10px;
 }
 
 /* Handle on hover */
@@ -1600,6 +1602,7 @@ a:hover p.card-text {
 label {
     color: #565656;
     margin-bottom: 0;
+    font-weight: bold;
 }
 a .card-title:hover {
     color: #FFC107;
@@ -2843,7 +2846,6 @@ a.text-primary:focus, a.text-primary:hover {
 }
 .menu-item-left li a {
     align-items: center;
-    display: flex;
 }
 .ic_user {
     background: url(../images/ic_file-user.png) no-repeat 0 0 ;
@@ -3013,9 +3015,9 @@ li.info-com {
 }
         
 label.custom-file-container__custom-file {
-    width: calc(20% - 1rem);
-    padding-bottom: calc(20% - 1rem);
-    margin: .5rem;
+    margin: 10px;
+    width: calc(20% - 20px);
+    padding-bottom: calc(20% - 20px);
     background: url(../images/carbon_add-alt.png) no-repeat 50% 20%;
     background-size: 27px;
     border: 1px dashed #39ABFD;
@@ -3112,9 +3114,9 @@ input.custom-file-container__custom-file__custom-file-input {
     background-position: center center;
     background-repeat: no-repeat;
     float: left;
-    margin: 0.5rem;
-    width: calc(20% - 1rem);
-    padding-bottom: calc(20% - 1rem);
+    margin: 10px;
+    width: calc(20% - 20px);
+    padding-bottom: calc(20% - 20px);
 }
 .custom-file-container__image-multi-preview__single-image-clear {
     right: 4px;
@@ -3149,4 +3151,22 @@ input.custom-file-container__custom-file__custom-file-input {
 #Warning .modal-dialog {
     max-width: 400px;
 
+}
+.k-list .k-item.k-state-focused, .k-list .k-item:focus, .k-list-optionlabel.k-state-focused, .k-list-optionlabel:focus, .k-list .k-item.k-state-focused.k-state-hover, .k-list .k-item.k-state-focused:hover, .k-list .k-item:focus.k-state-hover, .k-list .k-item:focus:hover, .k-list-optionlabel.k-state-focused.k-state-hover, .k-list-optionlabel.k-state-focused:hover, .k-list-optionlabel:focus.k-state-hover, .k-list-optionlabel:focus:hover {
+    box-shadow: inset 0 0 0 1px rgba(33,37,41,.15);
+}
+#main-popup .form-control:focus {
+    background: #ddd !important;
+}
+.img-sp {
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.img-noti {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
 }

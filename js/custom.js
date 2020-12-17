@@ -1,6 +1,9 @@
-$(document).ready(function () {
+$(function (){
 	$('.closefirstmodal').click(function () {
-		$('#Warning').modal('show').on('show.bs.modal', function () {
+		$('#Warning').modal({
+			'show': true
+		});
+		$('#Warning').on('show.bs.modal', function () {
 			$('.confirmclosed').click(function () {
 				$('#Warning').modal('hide');
 				$('#main-popup').modal('hide');
