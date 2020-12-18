@@ -1599,10 +1599,14 @@ a:hover p.card-text {
 .form-control {
     color: #414141;
 }
+
 label {
     color: #565656;
     margin-bottom: 0;
     font-weight: bold;
+}
+.content-right label {
+    color: #515C6F;
 }
 a .card-title:hover {
     color: #FFC107;
@@ -3015,9 +3019,9 @@ li.info-com {
 }
         
 label.custom-file-container__custom-file {
-    margin: 10px;
-    width: calc(20% - 20px);
-    padding-bottom: calc(20% - 20px);
+    margin: 8px 14px 0 14px;
+    width: calc(20% - 28px);
+    padding-bottom: calc(20% - 31px);
     background: url(../images/carbon_add-alt.png) no-repeat 50% 20%;
     background-size: 27px;
     border: 1px dashed #39ABFD;
@@ -3114,9 +3118,15 @@ input.custom-file-container__custom-file__custom-file-input {
     background-position: center center;
     background-repeat: no-repeat;
     float: left;
-    margin: 10px;
-    width: calc(20% - 20px);
-    padding-bottom: calc(20% - 20px);
+    margin: 8px 14px 0 14px;
+    width: calc(20% - 28px);
+    padding-bottom: calc(20% - 29px);
+}
+.content-right .custom-file-container__image-multi-preview,
+.content-right label.custom-file-container__custom-file {
+    margin: 10px 20px 0 20px;
+    width: calc(20% - 40px);
+    padding-bottom: calc(20% - 40px);
 }
 .custom-file-container__image-multi-preview__single-image-clear {
     right: 4px;

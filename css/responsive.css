@@ -441,7 +441,8 @@
 	}
 	.custom-file-container__image-multi-preview {
 		width: calc(50% - 1rem);
-    	padding-bottom: calc(50% - 1rem);
+		padding-bottom: calc(50% - 1rem);
+		margin: .5rem;
 	}
 	.custom-file-container[data-upload-id="img-cover"] label.custom-file-container__custom-file {
 		background-size: 50px;
@@ -605,6 +606,13 @@
 
 	.readtotoal a {
 		padding: 7px 20px 7px 10px!important;
+	}
+
+	.content-right .custom-file-container__image-multi-preview,
+	.content-right label.custom-file-container__custom-file {
+		margin: 10px 10px 0 10px;
+		width: calc(25% - 20px);
+		padding-bottom: calc(25% - 20px);
 	}
 
 }

@@ -1,3 +1,16 @@
+function heightOfThumb () {
+	if ($(window).width() < 767) {
+		return;
+	}
+	var width = $(".custom-file-container__image-preview").width();
+	console.log(width);
+	$(".custom-file-container__image-preview").css("height", width );
+
+}
+$(window).resize(function () {
+	heightOfThumb();
+});
+
 $(function (){
 	$('.closefirstmodal').click(function () {
 		$('#Warning').modal({
@@ -11,7 +24,9 @@ $(function (){
 		});
 	});
 });
+
 $(document).ready(function () {
+	heightOfThumb();
 	searchModule();
 	$(".menu .card").click(showmenu);
 
@@ -510,7 +525,7 @@ $( document ).ajaxComplete(function() {
 	});
 
 
-
+	
 });
  
 function decreaseQty (qtyTexbox) {
